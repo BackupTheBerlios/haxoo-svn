@@ -1,0 +1,69 @@
+Aenderungshinweise zu den Sprachdateien für XOOPS 2.0.x in der formellen und informellen Version.
+
+
+Version 1.4 08.01.2008
+
+1) Update für XOOPS 2.0.18
+2) neue Sprachdatei hinzugefügt und übersetzt (languages/german/banners.php)
+
+
+
+
+
+Version 1.3 18.11.2007
+
+1) Alle Umlaute in HTML-Entries umgewandelt, auch in den mySQL Dateien.
+ä ersetzen mit &auml; Ä ersetzen mit &Auml;
+ö ersetzen mit &ouml; Ö ersetzen mit &Ouml;
+ü ersetzen mit &uuml; Ü ersetzen mit &Uuml;
+ß ersetzen mit &szlig;
+Euro Zeichen ersetzen mit &euro;
+
+2) Bei der install.php die Versionsnummer von 2.0.17 in 2.0.17.1 geaendert
+
+3 Bei allen Sprachdateien wurde die Leerezeichen vor dem ?> und nach dem ?> entfernt.
+
+
+
+
+
+Version 1.2 27.10.2007
+
+1) Den Ordner /class/mail/phpmailer/language/german/phpmailer.lang-de.php
+wieder mit hinzugefuegt.
+
+
+
+
+
+Version 1.1 24.10.2007
+
+1) in der language/german/global.php folgendes hinzugefuegt:
+
+// 25.10.2007
+// Fehler im Framework 1.20 wird mit diesen Zeilen verbessert
+define("_TODAY", "Heu\te H:i");
+define("_YESTERDAY", "Ges\te\r\n H:i");
+define("_MONTHDAY", "d.m.Y H:i");
+define("_YEARMONTHDAY", "d.m.Y H:i");
+
+Da es Probleme im Framework 1.20 gibt.
+
+
+2) diese Datei wurde hinzugefuegt
+
+
+
+
+
+Version 1.0 (12.09.2007)
+
+1) komplett Ueberarbeitet, Neustart
+Historie:
+
+ tplset.php SIE, ein DU in SIE geaendert in Zeile 39
+ Gruppenhinweise geändert
+ Alle Dateien XHTML vail erstellt
+ user.php SIE Zeile 39
+ Sprachpaket (latin) komplett Ueberarbeitet
+
