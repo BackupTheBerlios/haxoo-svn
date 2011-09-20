@@ -1,0 +1,18 @@
+<{strip}>
+<link rel="stylesheet" type="text/css" media="screen,print" href="<{$xoops_url}>/modules/sitemap/slickmap.css"/>
+<div style="padding: 7px;"><{$msgs}></div>
+<div class="sitemap">
+	<ul id="utilityNav">
+		<li><a href="<{$xoops_url}>/register.php">Register</a></li>
+		<li><a href="<{$xoops_url}>/user.php">Log In</a></li>
+		<li><a href="<{$xoops_url}>/modules/sitemap">Site Map</a></li>
+	</ul>
+
+	<ul id="primaryNav" class="col<{$num_col}>">
+		<li id="home"><a href="<{$xoops_url}>/"><{$smarty.const._MD_SITEMAP_HOME}></a></li>
+			<{foreach name=i item=module from=$sitemap.modules}>
+				<{include file="db:sitemap_inc_eachmodule_slickmap.html"}>
+			<{/foreach}>
+	</ul>
+</div>
+<{/strip}>

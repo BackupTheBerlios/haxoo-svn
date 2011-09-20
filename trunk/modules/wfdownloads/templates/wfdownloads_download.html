@@ -1,0 +1,122 @@
+<table width="100%" cellspacing="1" cellpadding="2">
+  <tr>
+    <td width="82%" align="left">
+	 <a href="<{$xoops_url}>/modules/wfdownloads/singlefile.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>"><span class="itemTitle"><{$down.title}> </span></a> <{$down.icons}>
+	</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" bgcolor="#000000"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="2">
+		 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  		 <tr class="even" style="line-height: 10px;">
+    	  <td width="50%"><small><strong><{$smarty.const._MD_WFD_SUBMITTER}>:</strong> <{$down.submitter}> 
+		  	<{$down.adminlink}></small></td>
+    	   <td><div align="right" style="margin-right: 2px;"><small><b><{$lang_subdate}>:</b>&nbsp;&nbsp;
+		   	<{$down.updated}></small></div></td>
+		  </tr>
+		 </table>
+		</td>
+        </tr>
+      <tr>
+        <td colspan="2" style="line-height: 12px;" >&nbsp;</td>
+      </tr>
+      <tr>
+		  <td width="65%" height = "133" valign="top">
+        	<{if $show_screenshot == true}>
+				<{if $down.screenshot_full != ''}>
+				<div >
+					<a href="<{$xoops_url}>/<{$shots_dir}>/<{$down.screenshot_full}>" target="_blank">
+						<img src="<{$down.screenshot_thumb}>" width="<{$shotwidth}>" height="<{$shotheight}>" alt="" vspace="3" hspace="7" align="right" style='border: 1px solid black' />
+					</a>
+				</div>
+			<{/if}>
+			<{/if}>
+			<div style="margin-left: 6px;" align="justify"><a href="<{$xoops_url}>/modules/wfdownloads/visit.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+				<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/downloads.gif" alt="" align="absmiddle" /> 
+					<{$smarty.const._MD_WFD_DOWNLOADNOW}></a>&nbsp;&nbsp;
+<{if $down.use_mirrors == 1 && $down.mirrors_num >= 1}>
+				<a href="<{$xoops_url}>/modules/wfdownloads/mirror.php?op=list&amp;cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+					<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/downloads02.gif" alt="" align="absmiddle" /> <{$smarty.const._MD_WFD_DOWNLOADMIRRORS}></a></div>
+<{/if}>
+<{if $down.use_mirrors !== 1 && $down.mirror != ''}>
+				<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/downloads02.gif" alt="" align="absmiddle" /> <{$down.mirror}></div><br />
+<{/if}>
+<br /><br />
+			<div style="margin-left: 6px;" align="justify"><{$down.summary}>
+				<div style="padding-top: 10px; text-align: right;"><a href="<{$xoops_url}>/modules/wfdownloads/singlefile.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>"><{$smarty.const._MD_WFD_VIEWDETAILS}></a></div>
+			</div>
+		  </td>
+        <td width="35%">
+		 <div style="margin-left: 10px; margin-right: 10px; padding: 4px; background-color:#E6E6E6; border-color:#999999;" class="outer">
+		   <small>
+<{if $down.version != 0}>
+		   <div><b><{$smarty.const._MD_WFD_VERSION}>:</b>&nbsp;<{$down.version}></div>
+<{/if}>
+     	   <div>			
+			<div><b><{$smarty.const._MD_WFD_DOWNLOADHITS}></b>&nbsp;<{$down.hits}></div>
+			<div><b><{$smarty.const._MD_WFD_FILESIZE}>:</b>&nbsp;<{$down.size}></div>
+<{if $down.homepage != ''}>
+			<div><b><{$smarty.const._MD_WFD_HOMEPAGE}>:</b>&nbsp;<{$down.homepage|wordwrap:50:"\n":true}></div>
+<{/if}>
+		   </div>
+		  </small>	
+		 </div>
+		<br />
+		<div style="margin-left: 10px; margin-right: 10px; padding: 4px;" class = "outer">
+			<small><b><{$smarty.const._MD_WFD_RATINGC}></b>&nbsp;<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/<{$down.rateimg}>" alt="" align="absmiddle" />&nbsp;&nbsp;(<{$down.votes}>)</small>
+		</div><br />
+		<div style="margin-left: 10px; margin-right: 10px; padding: 4px;" class = "outer">
+			<small><b><{$smarty.const._MD_WFD_REVIEWS}></b>&nbsp;<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/<{$down.review_rateimg}>" alt="" align="absmiddle" />&nbsp;&nbsp;(<{$down.reviews_num}>)</small>
+		</div><br />
+<{if $down.use_mirrors == 1}>
+		<div style="margin-left: 10px; margin-right: 10px; padding: 4px;" class = "outer">
+			<small><b><{$smarty.const._MD_WFD_MIRROR_AVAILABLE}></b>&nbsp;<{$down.mirrors_num}></div>
+<{/if}>
+		</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="line-height: 12px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+		 <div align = "center" style="margin-bottom: 3px; "><small>
+		 	<b><{$smarty.const._MD_WFD_PRICE}>:</b>&nbsp;<{$down.price}> | 
+		 	<b><{$smarty.const._MD_WFD_SUPPORTEDPLAT}>:</b>&nbsp;<{$down.platform}> | 
+			<b><{$smarty.const._MD_WFD_DOWNLICENSE}>:</b>&nbsp;<{$down.license}> | 
+			<b><{$smarty.const._MD_WFD_LIMITS}>:</b>&nbsp;<{$down.limitations}></small></div>
+		</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="even" style="line-height: 12px;">
+		 
+    	  <div align="center"><small>
+<{if $down.use_mirrors == 1 && $down.add_mirror == 1}>
+    	   <a href="<{$xoops_url}>/modules/wfdownloads/mirror.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+		   	<{$smarty.const._MD_WFD_ADDMIRROR}></a> | 
+<{/if}>
+    	   <a href="<{$xoops_url}>/modules/wfdownloads/review.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+		   	<{$smarty.const._MD_WFD_REVIEWTHISFILE}></a> | 
+		   <a href="<{$xoops_url}>/modules/wfdownloads/ratefile.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+		   	<{$smarty.const._MD_WFD_RATETHISFILE}></a> | 
+		   <{if $down.useradminlink == true}>
+		    <a href="<{$xoops_url}>/modules/wfdownloads/submit.php?lid=<{$down.id}>">
+			 <{$smarty.const._MD_WFD_MODIFY}></a> | 
+		   <{/if}>
+		   <a href="<{$xoops_url}>/modules/wfdownloads/brokenfile.php?lid=<{$down.id}>">
+		   	<{$smarty.const._MD_WFD_REPORTBROKEN}></a> | 
+		   <a target="_top" href="mailto:?subject=<{$down.mail_subject}>&amp;body=<{$down.mail_body}>">
+		   	<{$smarty.const._MD_WFD_TELLAFRIEND}></a> | 
+		   <a href="<{$xoops_url}>/modules/wfdownloads/singlefile.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+		   	<{$smarty.const._COMMENTS}> (<{$down.comments}>)</a>
+    	   </small></div>
+		 
+		 </td>
+        </tr>
+    </table>
+  </tr>
+</table>
+<br />

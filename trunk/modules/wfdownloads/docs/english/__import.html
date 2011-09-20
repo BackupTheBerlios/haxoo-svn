@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<HTML>
+<HEAD><TITLE>Import from mydownloads module</TITLE></HEAD>
+
+<BODY>
+
+<TABLE><td width="550" style="font-family:'Arial'; background-color:#FF0000"><B><span style="color:white;">Instructions for importing from myDownloads to WF-Downloads.</B><P>If you want to update an older version of WF-Downloads please select 'Update'.<BR>If you want to do a fresh install of WF-Downloads please select 'Install'.</TD></TABLE><p>
+
+<FONT FACE="Arial" SIZE="-1">
+
+<FONT COLOR="#FF6600"><p><u>The SmartFactory STRONGLY recommends you take a full backup before INSTALLING or UPDATING any module.</u><p></font>
+
+
+<FONT FACE="Arial" SIZE="+2"><U>Import from Xoops MyDownloads into WF-Downloads</U></FONT><p>
+
+<B>Note:</B> When you do the import the update script will copy the data from the mydownloads tables into the database of wf-downloads. After this is done you will still be able to use mydownloads. It is possible to have wf-downloads and mydownloads running at the same time.
+<span style="font-size: x-small;">
+  <ol>
+    <li><U><B>Upload the module to your website</B></U><P>Upload the '<I>wfdownloads</I>' folder to <I>{xoops-rootdirectory}/modules</I> folder</li><p>
+    <li><U><B>Change and verify folder permissions</B></U><P>CHMOD the following folders to 777:<p><i>wfdownloads/images<br>wfdownloads/images/category<BR>wfdownloads/images/category/thumbs<BR>wfdownloads/images/screenshots<BR>wfdownloads/images/screenshots/thumbs</i><P>Also make sure that the <i>{xoops-rootdirectory}/uploads</i> folder is set to 777.</li><p>
+    <li><U><B>Install the module</B></U><P>Login as webmaster and enter Xoops Administration page. Select <I>System --> modules</I> and install wfdownloads</li><p>
+    <li><U><B>Start the Import</B></U><P>Go into the WF-Downloads admin area. At the top you will find a link <I>Import data</I>. Click on this one and you can choose to import your mydownloads data. Once you did so go into the permissions tab to set the permissions for the imported categories. <u>Until you changed the category permissions you will not be able to see the imported categories/files.</u><P>
+    <li><U><B>Configure the module</B></U><P>Most important steps now will be to setup the group permissions for the module and its blocks via <I>System --> groups</I><BR>and than within wfdownloads administration <I>Mimetype management</I> to decide which files are allowed to be uploaded<BR> by users and administrators.<BR></li><P>
+    <li><U><B>Optional: Remove myDownloads</B></U><P>If you want to use only WF-Downloads you can now disable and uninstall the MyDownloads module.</li>
+  </ol>
+</span><p>
+</FONT>
+</BODY>
+</HTML>

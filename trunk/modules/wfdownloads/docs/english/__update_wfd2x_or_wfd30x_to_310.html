@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Instructions to update any WF-Downloads to version 3.10</TITLE></HEAD>
+<BODY>
+<TABLE><td width="550" style="font-family:'Arial'; background-color:#FF0000"><B><span style="color:white;">Instructions to update WF-Downloads 2.0x/3.00rc1 to 3.10</B><P>If you want to import from MyDownloads please select 'Import'.<BR>If you want to do a fresh install of WF-Downloads please select 'Install'.</TD></TABLE><p>
+<FONT FACE="Arial" SIZE="-1">
+<FONT COLOR="#FF6600"><p><u>The SmartFactory STRONGLY recommends you take a full backup before INSTALLING or UPDATING any module.</u><p></font>
+<FONT FACE="Arial"  SIZE="+2"><U>Update from WF-Downloads 2.0x/3.00rc1 to 3.10</U></FONT><p>
+<span style="font-size: x-small;">
+  <ol>
+    <li><U><B>Did you read the important notes?</B></U><P>A lot of important changes in WF-Downloads were introduced with version 3. Before you start updating please make sure that you read and understand the   <a href="__important_notes_v3.html" target="content">Important notes</a>.</li><p> 
+    <li><U><B>(Optional)<FONT COLOR="#707070"> Before you start uploading ...</FONT></B></U>
+	    <P>We made a lot of changes to WF-Downloads. There are a lot of obselete files now that will no longer be used. <br /><B>If you feel comfortable with this </B>you could delete most of the old files in the <I>'modules/wfdownloads'</I> directory - <B>if not skip to the next step.</B><br />
+		If you want to do this:<ul>
+		<LI>you are advised to backup your files first ... just in case</LI>
+		<LI>Basicly you can delete every file and folder within the 'modules/wfdownloads' folder <U><B><FONT COLOR="#FF0000">except for</FONT></B></U></LI><br />
+		    - the <FONT COLOR="#FF0000">'images'</FONT> subfolder and its contents<br />
+   		    - the <FONT COLOR="#FF0000">'uploads'</FONT> subfolder and its contents if there are more files in it then just index.php<br />
+			- any file or folder you might have created yourself that came not from the original WF-Downloads installation</UL><br />
+         Please note that we are only talking about deleting files. DO NOT uninstall WF-Downloads.<br /><B>If you feel uncomfortable with this than don´t do it. It will create no problems to skip this step - just some unused files will remain on your server.  ;)</B></li><p> 
+    <li><U><B>Upload the module to your website</B></U><P>Upload the '<I>wfdownloads</I>' folder to <I>{xoops-rootdirectory}/modules</I> folder</li><p> 
+    <li><U><B>Update the module</B></U><P>Login as administrator and enter Xoops Administration page. Select <I>System --> modules</I> and update wfdownloads</li><p>
+    <li><U><B>Change your uploads path from relative to absolute</B></U><UL><P><LI>Enter the WF-Downloads administration section and click on preferences</LI><LI>Locate the field for the <I>'Uploads Directory'</I> and change the path to the absolute path of your server</LI><br />If you don´t know the path you can find it on the WF-Downloads admin section main<I>(index)</I>page <I>'Server Path to XOOPS Root:'</I> and just add the path to the uploads folder.<br /><B>One example:</B> <br />if your current setting would be <I><U>'/uploads'</U></I> <br />and your server path would be <U><I>'/xampp/xampp/htdocs/xoops'</I></U> <br />then the new entry for that field would be <U>'/xampp/htdocs/xoops/uploads'</U>.</UL></li><P>
+    <li><U><B>Check your category permissions</B></U><P>Since we removed 'per file' permissions in WF-Downloads you should check if your category permissions are properly setup to allow access to files only to those who are supposed to have it. (see history menu for a better explanation of this change)</li><p> 
+  </ol>
+</span>
+</FONT>
+</BODY>
+</HTML>

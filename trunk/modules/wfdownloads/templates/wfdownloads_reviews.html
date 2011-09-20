@@ -1,0 +1,52 @@
+<{if $catarray.imageheader != ""}>
+	<br /><div align="center"><{$catarray.imageheader}></div><br />
+<{/if}>
+<div align="center" class="itemPermaLink"><{$catarray.letters}></div>
+<div align="center"><{$catarray.toolbar}></div><br />
+
+<h4><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/reviews.gif" width="32" height="32" align="middle" /><b><{$smarty.const._MD_WFD_TITLE}>:</b> <{$down_arr.title}></h4>
+
+<div><b><{$smarty.const._MD_WFD_DESCRIPTION}>:</b> <{$down_arr.description}></div><br />
+
+<div><small><b><{$smarty.const._MD_WFD_REVIEW_CATPATH}> <{$category_path}></b></small></div><br />
+<table width="90%" cellspacing="0" cellpadding="10" border="0">
+<tr>
+<td class="head" align="left"><{$lang_review_found}></td>
+<td class="head" align="right"><a href="<{$xoops_url}>/modules/wfdownloads/review.php?cid=<{$down_arr.cid}>&amp;lid=<{$down_arr.lid}>"><{$smarty.const._MD_WFD_ADDREVIEW}></a></td>
+</tr>
+</table>
+<br />
+<{if $navbar.navbar }>
+<div class="odd"><b><{$smarty.const._MD_WFD_PAGES}></b>: <{$navbar.navbar}></div><br />
+<{/if}>
+
+<!-- Start ranking loop --> 
+<{foreach item=review from=$down_review}> 
+<table width="90%" cellpadding="1" cellspacing="0" border="0">
+<tr >
+<td style="padding: 2px;"><b><{$smarty.const._MD_WFD_REVIEWER}> : <{$review.submitter}></b></td>
+<td align="right" style="padding: 2px;"><b><{$review.date}></b></td></tr>
+<tr>
+<td bgcolor="#000000" colspan="2"><img src="/images/blank.png" alt="" height="1" width="1" /></td>
+</tr>
+</table>
+
+<table cellpadding="1" cellspacing="0" border="0">
+<tr valign="top"><td width ="20%">
+<div style="margin-left: 10px; margin-right: 10px; padding: 4px;"><b><{$smarty.const._MD_WFD_RATEDRESOURCE}></b><br /><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/<{$review.rated_img}>" alt="" align="middle" /></div> 
+
+</td>
+<td width="10">&nbsp;&nbsp;</td>
+<td style="margin-left: 5px; margin-right: 5px; padding: 4px;"><font color="#0000CC"><b>"<{$review.title}>"</b></font><br />
+<{$review.review}>
+</td></tr>
+</table>
+<br />
+<{/foreach}>
+<div class="foot" width="90%" style="text-align: right;"><a href="<{$xoops_url}>/modules/wfdownloads/review.php?cid=<{$down_arr.cid}>&amp;lid=<{$down_arr.lid}>"><span style="color: #ffffff;"><{$smarty.const._MD_WFD_ADDREVIEW}></span></a></div>
+<br />
+<{if $navbar.navbar }>
+<div style="text-align: right;" class="odd"><b><{$smarty.const._MD_WFD_PAGES}></b>: <{$navbar.navbar}></div><br />
+<{/if}>
+<!-- End ranking loop --> 
+<{include file='db:wfdownloads_footer.html'}>

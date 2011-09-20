@@ -1,0 +1,357 @@
+language changes from 3.1 RC2 to Final
+
+FILE:  \wfdownloads\language\english\admin.php
+
+added: define("_AM_WFD_MOD_FILENAME", "Local Filename: ");
+added: define("_AM_WFD_MOD_FILETYPE", "Local Filetype: ");
+added: define("_AM_WFD_MOD_STATUS", "Status: ");
+added: define("_AM_WFD_MOD_RATING", "Rating: ");
+added: define("_AM_WFD_MOD_HITS", "Hits: ");
+added: define("_AM_WFD_MOD_VOTES", "Votes: ");
+added: define("_AM_WFD_MOD_COMMENTS", "Comments: ");
+added: define("_AM_WFD_MOD_PUBLISHED", "Published: ");
+added: define("_AM_WFD_MOD_EXPIRED", "Expired: ");
+added: define("_AM_WFD_MOD_UPDATED", "Updated: ");
+added: define("_AM_WFD_MOD_OFFLINE", "Offline: ");
+added: define("_AM_WFD_MOD_REQUESTDATE", "Request Date: ");
+added: define("_AM_WFD_MOD_IPADDRESS", "IP Address: ");
+added: define("_AM_WFD_MOD_NOTIFYPUB", "Notify: ");
+added: define("_AM_WFD_MOD_PAYPALEMAIL", "PayPal Email: ");
+added: define("_AM_WFD_MOD_SUMMARY", "Summary: ");
+
+
+changed: define("_AM_WFD_MOD_DESCRIPTION", "Software limitations: ");
+
+to: define("_AM_WFD_MOD_DESCRIPTION", "Description: ");
+
+
+changed: define("_AM_WFD_MOD_URL", "Download Url: ");
+
+to: define("_AM_WFD_MOD_URL", "Remote Url: ");
+
+
+changed: define("_AM_WFD_DBERROR", "Database Access Error: Please report this error to the WFSection Website");
+
+to: define("_AM_WFD_DBERROR", "Database Access Error: Please report this error to the SmartFactory Website");
+
+
+FILE:  \wfdownloads\language\english\main.php
+
+added: define("_MD_WFD_NOTALLOWEDTOMOD","You are not allowed to modify this download");
+
+
+language changes from 3.1 RC1 to RC2
+
+FILE:  \wfdownloads\language\english\admin.php 
+
+added: define("_AM_WFD_CCATEGORY_CHILDASPARENT", "You cannot set a child category as the category's parent");
+added: define("_AM_WFD_FILE_SUBMITTERID", "Submitter User Id: <br /><br />Leave this as it is, Unless you want to change who submitted the download");
+
+
+changed: define("_AM_WFD_FILE_FILENAME", "Local Filename: ");
+
+to: define("_AM_WFD_FILE_FILENAME", "Local Filename:<br /><br /><span style='font-weight: normal;'>Note: If using local file as download, then you must also enter the correct filetype below!</span>");
+
+
+language changes from 3.0 RC1 to 3.1 RC1
+
+ADMIN.PHP
+
+added: define("_AM_WFD_SMIRRORS", "Mirrors: ");
+added: define("_AM_WFD_AREVIEWS_APPROVED", "Review has been approved.");
+added: define("_AM_WFD_DOWN_NOTSET", "Upload Path Not Set");
+added: define("_AM_WFD_DOWN_SERVERPATH", "Server Path to XOOPS Root: ");
+added: define("_AM_WFD_DOWN_UPLOADPATH", "Current Upload Path: ");
+added: define("_AM_WFD_DOWN_UPLOADPATHDSC", "Note. Upload Path *MUST* contain the full server path of your upload folder.");
+added: define("_AM_WFD_REV_REVIEWTITLE", "Review Title");
+added: define("_AM_WFD_REVIEW_APPROVETHIS", "Approve Review");
+added: define("_AM_WFD_REV_NOPUBLISHEDREVIEWS", "No Published Reviews Found");
+added: define("_AM_WFD_REV_REVIEW_TOTAL", "Total Reviews:");
+added: define("_AM_WFD_REV_REVIEW_WAITING", "Waiting Reviews");
+added: define("_AM_WFD_REV_REVIEW_PUBLISHED", "Published Reviews");
+added: define("_AM_WFD_FILE_FILENAME", "Local Filename: ");
+added: define("_AM_WFD_FILE_FILETYPE", "File Type: ");
+added: define("_AM_WFD_AMIRRORS", "Mirrors Management");
+added: define("_AM_WFD_AMIRRORS_WAITING", "Mirrors Waiting Validation:");
+added: define("_AM_WFD_AMIRRORS_INFO", "Mirrors Management Information");
+added: define("_AM_WFD_AMIRRORS_APPROVE", "<b>Approve</b> new mirror without validation.");
+added: define("_AM_WFD_AMIRRORS_EDIT", "<b>Edit</b> new mirror and then approve.");
+added: define("_AM_WFD_AMIRRORS_DELETE", "<b>Delete</b> the new mirror information.");
+added: define("_AM_WFD_MIRROR_MIRRORTITLE", "Mirror Host");
+added: define("_AM_WFD_MIRROR_NOPUBLISHEDMIRRORS", "No Published Mirrors Found");
+added: define("_AM_WFD_MIRROR_MIRROR_TOTAL", "Total Mirrors:");
+added: define("_AM_WFD_MIRROR_MIRROR_WAITING", "Waiting Mirrors");
+added: define("_AM_WFD_MIRROR_MIRROR_PUBLISHED", "Published Mirrors");
+added: define("_AM_WFD_MIRROR_SNEWMNAMEDESC", "Approve Mirror: ");
+added: define("_AM_WFD_MIRROR_ID", "ID");
+added: define("_AM_WFD_MIRROR_TITLE", "Title");
+added: define("_AM_WFD_MIRROR_MUSTBEVALID", "Home page logo  must be a valid image file under %s directory (ex. shot.gif). Leave it blank if there is no image file.");
+added: define("_AM_WFD_MIRROR_POSTER", "Submitter");
+added: define("_AM_WFD_MIRROR_SUBMITDATE", "Submitted");
+added: define("_AM_WFD_MIRROR_FHOMEURLTITLE", "Home Page Title: ");
+added: define("_AM_WFD_MIRROR_FHOMEURL", "Home Page URL: ");
+added: define("_AM_WFD_MIRROR_UPLOADIMAGE", "Upload Site Logo:<br /><br />A small logo representing your website.");
+added: define("_AM_WFD_MIRROR_MIRRORIMAGE", "Site Logo:");
+added: define("_AM_WFD_MIRROR_CONTINENT", "Continent:");
+added: define("_AM_WFD_MIRROR_LOCATION", "Location:<br /><br />Example: London, UK");
+added: define("_AM_WFD_MIRROR_DOWNURL", "Download URL:<br /><br />Enter the url to the file.");
+added: define("_AM_WFD_MIRROR_FAPPROVE", "Mirror Approve: ");
+added: define("_AM_WFD_MIRROR_ACTION", "Action");
+added: define("_AM_WFD_MIRROR_NOWAITINGMIRRORS", "No Waiting Mirrors Found");
+added: define("_AM_WFD_MIRROR_MIRROR_UPDATED", "Selected Mirror Modified and Database Updated Successfully");
+added: define("_AM_WFD_MIRROR_APPROVETHIS", "Approve Mirror");
+added: define("_AM_WFD_CONT1","Africa");
+added: define("_AM_WFD_CONT2","Antarctica");
+added: define("_AM_WFD_CONT3","Asia");
+added: define("_AM_WFD_CONT4","Europe");
+added: define("_AM_WFD_CONT5","North America");
+added: define("_AM_WFD_CONT6","South America");
+added: define("_AM_WFD_CONT7","Oceania");
+added: define("_AM_WFD_HELP","Help");
+
+changed: define("_AM_WFD_FILE_DLURL", "File URL: ");
+
+to: define("_AM_WFD_FILE_DLURL", "Remote URL: ");
+
+
+changed: define("_AM_WFD_DB_CHECKTABLES", "Check tables");
+
+to: define("_AM_WFD_DB_IMPORT", "Import");
+
+
+MAIN.PHP
+
+added: define("_MD_WFD_UPLOADMINPOSTS", "You need to increase you Post Count<br />Before you can Upload Files");
+added: define("_MD_WFD_UPLOAD_FILENAME", "Local Filename: ");
+added: define("_MD_WFD_UPLOAD_FILETYPE", "File Type: ");
+added: define("_MD_WFD_ERROR_CREATEREVIEW", "Error when creating a review");
+added: define("_MD_WFD_REVIEW_CATPATH", "Category Path:");
+added: define("_MD_WFD_ADDREVIEW", "Add Review");
+added: define("_MD_WFD_MIRROR_AVAILABLE", "Mirrors Available:");
+added: define("_MD_WFD_MIRROR_CATPATH", "Category Path:");
+added: define("_MD_WFD_MIRROR_FILENAME", "Filename:");
+added: define("_MD_WFD_DOWNLOADMIRRORS", "Download Mirrors");
+added: define("_MD_WFD_MIRROR_NOTALLOWESTOSUBMIT", "You are not allowed to submit mirrors");
+added: define("_MD_WFD_MIRRORS", "Download Mirrors:");
+added: define("_MD_WFD_USERMIRRORSTITLE", "Available Download Mirrors");
+added: define("_MD_WFD_USERMIRRORS", "View Available Download Mirrors on %s");
+added: define("_MD_WFD_NOUSERMIRRORS", "Add a new Download Mirror on %s.");
+added: define("_MD_WFD_TOTALMIRRORS", "Total Mirrors:");
+added: define("_MD_WFD_ADDMIRROR", "Add Mirror");
+added: define("_MD_WFD_MIRROR_TOTAL", "<b>Total Mirrors:</b> %s");
+added: define("_MD_WFD_MIRROR_HOMEURLTITLE", "Homepage Title:");
+added: define("_MD_WFD_MIRROR_HOMEURL", "Homepage URL:<br /><br />Enter your Homepage url.");
+added: define("_MD_WFD_MIRROR_UPLOADMIRRORIMAGE", "Upload Site Logo:<br /><br />A small logo representing your website.");
+added: define("_MD_WFD_MIRROR_MIRRORIMAGE", "Site Logo:");
+added: define("_MD_WFD_MIRROR_CONTINENT", "Continent:");
+added: define("_MD_WFD_MIRROR_LOCATION", "Location:<br /><br />Example: London, UK");
+added: define("_MD_WFD_MIRROR_DOWNURL", "Download URL:<br /><br />Enter the url to the file.");
+added: define("_MD_WFD_MIRROR_SUBMITMIRROR", "Submit Mirror");
+added: define("_MD_WFD_ERROR_CREATEMIRROR", "Error when creating mirror");
+added: define("_MD_WFD_MIRROR_SNEWMNAMEDESC", " 
+Please completely fill out the form below, and we'll add your mirror as soon as possible.<br /><br />
+Thank you for your assistance in providing another location to download these files. We want to give our users a possibility to find quality software faster.<br /><br />All mirror submissions will be reviewed by one of our webmasters before they are put up on the web site. 
+");
+added: define("_MD_WFD_MIRROR_HHOST", "Host");
+added: define("_MD_WFD_MIRROR_HLOCATION", "Location");
+added: define("_MD_WFD_MIRROR_HCONTINENT", "Continent");
+added: define("_MD_WFD_MIRROR_HDOWNLOAD", "Download");
+added: define("_MD_WFD_MIRROR_OFFLINE", "Server Host Is Offline.");
+added: define("_MD_WFD_MIRROR_ONLINE", "Server Host Is Online.");
+added: define("_MD_WFD_MIRROR_DISABLED", "Server Host Check Disabled.");
+added: define("_MD_WFD_CONT1","Africa");
+added: define("_MD_WFD_CONT2","Antarctica");
+added: define("_MD_WFD_CONT3","Asia");
+added: define("_MD_WFD_CONT4","Europe");
+added: define("_MD_WFD_CONT5","North America");
+added: define("_MD_WFD_CONT6","South America");
+added: define("_MD_WFD_CONT7","Oceania");
+
+
+changed: define("_MD_WFD_MINPOSTS", "You need to increase you Post Count<br />Before you can Upload/Download Files");
+
+to: define("_MD_WFD_DOWNLOADMINPOSTS", "You need to increase you Post Count<br />Before you can Download Files");
+
+
+changed: define("_MD_WFD_FILESIZE", "File Size (bytes)");
+
+to: define("_MD_WFD_FILESIZE", "File Size");
+
+
+changed: define("_MD_WFD_DLURL", "Download URL: ");
+
+to: define("_MD_WFD_DLURL", "Remote URL: ");
+
+
+changed: define("_MD_WFD_FILESIZEC", "File Size (bytes): ");
+
+to: define("_MD_WFD_FILESIZEC", "File Size: ");
+
+
+
+MODINFO.PHP
+
+added: define("_MI_WFD_REVIEWANONPOST","Anonymous User Reviews:");
+added: define("_MI_WFD_REVIEWANONPOSTDSC","Allow Anonymous users to submit new Reviews to your website?");
+added: define("_MI_WFD_MMIRRORS","Mirrors");
+added: define("_MI_WFD_ANONPOST1","None");
+added: define("_MI_WFD_ANONPOST2","Download Only");
+added: define("_MI_WFD_ANONPOST3","Mirror Only");
+added: define("_MI_WFD_ANONPOST4","Both");
+added: define('_MI_WFD_AUTOAPPROVE1','None');
+added: define('_MI_WFD_AUTOAPPROVE2','Download Only');
+added: define('_MI_WFD_AUTOAPPROVE3','Mirror Only');
+added: define('_MI_WFD_AUTOAPPROVE4','Both');
+added: define('_MI_WFD_REVIEWAPPROVE','Auto Approve Submitted Reviews');
+added: define('_MI_WFD_REVIEWAPPROVEDSC','Select to approve submitted reviews without moderation.');
+added: define('_MI_WFD_UPLOADDIRDSC','Upload Directory *MUST* be an absolute path!');
+added: define('_MI_WFD_ALLOWSUBMISS1','None');
+added: define('_MI_WFD_ALLOWSUBMISS2','Download Only');
+added: define('_MI_WFD_ALLOWSUBMISS3','Mirror Only');
+added: define('_MI_WFD_ALLOWSUBMISS4','Both');
+added: define('_MI_WFD_MIRROR_USEIMAGES', 'Display Mirror Logos?'); // not implemented yet
+added: define('_MI_WFD_MIRROR_USEIMAGESDSC', 'Select yes to display logo for each mirror'); // not implemented yet
+added: define('_MI_WFD_MIRROR_IMGWIDTH', 'Logo Display Width'); // not implemented yet
+added: define('_MI_WFD_MIRROR_IMGWIDTHDSC', 'Display width for mirror logo'); // not implemented yet
+added: define('_MI_WFD_MIRROR_IMGHEIGHT', 'Logo Display Height'); // not implemented yet
+added: define('_MI_WFD_MIRROR_IMGHEIGHTDSC', 'Display height for mirror logo'); // not implemented yet
+added: define('_MI_WFD_MIRROR_AUTOAPPROVE','Auto Approve Submitted Mirrors');
+added: define('_MI_WFD_MIRROR_AUTOAPPROVEDSC','Select to approve submitted mirrors without moderation.');
+added: define('_MI_WFD_MIRROR_MAXIMGWIDTH','Upload Logo width'); // not implemented yet
+added: define('_MI_WFD_MIRROR_MAXIMGWIDTHDSC','Maximum logo width permitted when uploading logo files'); // not implemented yet
+added: define('_MI_WFD_MIRROR_MAXIMGHEIGHT','Upload logo height'); // not implemented yet
+added: define('_MI_WFD_MIRROR_MAXIMGHEIGHTDSC','Maximum logo height permitted when uploading logo files'); // not implemented yet
+added: define('_MI_WFD_MIRROR_ENABLE','Enable Mirror System');
+added: define('_MI_WFD_MIRROR_ENABLEDSC','');
+added: define('_MI_WFD_MIRROR_ENABLEONCHK','Enable Server Online Check');
+added: define('_MI_WFD_MIRROR_ENABLEONCHKDSC','Enables the host server check for the Mirrors<br />This can slow your page load down if<br />you have many mirrors');
+added: define('_MI_WFD_MIRROR_ALLOWSUBMISS','User Mirror Submissions:');
+added: define('_MI_WFD_MIRROR_ALLOWSUBMISSDSC','Allow Users to Submit new mirrors');
+added: define('_MI_WFD_MIRROR_MIRRORIMAGES','Mirror Logo Upload Directory'); // not implemented yet
+added: define('_MI_WFD_MIRROR_MIRRORIMAGESDSC','Mirror Logo Upload Directory'); // not implemented yet
+
+
+changed: define("_MI_WFD_ANONPOSTDSC","Allow Anonymous users to submit or upload to your website?");
+
+to: define("_MI_WFD_ANONPOSTDSC","Allow Anonymous users to submit new Downloads/Mirrors to your website?");
+
+
+changed: define('_MI_WFD_AUTOAPPROVE','Auto Approve Submitted Downloads');
+
+to: define('_MI_WFD_AUTOAPPROVE','Auto Approve Submitted Downloads/Mirrors');
+
+
+changed: define('_MI_WFD_AUTOAPPROVEDSC','Select to approve submitted downloads without moderation.');
+
+to: define('_MI_WFD_AUTOAPPROVEDSC','Select to approve submitted downloads/mirrors without moderation.');
+
+
+changed: define('_MI_WFD_DOWNLOADMINPOSTS', "Minimum posts required");
+
+to: define('_MI_WFD_DOWNLOADMINPOSTS', "Minimum posts required to download");
+
+
+changed: define('_MI_WFD_DOWNLOADMINPOSTS_DESC', "Enter the minimum number of posts required to upload/download a file");
+
+to: define('_MI_WFD_DOWNLOADMINPOSTSDSC', "Enter the minimum number of posts required to download a file");
+
+
+changed: define('_MI_WFD_ALLOWSUBMISSDSC','Allow Users to Submit new downloads');
+
+to: define('_MI_WFD_ALLOWSUBMISSDSC','Allow Users to Submit new Downloads/Mirrors');
+
+
+changed: define("_MI_WFD_USETHUMBSDSC", "Supported file types: JPG, GIF, PNG.<div style='padding-top: 8px;'>WF-Section will use thumb nails for images. Set to 'No' to use orginal image if the server does not support this option.</div>");
+
+to: define("_MI_WFD_USETHUMBSDSC", "Supported file types: JPG, GIF, PNG.<div style='padding-top: 8px;'>WF-Downloads will use thumb nails for images. Set to 'No' to use orginal image if the server does not support this option.</div>");
+
+
+changed: define("_MI_WFD_BINDEX","Main Index");
+
+to: define("_MI_WFD_BINDEX","Index");
+
+
+changed: define("_MI_WFD_INDEXPAGE","Index Page Management");
+
+to: define("_MI_WFD_INDEXPAGE","Index Management");
+
+
+changed: define("_MI_WFD_MCATEGORY","Category Management");
+
+to: define("_MI_WFD_MCATEGORY","Categories");
+
+
+changed: define("_MI_WFD_MDOWNLOADS","File Management");
+
+to: define("_MI_WFD_MDOWNLOADS","Files");
+
+
+changed: define("_MI_WFD_MMIMETYPES","Mimetypes Management");
+
+to: define("_MI_WFD_MMIMETYPES","Mimetypes");
+
+
+changed: define("_MI_WFD_PERMISSIONS","Permission Settings");
+
+to: define("_MI_WFD_PERMISSIONS","Permissions");
+
+
+changed: define('_MI_WFD_MODULE_MAILLIST', "WF-Section Mailing Lists");
+
+to: define('_MI_WFD_MODULE_MAILLIST', "SmartFactory Mailing Lists");
+
+
+changed: define('_MI_WFD_MODULE_MAILANNOUNCEMENTSDSC', "Get the latest announcements from WF-Section.");
+
+to: define('_MI_WFD_MODULE_MAILANNOUNCEMENTSDSC', "Get the latest announcements from SmartFactory.");
+
+
+changed: define('_MI_WFD_WARNINGTEXT', "THE SOFTWARE IS PROVIDED BY WF-SECTIONS \"AS IS\" AND \"WITH ALL FAULTS.\"
+WF-SECTIONS MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING
+THE QUALITY, SAFETY OR SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR
+IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+FURTHER, ABLEMEDIA MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE TRUTH,
+ACCURACY OR COMPLETENESS OF ANY STATEMENTS, INFORMATION OR MATERIALS
+CONCERNING THE SOFTWARE THAT IS CONTAINED IN WF-SECTIONS WEBSITE. IN NO
+EVENT WILL ABLEMEDIA BE LIABLE FOR ANY INDIRECT, PUNITIVE, SPECIAL,
+INCIDENTAL OR CONSEQUENTIAL DAMAGES HOWEVER THEY MAY ARISE AND EVEN IF
+WF-SECTIONS HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES..");
+
+to: define('_MI_WFD_WARNINGTEXT', "THE SOFTWARE IS PROVIDED BY SMARTFACTORY \"AS IS\" AND \"WITH ALL FAULTS.\"
+SMARTFACTORY MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING
+THE QUALITY, SAFETY OR SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR
+IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+FURTHER, SMARTFACTORY MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE TRUTH,
+ACCURACY OR COMPLETENESS OF ANY STATEMENTS, INFORMATION OR MATERIALS
+CONCERNING THE SOFTWARE THAT IS CONTAINED IN SMARTFACTORY WEBSITE. IN NO
+EVENT WILL SMARTFACTORY BE LIABLE FOR ANY INDIRECT, PUNITIVE, SPECIAL,
+INCIDENTAL OR CONSEQUENTIAL DAMAGES HOWEVER THEY MAY ARISE AND EVEN IF
+SMARTFACTORY HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES..");
+
+
+changed: define('_MI_WFD_AUTHOR_CREDITSTEXT',"The WF-Sections Team would like to thank the following people for their help and support during the development phase of this module:<br /><br />tom, mking, paco1969, mharoun, Talis, m0nty, steenlnielsen, Clubby, Geronimo, bd_csmc, herko, LANG, Stewdio, tedsmith, veggieryan, carnuke, MadFish.<br /><br />And on a personal note, I would like to thank the special girl in my life who I love dearly and who gives me the strength and support to do all of this.");
+
+to: define('_MI_WFD_AUTHOR_CREDITSTEXT',"The SmartFactory Team would like to thank the following people for their help and support during the development phase of this module:<br /><br />tom, mking, paco1969, mharoun, Talis, m0nty, steenlnielsen, Clubby, Geronimo, bd_csmc, herko, LANG, Stewdio, tedsmith, veggieryan, carnuke, MadFish, Kiang<br />and anyone else who has contributed to either directly or indirectly.");
+
+
+changed: define('_MI_WFD_COPYRIGHTIMAGE', "Images copyright WF-Project and may only be used with permission");
+
+to: define('_MI_WFD_COPYRIGHTIMAGE', "Images copyright WF-Project/SmartFactory and may only be used with permission");
+
+
+removed: define("_MI_WFD_BLOCKADMIN","Block Settings");
+
+
+
+
+
+
+
+
+
+
+
+
+

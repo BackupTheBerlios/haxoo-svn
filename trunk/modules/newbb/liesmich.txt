@@ -1,0 +1,8 @@
+$Id: liesmich.txt 17 2007-11-18 14:22:36Z LupusC $
+
+UNTERSTÜTZUNG VON CBB 3.08:
+
+ Im Verzeichnis _hack_cbb sind die Dateien zur Anpassung an CBB 3.08 enthalten.
+Diese müssen nur einfach in das newbb Verzeichnis kopiert werden. Wichtig ist
+nur, dass das template newbb_poll_results.html verwendet wird, da hier die 
+die Anzeige von Blind Votes unterdrückt wird.

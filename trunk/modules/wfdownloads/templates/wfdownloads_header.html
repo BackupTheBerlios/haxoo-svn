@@ -1,0 +1,39 @@
+<!-- Thank you for keeping this line in the template :-) //-->
+<div style="display: none;"><{$ref_smartfactory}></div>
+<!-- Thank you for keeping this line in the template :-) //-->
+
+<div class="wfdownloads_headertable">
+	<{if $module_home}>
+		<span class="wfdownloads_modulename"><{$module_home}></span>
+	<{/if}>
+	<{if $categoryPath}>
+		<span class="wfdownloads_breadcrumb">
+		<{if $module_home}>
+			&gt;
+		<{/if}>
+	  	<{$categoryPath}></span>
+	<{/if}>
+</div>
+
+<{if $catarray.imageheader != ""}>
+	<br /><div align="center"><{$catarray.imageheader}></div><br />
+<{/if}>
+
+<{if $down.imageheader != ""}>
+	<br /><div align="center"><{$down.imageheader}></div><br />
+<{/if}>
+
+<{if $imageheader != ""}>
+	<br /><div align="center"><{$imageheader}></div><br />
+<{/if}>
+
+<{if $catarray.indexheader}>
+	<div align="<{$catarray.indexheaderalign}>"><{$catarray.indexheader}></div><br />
+<{/if}>
+<{if $catarray.letters}>
+	<div align="center" class="itemPermaLink"><{$catarray.letters}></div><br />
+<{/if}>
+<{if $catarray.toolbar}>
+	<div align="center"><{$catarray.toolbar}></div><br />
+<{/if}>
+

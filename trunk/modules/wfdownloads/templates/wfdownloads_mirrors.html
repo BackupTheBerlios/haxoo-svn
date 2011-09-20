@@ -1,0 +1,45 @@
+<{include file='db:wfdownloads_header.html'}>
+
+<div><{$lang_mirror_found}></div>
+<br />
+<table border="0" cellpadding="10" cellspacing="0" width="90%">
+<tr>
+<th><span style="font-size: 14px"><{$smarty.const._MD_WFD_MIRROR_HHOST}></span></th>
+<th><span style="font-size: 14px"><{$smarty.const._MD_WFD_MIRROR_HLOCATION}></span></th>
+<th><span style="font-size: 14px"><{$smarty.const._MD_WFD_MIRROR_HCONTINENT}></span></th>
+<th width="40"><span style="font-size: 14px"><{$smarty.const._MD_WFD_MIRROR_HDOWNLOAD}></span></th>
+<th width="20">&nbsp;</th>
+</tr>
+  <!-- Start mirror loop -->
+  <{foreach item=mirror from=$down_mirror}>
+  <tr style="line-height: 25px;">
+    <td align="left"><span><a href="<{$mirror.homeurl}>"><{$mirror.title}></a></span></td>
+    <td align="left"><span><{$mirror.location}></span></td>
+    <td align="left"><span><{$mirror.continent}></span></td>
+    <td align="left"><span><a href="<{$mirror.downurl}>"><{$smarty.const._MD_WFD_MIRROR_HDOWNLOAD}></a></span></td>
+<{if $mirror.isonline == 1}>
+    <td align="center" style="vertical-align: middle;"><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/on.gif" alt="Online" width="18" height="18"></td>
+<{/if}>
+<{if $mirror.isonline == 0}>
+    <td align="center" style="vertical-align: middle;"><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/off.gif" alt="Offline" width="18" height="18"></td>
+<{/if}>
+<{if $mirror.isonline == 2}>
+    <td align="center" style="vertical-align: middle;"><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/disabled.gif" alt="Disabled" width="18" height="18"></td>
+<{/if}>
+  </tr>
+  <{/foreach}>
+  <!-- End mirror loop -->
+<tr>
+<{if $mirror.add_mirror == 1}>
+<td class="foot" colspan="5"><a href="<{$xoops_url}>/modules/wfdownloads/mirror.php?cid=<{$down_arr.cid}>&amp;lid=<{$down_arr.lid}>"><span style="color: #ffffff;"><{$smarty.const._MD_WFD_ADDMIRROR}></span></a></td>
+<{else}>
+<td class="foot" colspan="5">&nbsp;</td>
+<{/if}>
+</tr>
+</table>
+<br />
+<div><img src="<{$xoops_url}>/modules/wfdownloads/images/icon/on.gif" width="18" height="18" align="middle" />&nbsp;<b><{$smarty.const._MD_WFD_MIRROR_ONLINE}></b>&nbsp;&nbsp;&nbsp;
+<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/off.gif" width="18" height="18" align="middle" />&nbsp;<b><{$smarty.const._MD_WFD_MIRROR_OFFLINE}></b>&nbsp;&nbsp;&nbsp;
+<img src="<{$xoops_url}>/modules/wfdownloads/images/icon/disabled.gif" width="18" height="18" align="middle" />&nbsp;<b><{$smarty.const._MD_WFD_MIRROR_DISABLED}></b></div>
+
+<{include file='db:wfdownloads_footer.html'}>

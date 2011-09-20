@@ -1,0 +1,22 @@
+<{include file='db:wfdownloads_header.html'}>
+
+<center><b><{$smarty.const._MD_WFD_TOTALNEWDOWNLOADS}>:</b>
+	<{$smarty.const._MD_WFD_LASTWEEK}> - <{$allweekdownloads}> \ <{$smarty.const._MD_WFD_LAST30DAYS}> - <{$allmonthdownloads}><br />
+  <br /><{$smarty.const._MD_WFD_SHOW}>: <a href="<{$xoops_url}>/modules/wfdownloads/newlist.php?newdownloadshowdays=7"><{$smarty.const._MD_WFD_1WEEK}></a>
+  - <a href="<{$xoops_url}>/modules/wfdownloads/newlist.php?newdownloadshowdays=14"><{$smarty.const._MD_WFD_2WEEKS}></a>
+  - <a href="<{$xoops_url}>/modules/wfdownloads/newlist.php?newdownloadshowdays=30"><{$smarty.const._MD_WFD_30DAYS}></a>
+</center>
+<p><div align="center"><b><{$smarty.const._MD_WFD_DTOTALFORLAST}> <{$newdownloadshowdays}> <{$smarty.const._MD_WFD_DAYS}></b></div></p>
+<br />
+
+<table width="100%" cellspacing="0" cellpadding="10" border="0">
+<tr>
+<td width="100%">
+  <!-- Start link loop -->
+  <{foreach item=down from=$file}>
+    <{include file="db:wfdownloads_download.html"}>
+  <{/foreach}>
+  <!-- End link loop -->
+</td></tr>
+</table>
+<{include file='db:wfdownloads_footer.html'}>

@@ -1,0 +1,18 @@
+/**
+* $Id: module.css,v 1.2 2006/04/06 17:55:28 mithyt2 Exp $
+* Module: SmartFAQ
+* Author: marcan <marcan@notrevie.ca>
+* Licence: GNU
+*/
+
+.wfdownloads_headertable {padding: 0; margin: 0; border-bottom: 1px solid; margin-bottom: 10px;}
+.wfdownloads_modulename {font-size: 10px; text-align: left; font-weight: bold; padding-right: 0.3em;	line-height: 18px;}
+.wfdownloads_breadcrumb {font-size: 10px; line-height: 18px;}
+
+.wfdownloads_infotitle {margin-top: 8px; margin-bottom: 8px; font-size: 250%; line-height: 250%; font-weight: bold; display: block;}
+.wfdownloads_infotext  {margin-bottom: 8px; line-height: 130%; display: block;}
+
+.wfdownloads_adminlinks {padding-top: 15px; padding-bottom: 5px; font-size: 10px; text-align: center; line-height: 18px;}
+
+.wfdownloads_indexfooter {font-size: 10px; font-weight: bold; text-align: center;  padding: 10px;}
+.wfdownloads_itemfooter {font-size: 10px; font-weight: bold; text-align: center;  padding: 10px;}
