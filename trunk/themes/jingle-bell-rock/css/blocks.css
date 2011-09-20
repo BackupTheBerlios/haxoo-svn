@@ -1,0 +1,43 @@
+/* Theme Factory v-0.1 Alpha
+Author				:					Angelo Rocha
+Site URL			:					www.angelorocha.com.br
+Contact				:					contato@angelorocha.com.br
+Theme				:					Jingle Bell Rock
+*/
+
+#content{}
+.blockTitle{clear:both; font-size:1.2em; color:#600; border-bottom:1px dashed #600; font-weight:bold; padding-bottom:2px; margin-bottom:3px;}
+.blockContent{text-align:justify; margin-bottom:20px;}
+
+#leftBlock{width:190px;}
+#leftBlock .blockTitle{background:url(../images/icon-title.png) left top no-repeat; padding-left:25px; color:#099; border-bottom:1px dashed #099;}
+#leftBlock .blockContent{}
+
+#rightBlock{width:190px;}
+#rightBlock .blockTitle{background:url(../images/icon-title.png) left top no-repeat; padding-left:25px; color:#099; border-bottom:1px dashed #099;}
+#rightBlock .blockContent{}
+
+#centerBlock{width:100%;}
+#centerBlock .blockTitle{}
+#centerBlock .blockContent{}
+
+#centerLeft{margin-right:10px;}
+#centerLeft .blockTitle{}
+#centerLeft .blockContent{}
+
+#centerRight{}
+#centerRight .blockTitle{}
+#centerRight .blockContent{}
+
+#centerBottom{}
+#centerBottom .blockTitle{}
+#centerBottom .blockContent{}
+
+#leftBottom{margin-right:10px;}
+#leftBottom .blockTitle{}
+#leftBottom .blockContent{}
+
+#rightBottom{}
+#rightBottom .blockTitle{}
+#rightBottom .blockContent{}
+

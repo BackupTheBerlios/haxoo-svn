@@ -1,0 +1,139 @@
+@import url(style.css);
+
+#header .logo {
+	background-image: url(images/blue/bg_banner.gif);
+	background-color: #093965;
+}
+
+#header_banner-b {
+	background-image: url(images/blue/blue-header-img.jpg);
+}
+
+
+a {color: #05397b; }
+a:hover {color: #ffffff;}
+
+
+li {	color: #666666; }
+
+.itemHead { color: #000000;}
+
+#leftcolumn .blockTitle, #rightcolumn .blockTitle {		background-image: url(images/blue/bg_banner.gif);
+	background-repeat: repeat-x;
+	background-position: left top; }
+.centercol {}
+
+.centercol .blockTitle {	color: #ffffff;
+	font-weight: normal;
+	margin-top: 3px;
+    background-image: url(images/blue/bg_banner.gif); background-repeat: repeat-x;  }
+
+
+#centercolumn th {
+	background-color: #05397b;
+	border-bottom-color: #05397b;
+}
+#centercolumn th a { color: #FFFFFF;}
+
+
+#mainmenu a {
+	display: block;
+	font-weight: normal;
+	background-image: url(images/blue/snow-flake.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	border-bottom-width: 1px;
+	font-weight: normal;
+	border-bottom-style: solid;
+	border-bottom-color: #05397b;
+}
+#mainmenu a:hover {
+	text-decoration: none;
+	background-color: #05397b;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 16px; }
+#mainmenu a.menuTop {
+	border-top-style: none;
+}
+#mainmenu a.menuSub {
+	padding-left: 25px;
+	color: #636a6f;
+}
+#usermenu a {
+	display: block;
+	font-weight: normal;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	border-bottom-width: 1px;
+	font-weight: normal;
+	border-bottom-style: solid;
+	border-bottom-color: #05397b;
+}
+#usermenu a:hover {		
+	text-decoration: none;
+	background-color: #05397b;
+	padding-left: 16px;
+}
+#usermenu a.highlight {
+	background-color: #05397b;
+	color: #FFFFFF;
+}
+
+
+.outer {}
+.head {
+	background-color: #217CB4;
+	border-bottom-color: #236698;
+}
+.head a {
+	color: #ADD3FA;
+}
+.head a:hover {
+	color: #5AB0EF;
+}
+
+.even, tr.even td {
+	background-color: #FFFFFF;
+	border: 1px solid #E8E8E8;
+}
+td.even:hover, tr.even td:hover, .odd:hover, tr.odd td:hover {
+	background-color: #F4FAFF;
+}
+
+.odd, tr.odd td {
+	background-color: #FFFFFF;
+	border: 1px solid #E8E8E8;
+}
+.foot {
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+.footer {
+	padding: 10px 3px;
+	text-align: center;
+	font-weight: normal;
+	color: #ffffff;
+	background-image: url(images/blue/bg_banner.gif); background-repeat: repeat-x ;
+	text-decoration: none;
+	font-size: 90%;
+	background-color: #1f1f1f;
+}
+.footer a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #000000;
+}
+.footer a:hover {
+	color: #000000;
+}
+
+
+#tabsE a {	background-image: url(images/blue/tableftE.gif); }
+#tabsE a span { background-image: url(images/blue/tabrightE.gif); }

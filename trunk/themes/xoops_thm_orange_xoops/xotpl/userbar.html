@@ -1,0 +1,54 @@
+<div id="xo-userbar">
+	<{if !$xoops_isuser}>
+		<!-- menu in anonymous mode-->
+		<form method="post" action="<{xoAppUrl /user.php op=login}>">
+    <p style="font-size: 12px; font-weight: 700; color: #fff;">
+    <{$smarty.const._LOGIN}>&nbsp;/&nbsp;<a href="<{xoAppUrl /register.php}>" class="register" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a>
+    </p>
+		<p style="padding: 5px 0 0 5px; font-size: .8em">
+		  <{$smarty.const.THEME_PSEUDO}>&nbsp;<input name="uname" type="text" title="<{$smarty.const.THEME_DESC_PSEUDO}>" />
+    </p>
+    <p style="padding-left: 5px; font-size: .8em">
+      <{$smarty.const.THEME_PASSWORD}>&nbsp;<input name="pass" type="password" title="<{$smarty.const.THEME_DESC_PASSWORD}>"/>
+      <input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+		  <{if $lang_siteclosemsg}><input type="hidden" name="xoops_login" value="1" /><{/if}>
+    <button type="submit"><img src="<{xoImgUrl icons/users/home.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+		</p>	
+
+	  </form>
+
+  <{else}>
+		<!-- menu in recorded mode -->
+		<p style="padding: 5px 0 5px 0; font-size: 12px">
+    <{$smarty.const.THEME_WELLCOME}>&nbsp;<a id="xo-uname" href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_PROFILE}>"><{$xoops_uname}></a>
+    </p>
+    
+
+    
+      <!-- for my message box  -->
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>">
+		<{if $pmcount}>
+			<!-- if I have messages -->
+			<img src="<{xoImgUrl icons/users/inbox-full.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+		<{else}>
+			<!-- if I do not have a message -->
+			<img src="<{xoImgUrl icons/users/inbox.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+		<{/if}>
+		</a>
+		<!-- end my message box-->
+
+		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{xoImgUrl icons/users/note_view.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{xoImgUrl icons/users/profile.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
+
+
+		<!-- additional link if I have rights of administration of module -->
+		<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>" title="<{$smarty.const._CPHOME}>"><img src="<{xoImgUrl icons/users/configuration.png}>" alt="<{$smarty.const._CPHOME}>" /></a>
+		<{/if}>
+		<!-- end additional link-->
+
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{xoImgUrl icons/users/exit.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+
+	<{/if}>
+</div>

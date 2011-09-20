@@ -1,0 +1,335 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : content-data.css - 12 01 2008 */
+
+
+/*============== Style for userbar.html =================*/
+#xo-userbar {
+display: inline;
+	float: left;
+padding: 15px 35px 0 15px;
+margin: 0;
+	color:							#fff;
+		background-color: 			transparent;
+	background-image: 			url(../img/quicklinks-slide-backg.png);
+	background-repeat: 			no-repeat;
+	background-position: 		left top;
+	height: 96px;
+}
+#xo-userbar a {
+color: #fff !important;
+}
+#xo-userbar form {
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0;
+	background-color:				transparent;
+	background-image: 			none;
+	padding:							0;
+	border:							none;
+	color: 							inherit;
+}
+#xo-userbar button img {
+padding: 0 0 0 5px;
+margin: 0;
+	width: 							18px;
+	height: 							18px;
+ }
+ #xo-userbar button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar img {
+padding: 8px 5px 0 10px;
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar a {
+	background-color: 			inherit;
+	color: 							#46574d;
+	text-decoration:				none;
+}
+#xo-userbar a:hover {
+	background-color: 			inherit;
+	color: 							#647b6d;
+}
+a#xo-uname {
+	background-color:				inherit;
+	color: 							#ff0000;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+/*========== Style for searchbar.html ==============*/
+#xo-searchbar {
+	display:							inline;
+	float: 							right;
+	margin-top: 					30px;
+	margin-right : 					50px;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+/*============== Styles for userbar_siteclosed.html =================*/
+#xo-userbar_siteclosed {
+	display:							block;
+	float: 							right;
+	background-color: 			inherit;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color:							#fff;
+}
+#xo-userbar_siteclosed form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar_siteclosed button {
+	margin: 							0 -3px;
+	background-color:				transparent;
+	background-image: 			none;
+	color: 							inherit;
+	padding:							0;
+	border:							none;
+}
+#xo-userbar_siteclosed button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar_siteclosed button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar_siteclosed input {
+	width: 							80px;
+}
+/*============= Style for globalnav.html ================*/
+#xo-globalnav {
+	min-height:						20px;
+	background-color:				transparent;
+	color:							#fff;
+}
+* html #xo-globalnav { height: 20px; }
+
+#xo-globalnav .x2-label {
+	display:							none;
+}
+#xo-globalnav ul {
+	margin:0;
+  padding: 0;
+	list-style-type:				none;
+}
+#xo-globalnav ul li {
+  color: #FFF; 
+display: inline;
+	margin:0;
+  padding: 0;
+}
+#xo-globalnav a {
+	margin:0;
+position:absolute;
+top: 218px;
+font-family: Arial, sans-serif;
+color:#fff;
+border: none;
+padding: 0 10px 0 10px;
+text-decoration:none;
+font-weight: bold;
+}
+
+#xo-globalnav a:hover {
+	background-color:				#000;
+color:#FFF;
+	text-decoration:				none;
+	padding: 5px 10px 8px 10px !important;
+	position:absolute;
+	top: 205px;
+		margin:0;
+	border-bottom: solid 10px  #000 !important;
+	border-top: solid 3px #FF9C00 !important;
+}
+
+/* --- Nav links position (absolute --> IE grrrrrrrrr) */
+#xo-globalnav ul li.menu1 a {
+left: 10px;
+}
+#xo-globalnav ul li.menu2 a {
+left: 77px;
+}
+#xo-globalnav ul li.menu3 a {
+left: 185px;
+}
+#xo-globalnav ul li.menu4 a {
+left: 250px;
+}
+#xo-globalnav ul li.menu5 a {
+left: 304px;
+}
+#xo-globalnav ul li.menu6 a {
+left: 415px;
+}
+#xo-globalnav ul li.menu7 a {
+left: 474px;
+}
+#xo-globalnav ul li.menu8 a {
+left: 538px;
+}
+
+
+
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	background-color: 			inherit;
+	background-image: 			url(../img/icons-breadcrumbs.png);
+	background-repeat: 			no-repeat;
+	background-position: 		left top;
+	margin: 						0 10px 15px 10px;
+	padding: 0 0 5px 20px;
+	color : 							#333;
+	font-size:						.8em;
+	border-bottom: 1px dashed #ff9c00;
+}
+/*============== Styles for system_siteclosed.html =================*/
+#xo-siteclose {
+	width:							400px;
+	margin:							100px auto;
+	background-color: 			transparent;
+	background-image: 			url(../img/xo-banner-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+	padding:							30px;
+	color:							#fff;
+	font-size: 						1.2em;
+	font-weight: 					bold;
+	text-align: 					center;
+	border:							1px solid #666;
+}
+/*============== Styles for system_redirect.html =================*/
+#xo-redirect {
+	width:							700px;
+	margin:							50px auto;
+	padding:							1em;
+	font-weight:					bold;
+	text-align:						center;
+	background-color: transparent;
+}
+#xo-redirect .notreload {
+	height:							28px;
+	background-color:				inherit;
+	padding-top:					2px;
+	color:							#fff;
+}
+#xo-redirect .notreload a {
+	background-color: 			inherit;
+	color:							#fe7200;
+	text-decoration: 				none;
+}
+#xo-redirect .notreload a:hover {
+	color:						#ff9c00;	
+	text-decoration: 				underline;
+}
+#xo-redirect .message {
+	min-height:						60px;
+	background-color: 			transparent;
+	background-image: 			url(../img/xo-banner-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+	padding:							1em;
+	color:							#fff;
+	font-size:						1.2em;
+	text-align:						center;
+	border:		 					solid 1px #fe7200;
+}
+#xo-redirect .message img{	padding:	1em;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*======== others float class ======== */
+.floatleft {
+	float: 							left;
+	margin-top: 					1em;
+	margin-right : 				1em;
+	padding-left: 					4px;
+	border: 							0;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	padding: 						2px;
+	border: 							0;
+}
+/*========  others alignment class ======== */
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align:			justify; }
+.middle { vertical-align: 		middle;}
+.top { vertical-align: 			top;}
+.bottom { vertical-align: 		bottom;}
+/*========  others width class ======== */
+.width100 { width: 				100%; }
+.width95 {width:					95%}
+.width75 { width: 				75%; }
+.width50 { width: 				50%; }
+.width33 { width: 				33%; }
+.width25 { width: 				25%; }
+.width20 { width: 				20%; }
+
+/* ========= others font class ========== */
+.small {	font-size: .92em;}
+.normal { font-size: 1em;}
+.big { font-size: 1.17em;}
+.maxi { font-size: 1.5em;}
+
+.bold { font-weight: bold;}
+.italic {font-style: italic;}
+/*========  others display class ======== */
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/* ======== others hypertext links ================ */
+a.printable, a.pdf, a.friend {
+	width:							22px;
+	height:							22px;
+	background-repeat:			no-repeat;
+	background-position:			left top;
+	text-indent:					-1000em;
+}
+a.printable	{	background-image: url(../icons/action/printable.png); }
+a.pdf	{	background-image: url(../icons/action/pdf.png); }
+a.friend	{	background-image: url(../icons/action/friend.png); }
+
+/*======== body for tinyeditor/inbetwen module ======== */
+body.mceContentBody {
+	background-color: 			#fff;
+	background-image: 			none;
+	color: 							#333;
+}
+/* ======== for accessibility ================ */
+/*a[hreflang]:after {
+	content: "\0000a0[alt+" attr(hreflang) "]";
+}
+a[accesskey]:after {
+	content: "\0000a0[alt+" attr(accesskey) "]";
+}*/
+
+/* -- signature in CBB/NewBB -- */
+.signature {
+	font-style: italic;
+	font-size: .9em;
+}
+
+/* ============ Style for notification form ============ */
+span.notification_title {
+	font-size:.9em;
+	font-weight:bold;
+}
+
+

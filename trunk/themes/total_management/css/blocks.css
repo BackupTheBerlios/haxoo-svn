@@ -1,0 +1,189 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : blocks.css - 12 01 2008 */
+
+/*========== list in columns ==========*/
+.xo-canvas-column ul {
+	margin:							0;
+	padding:							.5em;
+	list-style-type:				none;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+
+}
+
+/* ====== cells table in column ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	color: 							#FBD61A;
+	background-color:				#f6f6f6;
+	border:							0 none;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	margin:							0;
+	padding:							0;
+	border: 							0 !important;
+}
+
+/*===== left column =======*/
+#xo-canvas-leftcolumn {
+   background-color: 	#2F2F2F;	
+   -moz-border-radius: 10px 10px 30px 30px;
+	-webkit-border-radius: 10px 10px 30px 30px;
+   -khtml-border-radius: 10px 10px 30px 30px;
+	border-radius: 10px 10px 30px 30px;
+}
+#xo-canvas-leftcolumn .xo-block {
+	margin-right:					3px;
+	margin-bottom:					10px;
+	padding-top:					4px;
+	color:							#f7f7f7;
+
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+    text-align: 				center;
+	background-color: 			inherit;
+	padding-left:					6px;
+	padding-bottom:				5px;
+	color:							#666;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+	border-bottom: 3px solid #5c5c5c;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    	/*min-height:						60px;*/
+	background-color: 			inherit;
+	padding:							2px 8px 0;
+	color:							#f7f7f7;
+	padding-bottom:  12px;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px; }
+#xo-canvas-leftcolumn .xo-blockcontent a {
+	background-color: 			inherit;
+	color:							#FBD61A;
+	text-decoration: 				none;
+}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+	background-color: 			inherit;
+	color:							#01bdbc;
+	text-decoration: 				underline;
+}
+#xo-canvas-leftcolumn img {
+	margin: 							1px;
+	padding: 						1px;
+	border: 							1px
+}
+#xo-canvas-leftcolumn img:hover {border: 1px}
+
+/*======== right column ========*/
+#xo-canvas-rightcolumn {
+   background-color: 	#2F2F2F;	
+   -moz-border-radius: 10px 10px 30px 30px;
+	-webkit-border-radius: 10px 10px 30px 30px;
+   -khtml-border-radius: 10px 10px 30px 30px;
+	border-radius: 10px 10px 30px 30px;
+}
+#xo-canvas-rightcolumn .xo-block {
+	margin-right:					3px;
+	margin-bottom:					10px;
+	padding-top:					4px;
+	color:							#f7f7f7;
+
+}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	background-color: 			inherit;
+	text-align: 				center;
+	padding-right:					6px;
+	padding-bottom:				5px;
+	color:							#666;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+	border-bottom: 3px solid #5c5c5c;
+}
+
+#xo-canvas-rightcolumn .xo-blockcontent {
+	/*min-height:						60px;*/
+	background-color: 			inherit;
+	padding:							2px 8px 0;
+	color:							#f7f7f7;
+	padding-bottom:  12px;
+}
+* html #xo-canvas-rightcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-rightcolumn .xo-blockcontent a {
+	background-color: 			inherit;
+	color:							#FBD61A;
+	text-decoration: 				none;
+}
+#xo-canvas-rightcolumn .xo-blockcontent a:hover {
+	background-color: 			inherit;
+	color:							#01bdbc;
+	text-decoration: 				underline;
+}
+#xo-canvas-rightcolumn img {
+	margin: 							1px;
+	padding: 						1px;
+	border: 							1px
+}
+#xo-canvas-rightcolumn img:hover {border: 1px}
+
+
+/* ======= Content center ===========*/
+#xo-page .xo-blockszone > .xo-block {
+}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	margin:							0;
+	background: 			url(../img/h1-bg.jpg) repeat-x;
+	padding:							0;
+	color:							#818181;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	border: 2px dashed #5b5b5b;
+	background-color:				#292929;
+	padding:							.5em;
+	color:							#666;
+	text-align: 					justify;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 							1px;
+	padding: 						1px;
+	border: 							1px;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	color:							inherit;
+	border: 							1px;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {
+	background-color:				inherit;
+	color:							#FBD61A;
+	text-decoration:				none;
+}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+	color:							#fff;
+}
+
+/* ======= Center blocks ===========*/
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block,#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {}
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
+/* exemple :
+#xo-page-topleftblocks .xo-block .xo-blocktitle {
+	color: #ff00ff;
+	background-color: transparent;
+} 
+#xo-page-topleftblocks .xo-block .xo-blockcontent {
+	color: #ff0000;
+	background-color: #000;
+} 
+etc ...*/

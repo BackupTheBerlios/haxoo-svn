@@ -1,0 +1,11 @@
+<div id="xo-userbar_siteclosed">
+		<form method="post" action="<{xoAppUrl /user.php op=login}>">
+			<{$smarty.const.THEME_PRIVATE}>&nbsp;
+		<input name="uname" type="text" title="<{$smarty.const.THEME_DESC_PSEUDO}>" />&nbsp;&nbsp;<input name="pass" type="password" title="<{$smarty.const.THEME_DESC_PASSWORD}>"/>
+		<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+				<{if $lang_siteclosemsg}>
+		<input type="hidden" name="xoops_login" value="1" />
+		<{/if}>
+		<button type="submit"><img src="<{xoImgUrl icons/users/lock.png}>" alt="<{$smarty.const._LOGIN}>" /></button>	
+		</form>
+</div>

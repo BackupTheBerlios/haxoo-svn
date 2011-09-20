@@ -1,0 +1,498 @@
+@import url(xosystpl.css);
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+@import url(xoopseditor.css);
+
+html {
+}
+body {
+	background:				#000 url(../img/content.jpg) repeat-y center top;
+    color:                  #999;
+    font-family:            "Lucida Grande", Verdana, sans-serif;
+    font-size:              10pt;
+}
+
+/* ======= Body wrapper ======= */
+#xo-wrapper {
+	margin-left:			0px;
+	background:             transparent url(../img/bg.jpg) no-repeat center top;
+}
+#xo-bgstatic {}
+#xo-canvas {
+    background-color:       transparent;
+	margin-top:            -8px;
+}
+body.theme-dialog #xo-canvas {
+    margin:                 0 6px;
+}
+/*================= Content Zone ===================*/
+#xo-canvas-content {
+
+    margin:auto;
+    background:             transparent;
+	width:                  895px;
+	margin-top:				0px;
+	/*padding-top:			-550px;*/
+    padding-left:           4px;
+    color:                  inherit;
+}
+#xo-page {
+	min-height:             500px;
+    padding-top: 			80px;
+    width:                  895px; /* add by kris */
+}
+#xo-canvas-rightcolumn {
+    padding-top:                50px;
+
+}
+
+
+#xo-content {
+	width:                  90%;
+    clear:                  both;
+    margin-left:            35px;
+    background-color:       inherit;
+    padding:                .5em;
+    color:                  #333;
+}
+
+#xo-content table td {
+    vertical-align:         top;
+}
+
+/* ============== header ================= */
+#xo-header {
+margin-top: -10px;
+}
+
+/* ---------- Banner ---------- */
+#xo-banner {
+    margin:                 auto;
+    clear:      	        both;
+    /* Use relative pos to ensure the banner ad img/flash is relative to the header */
+    position:               relative;
+    z-index:                100;
+    width:                  996px;
+    height:                 370px;
+    color:                  #cc0000;
+}
+
+#xo-banner.commercial {
+    height:                 331px;
+}
+
+/*body.theme-dialog #xo-banner {
+    height:                 48px;
+    padding-top:            6px;
+    padding-left:           10px;
+}*/
+
+#xo-banner-ad {
+    position:               absolute;
+    top:                    7px;
+    right:                  5px;
+    width:                  480px;
+    height:                 72px;
+    background:             transparent;
+    padding:                6px;
+}
+
+#xo-banner-ad object, #xo-banner-ad img {
+    display:                block;
+}
+
+/*---------------------- Site name in header ----------------------------*/
+#xo-site-title {}
+a#xo-site-title {}
+a:hover#xo-site-title {}
+#xo-site-title.commercial {}
+#xo-site-title .commercial a:hover {}
+/*----------------------- slogan in header ------------------------*/
+#xo-site-slogan {}
+#xo-site-slogan.commercial {}
+/*------------------------ logo ----------------------------*/
+#xo-main-logo {}
+#xo-main-logo.commercial {}
+/*-------- Bannder-----------*/
+#xo-banner form {}
+#xo-banner input {}
+/*============== Styles in userbar.html =================*/
+
+
+#xo-userbar {
+	padding-top:			360px;
+    color:                  green;
+    bottom:                 1px;
+    right:                  17px;
+    text-align:             right;
+}
+#xo-userbar form {
+    display:                inline;
+    padding:                0;
+}
+#xo-userbar button {
+    margin:                 0;
+    margin-bottom:          -2px;
+    background:             transparent none;
+    padding:                0;
+    color:                  #7BADEA;
+    border:                 0 none transparent;
+}
+#xo-userbar button img {
+    width:                  22px;
+    height:                 22px;
+}
+#xo-userbar button:hover {
+     border:                0 !important;
+ }
+#xo-userbar img {
+    width:                  26px;
+    height:                 26px;
+}
+#xo-userbar a {
+    color:                  green;
+    background-color:       inherit;
+    text-decoration:        none;
+}
+#xo-userbar a:hover {
+    color:                  #000;
+    background-color:       inherit;
+}
+#xo-uname {
+    font-weight:            bold;
+    font-size:              1.1em;
+}
+
+
+/*============= RSS============= */
+/*#rss{
+	
+	float : left;
+	padding-top:15px;
+	padding-right:25px;
+}*/
+
+
+/*============= Search============= */
+/*#bar_search
+{
+	top:50px;
+	height: 30px;
+	padding: 0;
+	margin: 0 700px;
+}
+
+#search_global_1
+{
+	background:transparent;
+	padding: 2px 5px 2px 20px;
+	text-align:left;
+	margin-left: 10px;
+	margin-top: 80px;
+	margin-bottom: 3px;
+	height: 16px;
+}
+#search_global_2
+{
+	background:#fff url(../images/search.png) 3px -30px no-repeat;
+	padding: 2px 5px 2px 20px;
+	float:right;
+	margin-right: 10px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+	border: 1px solid #666;
+	height: 16px;
+}/*
+
+/*============= Style pour le Menu inclus dans globalnav.html ================*/
+/*#sidebar {
+*/	/*background-image: url(img/bg-rideaurose.gif);
+	background-repeat: repeat;*/
+/*	background-color: transparent;
+	display: block;
+	border: 0px;
+	padding: 0px 0 0px 0;
+	margin-top:200px;
+	margin-left:-50px;
+	z-index: 5;
+	text-align:center
+		
+}
+
+#sidebar ul {
+	width:100%;
+	min-height: 15px;
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;  *//* marge:  superieur , droite ,inferieur , gauche */
+/*	margin: 0px 0 0px 0;
+	z-index: 500;	
+	font-weight: bold;
+	font-size: 1em;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align:center;
+}
+
+#sidebar li {
+	display: inline;
+	float: left;
+	min-height: 15px;
+	position: relative;
+	padding: 5px 16px 5px;
+	margin: 0px 0px 0px 0px;
+	text-align:center;
+}
+
+#sidebar h2 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 1em;
+	text-align:center;
+}
+
+#sidebar li ul {
+	width: 150px;
+	height: auto;
+	top: 100%;
+	left: 0px;		
+	font-weight: normal;
+	font-size: 1em;
+	text-align:center;
+}
+
+#sidebar li.LargeMenu ul {
+	width: 200px;
+	height: auto;
+	top: 100%;
+	left: 0px;
+	text-align:center;
+}
+
+#sidebar li ul li {
+	text-align: left;
+	width: 118px;	
+	height: auto;
+	*//*min-height: auto;*/
+/*	display: block;
+	text-align:center;
+}
+
+#sidebar li.LargeMenu ul li {
+	text-align: left;
+	width: 198px;	
+	height: auto;
+	*//*min-height: auto;*/
+/*	display: block;
+	text-align:center;
+}
+
+#sidebar a {
+	*//*text-decoration: blink; /*clignotement*/
+/*	text-decoration: none;
+	text-align:center;
+	}
+
+#sidebar li li ul {
+	top: 0;
+	left: 0;
+	text-align:center;
+}
+
+#sidebar li li:hover ul {
+	left: 150px;
+}
+*/
+/* initialy hide all sub sidemenus */
+/*#sidebar ul ul,
+#sidebar ul li:hover ul ul,
+#sidebar ul ul li:hover ul ul,
+#sidebar ul ul ul li:hover ul ul,
+#sidebar ul ul ul ul li:hover ul ul {
+	position: absolute;
+	display:none;
+}
+*/
+/* display them on hover */
+/*#sidebar li:hover ul,
+#sidebar ul li:hover ul,
+#sidebar ul ul li:hover ul,
+#sidebar ul ul ul li:hover ul,
+#sidebar ul ul ul ul li:hover ul,
+#sidebar ul ul ul ul ul li:hover ul {
+ 	 display: block;
+}
+
+#sidebar #PhpWebcontent {
+	display:none;
+}	
+*/
+/* define the consecutive colors */
+/*
+#sidebar {
+	color: #CA607E;
+	
+}
+
+#sidebar ul{
+	background: transparent;
+	-moz-opacity:0.88;*/ /* for mozilla */
+	/*opacity: 0.88; *//* for safari */
+	/*khtml-opacity: 0.88 *//* for konquerer and older safari */
+/*}
+
+#sidebar ul ul {
+	*//*background: #140613;*/
+	/*background: #b7e248;
+}
+#sidebar ul li {
+		background:#b7e248 no-repeat;
+}
+
+#feeds li {
+  background: url(img/feed.png) top left no-repeat;
+  padding-left: 18px;
+}
+
+#sidebar h2 {
+	color: #cd4135;
+}
+
+#sidebar a {
+	color: #cd4135;
+	}
+
+#sidebar ul li:hover {
+	*//*background: #333333;*/
+	/*background: transparent;
+}
+
+#sidebar ul li ul {
+
+}
+
+#sidebar ul li ul li {
+	*//*background: #333333;*/
+	/*background: transparent;
+}
+
+#sidebar ul li ul li:hover {
+	*//*background: #666666;*/
+	/*background: transparent;
+}
+
+#sidebar ul li ul ul li{
+	*//*background: #666666;*/
+	/*background: transparent;
+	
+}
+
+#sidebar ul li ul ul li:hover {
+	*//*background: #999999;*/
+	/*background: transparent;
+}
+
+/*============= Style in globalnav.html ================*/
+#xo-globalnav {
+	margin:							auto;
+	width:                  		895px;
+	padding-top:					10px;
+	min-height:						60px;
+	color:							#32529C;
+	background:             		transparent;
+	list-style-type:				none;
+	font-size:						1.1em;
+	font-weight: 					bold;
+}
+* html #xo-globalnav { height: 20px; }
+
+#xo-globalnav .x2-label {
+	display:							none;
+}
+#xo-globalnav li {
+	display:							inline;
+	margin:							0;
+	padding-left:					.5em;
+	padding-right:					.5em;
+	font-size: 						.9em;
+}
+#xo-globalnav a {
+	color:							#32529C;
+	background-color:				inherit;
+	text-decoration:				none;
+}
+#xo-globalnav a:hover {
+	color:							#EAAD7B;
+	background-color:				inherit;
+	text-decoration:				none;
+	text-decoration:				none;
+	}
+
+/* ===== Footer ===== */
+#xo-footer {
+	margin-top:				20px;
+	height:                 69px;
+    background-color:       transparent;
+    padding:                .5em;
+    color:                  #000;
+    font-size:              .9em;
+    text-align:             center;
+}
+
+body.theme-dialog #xo-footer {
+    padding:                .2em .5em;
+    font-size:              .8em;
+}
+#xo-footer a {
+    background-color:       inherit;
+    color:                  green;
+}
+
+#xo-footer a:hover {
+    background-color:       inherit;
+    color:                  green;
+    text-decoration:        underline;
+}
+/*========== xo_footerstatic.html ==========*/
+#xo-footerstatic * { margin: 0; padding: 0;}
+#xo-footerstatic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: #000;
+  font-size: 11px;
+}
+body>#xo-footerstatic {  position: fixed;}
+#xo-footerstatic #controls {
+  margin: 0 20px 0 20px;
+  background-color: #fff;
+  line-height: 39px;
+  text-shadow:	2px 2px 3px #aaa;
+  border: 1px solid #b5b5b5;
+  border-bottom: none;
+}
+#xo-footerstatic #controls  { margin-top: 1px; background: #E7F4F7; padding: 3px 10px 0 10px;}
+#xo-footerstatic .separator { margin-left: 3px; border-left: 1px solid #b5b5b5;}
+#xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
+#xo-footerstatic #controls ul { list-style: none;}
+#xo-footerstatic #controls li { display: inline-block; height: 29px; line-height: 27px; padding-right: 6px;}
+#xo-footerstatic .icon { vertical-align: text-bottom;}
+#xo-footerstatic .icon-chat { padding-top: 3px;}
+#xo-footerstatic .chat, .icon-chat { float: right;}
+#xo-footerstatic .text { vertical-align: top;}
+
+/* ===== debug messages ===== */
+#xo-logger-output {
+    font-size:              .8em;
+	margin-bottom:			35px;
+}
+
+.outer {border: 1px solid silver;}
+.head {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}

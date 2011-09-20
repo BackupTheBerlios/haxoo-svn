@@ -1,0 +1,19 @@
+------------------------------------------------------
+1. FXSlide
+
+- mootools.js
+- FXslide.js
+
+Note : 
+- to hide content at start (FXslide.js)
+//automagic hide	
+myVerticalSlide.hide();	
+- just remove these two lines to shwo content at start
+------------------------------------------------------
+
+
+--------------------------------------------------------------
+2. rel.js
+
+Replace target="_blank" by rel="external" (full compliant W3C)
+--------------------------------------------------------------

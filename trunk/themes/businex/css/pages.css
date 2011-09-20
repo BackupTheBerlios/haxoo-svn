@@ -1,0 +1,52 @@
+/*=============== styles pour les changement de page =================*/
+#pageNav {
+	padding:							5px 0;
+	margin:							0;
+	text-align:						center;
+}
+
+
+.PagePrev {
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagneutral.png);
+	background-repeat: 			no-repeat;
+}
+
+.PageNext {
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagneutral.png);
+	background-repeat: 			no-repeat;
+}
+
+.PageActive {
+/*
+	position:						absolute;
+*/
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagact.png);
+	background-repeat: 			no-repeat;
+}
+.PageInactive, .PageNo {
+/*
+	position:						absolute;
+*/
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/paginact.png);
+	background-repeat: 			no-repeat;
+}

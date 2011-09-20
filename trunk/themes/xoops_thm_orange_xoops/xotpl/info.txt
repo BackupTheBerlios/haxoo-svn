@@ -1,0 +1,6 @@
+1. Features added : edit icon for each block (Front side)
+- blockszone.html
+- centerblocks.html
+
+
+2. To modify DEFINES in globalnav.html, edit www/language/your-language/theme.php

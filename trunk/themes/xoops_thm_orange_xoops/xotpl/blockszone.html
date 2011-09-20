@@ -1,0 +1,21 @@
+
+<{if $blocks}>
+	<<{$zoneTag}> class="xo-blockszone <{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+	<{foreach from=$blocks item=block}>
+	<div class="xo-block <{$block.module}>">
+		<{if $block.title}>
+      <div class="xo-blocktitle">
+          <{$block.title}>
+      		<{if $xoops_isadmin}><a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /></a><{/if}>
+      </div>
+    <{else}>
+      <div class="blocks-quicklink">
+          <{if $xoops_isadmin}><a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /><{$smarty.const.THEME_THISBLOCK_EDIT}></a><{/if}>
+      </div>   
+    <{/if}>
+		<div class="xo-blockcontent"><{$block.content}></div>
+	</div>	
+	<{/foreach}>
+	</<{$zoneTag}>>
+	<!-- more content here for example -->
+<{/if}>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+	<{assign var=theme_plugin value=$xoTheme->folderName|cat:'/xoplugins'}>
+	<{includeq file="$theme_name/xometas.html"}>
+  <{includeq file="$theme_name/xoscripts.html"}>	
+</head>
+<body>
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+<div class="xo-wrapper">
+<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
+<div id="xo-top">
+      <div>
+        <a id="xo-main-logo" href="<{xoAppUrl /}>" title=""><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a>
+	      <a id="xo-site-title" href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$smarty.const.THEME_NAME}></a>	
+	      <div id="xo-site-slogan"><{$smarty.const.THEME_DESC}></div>
+      </div>
+      <{includeq file="$theme_name/userbar_siteclosed.html"}>
+</div>
+<div id="xo-header" class="<{$xoops_dirname}>">
+			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+	      <div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+			<{/if}>
+</div>
+<div id="xo-page">
+		<div id="xo-siteclose"><{$lang_siteclosemsg}></div>
+</div>
+<{includeq file="$theme_name/xofooter.html"}>
+	<!--{xo-logger-output}-->
+</div>
+</div>
+</body>
+</html>
