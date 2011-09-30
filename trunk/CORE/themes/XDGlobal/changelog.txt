@@ -1,0 +1,27 @@
+XOOPS Blank Theme - Changelog
+
+Documentation on line --> http://dev.xoofoo.org/BlankTheme/
+
+============================
+Version 1.3 ( for xoops 2.4.x )
+============================
+- Add two new xo_page.html : (left - content and below center - right) and (content and below left center right) in extras folder
+
+============================
+Version 1.2 ( for xoops 2.4.x )
+============================
+- Deplace xo-canvas-content div in xo_page.html
+- Add two new xo_page.html (left center bottom and center right bottom) in extras folder
+
+============================
+Version 1.1 ( for xoops 2.4.x )
+============================
+- Add style sheat for fonts (kris)
+- Add language files (kris & XDT)
+- Change style position for logo and banner in header
+- Fix news smarty tags for theme override
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- cleaning code and style (kris)

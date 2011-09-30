@@ -1,0 +1,100 @@
+<script type="text/javascript"><!--
+	jQuery(document).ready(function(){ jQuery('#mydl-submit-ta').markItUp(mydl_fileup_markitup_bbcodeset); })
+//--></script>
+<div id="mydl-wrapper">
+	<h1><{$xoops_modulename}> - <{if $action == "submit"}><{$lang_submitcath}><{else}><{$lang_requestmod}><{/if}></h1>
+	<{if count($categories) == 0}>
+	<div id="mydl-nav" style="border-width: 0;">
+	<{else}>
+	<div id="mydl-nav">
+	<{/if}>
+		<a href="<{$xoops_url}>/modules/mydownloads/" target="_top"><{$smarty.const._MD_NEWARRIVAL}></a>
+		 | <a href="<{$xoops_url}>/modules/mydownloads/filelist.php" target="_top"><{$smarty.const._MD_FILELIST}></a>
+	</div>
+	<div id="mydl-con">
+		<{if $action == "submit"}>
+		<div id="mydl-submit-note">
+			<ul>
+				<li><{$lang_submitonce}></li>
+				<li><{$lang_allpending}></li>
+				<li><{$lang_dontabuse}></li>
+				<li><{$lang_wetakeshot}></li>
+			</ul>
+		</div>
+		<{/if}>
+		<form action="<{if $action == "submit"}>submit.php<{else}>modfile.php<{/if}>" method="post" enctype="multipart/form-data" id="mydl-submit-form">
+			<table>
+				<tbody>
+					<{if $action == "modify"}>
+					<tr>
+						<th><{$lang_fileid}></th>
+						<td><{$file.id}></td>
+					</tr>
+					<{/if}>
+					<tr> 
+						<th><{$lang_filetitle}></th>
+						<td><input type="text" name="title" size="50" maxlength="100" value="<{$file.title}>" /></td>
+					</tr>
+					<{if $lang_upload}>
+					<tr>
+						<th><{$lang_upload}></th>
+						<td>
+							<input type='hidden' name='MAX_FILE_SIZE' value='<{$maxbyte}>' />
+							<input type='file' size='50' name='upfile' /><br />
+							Max <{$maxbyte_str}> Byte.<br />
+							<{$accept_files}>
+						</td>
+					</tr>
+					<{/if}>
+					<tr> 
+						<th><{$lang_siteurl}></th>
+						<td><input type="text" name="url" size="50" maxlength="250" value="<{if $action == "submit"}>http://<{else}><{$file.url}><{/if}>" /></td>
+					</tr>
+					<tr> 
+						<th><{$lang_category}></th>
+						<td><{$category_selbox}></td>
+					</tr>
+					<tr> 
+						<th><{$lang_homepage}></th>
+						<td><input type="text" name="homepage" size="50" maxlength="100" value="<{$file.homepage}>" /></td>
+					</tr>
+					<tr> 
+						<th><{$lang_version}></th>
+						<td><input type="text" name="version" size="10" maxlength="20" value="<{$file.version}>" /></td>
+					</tr>
+					<tr> 
+						<th><{$lang_size}></th>
+						<td><input type="text" name="size" size="10" maxlength="20" value="<{$file.size}>" /> <{$lang_bytes}></td>
+					</tr>
+					<tr> 
+						<th><{$lang_platform}></th>
+						<td><input type="text" name="platform" size="50" maxlength="50" value="<{$file.plataform}>"></td>
+					</tr>
+					<tr> 
+						<th><{$lang_description}></th>
+						<td><textarea id="mydl-submit-ta" name="<{if $action == "submit"}>message<{else}>description<{/if}>"><{$file.description}></textarea></td>
+					</tr>
+					<{if $notify_show}>
+					<tr>
+						<th><{$lang_options}></th>
+						<td><input type="checkbox" name="notify" value="1"><{$lang_notify}></input> </td>
+					</tr>
+					<{/if}>
+				</tbody>
+				<tfoot>
+					<tr> 
+						<td colspan="2">
+							<input type="submit" name="submit" value="<{$lang_submit}>" />
+							&nbsp;
+							<input type="button" value="<{$lang_cancel}>" onclick="javascript:history.go(-1)" />
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<{if $action == "modify"}>
+			<input type="hidden" name="logourl" value="<{$file.logourl}>" />
+			<input type="hidden" name="lid" value="<{$file.id}>" />
+			<{/if}>
+		</form>
+	</div>
+</div>

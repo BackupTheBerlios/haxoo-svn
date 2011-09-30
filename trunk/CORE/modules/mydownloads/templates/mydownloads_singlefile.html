@@ -1,0 +1,36 @@
+<div id="mydl-wrapper">
+	<h1><a href="index.php" target="_top"><{$xoops_modulename}></a> - <{$category_path|replace:":":""|replace:"<a":"&gt; <a"|regex_replace:"/.*&gt; /":""}></h1>
+	<{if count($subcategories) == 0}>
+		<div id="mydl-nav" style="border-width: 0;">
+	<{else}>
+		<div id="mydl-nav">
+	<{/if}>
+		<div id="mydl-path">
+			<{$category_path|replace:":":""|replace:"<a":"&gt; <a"|regex_replace:"/^&gt; /":""}>
+		</div>
+		<{$smarty.const._MD_NEWARRIVAL}> | <a href="filelist.php" target="_top"><{$smarty.const._MD_FILELIST}></a>
+	</div>
+	<div id="mydl-contents">
+		<dl id="mydl-con-list">
+			<{include file="db:mydownloads_download.html" down=$file}>
+		</dl>
+		<div id="mydl-comments">
+			<div id="comments-nav">
+				<{$commentsnav}>
+				<{$lang_notice}>
+			</div>
+			<div id="comments-list">
+				<!-- start comments loop -->
+				<{if $comment_mode == "flat"}>
+				  <{include file="db:system_comments_flat.html"}>
+				<{elseif $comment_mode == "thread"}>
+				  <{include file="db:system_comments_thread.html"}>
+				<{elseif $comment_mode == "nest"}>
+				  <{include file="db:system_comments_nest.html"}>
+				<{/if}>
+				<!-- end comments loop -->
+			</div>
+			<{include file="db:system_notification_select.html"}>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" >
+<head>
+	<!-- do not remove Template by IT-Telemann http://it-telemann.de itt_blueworld for ICMS / XOOPS 2.Juni 2010 -->
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html files -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="ImpressCMS or XOOPS Template" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<{xoAppUrl backend.php}>" />
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style.css}>" />
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl dddropdownpanel.css}>" />
+	    <!--[if IE 6]><link rel="stylesheet" href="<{xoImgUrl style.ie6.css}>" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" href="<{xoImgUrl style.ie7.css}>" type="text/css" media="screen" /><![endif]-->
+		<!-- /***********************************************
+        * DD Drop Down Panel- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com) and Scroll To Top Control script
+        * This notice MUST stay intact for legal use
+        * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+        ***********************************************/ -->
+      <script type="text/javascript" src="<{xoImgUrl js/script.js}>"></script>
+      <script type="text/javascript" src="<{xoImgUrl js/dddropdownpanel.js}>"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script type="text/javascript" src="<{xoImgUrl js/scrolltopcontrol.js}>"></script>
+	<{$xoops_module_header}>
+	</head>
+<!-- Body -->
+<body>							
+<!-- Abfragen der Blöcke -->	
+<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}>
+<{assign var=columns_layout value='tree-layout'}>
+<{assign var=block_layout value='tree-block'}>
+<{elseif $xoBlocks.canvas_left}>
+<{assign var=columns_layout value='two-layout'}>
+<{assign var=block_layout value='two-block'}>
+<{elseif $xoBlocks.canvas_right}>
+<{assign var=columns_layout value='two-layout'}>
+<{assign var=block_layout value='two-block'}>
+<{else}>
+<{assign var=columns_layout value='row'}>
+<{assign var=block_layout value='full-block'}>
+<{/if}>
+<!-- Ende Abfrage -->		
+    <div id="art-page-background-gradient"></div>
+    <div id="art-page-background-glare">
+        <div id="art-page-background-glare-image"></div>
+    </div>
+<div id="art-main">
+        <div class="art-Sheet">
+            <div class="art-Sheet-tl"></div>
+            <div class="art-Sheet-tr"></div>
+            <div class="art-Sheet-bl"></div>
+            <div class="art-Sheet-br"></div>
+            <div class="art-Sheet-tc"></div>
+            <div class="art-Sheet-bc"></div>
+            <div class="art-Sheet-cl"></div>
+            <div class="art-Sheet-cr"></div>
+            <div class="art-Sheet-cc"></div>
+            <div class="art-Sheet-body">
+                <div class="art-Header">
+                    <div class="art-Header-png"></div>
+                    <div class="art-Header-jpeg"></div>
+                   <div class="art-Logo">		
+                        <h1 id="name-text" class="art-Logo-name"><a href="<{$xoops_url}>"><{$xoops_sitename}></a></h1>
+                        <div id="slogan-text" class="art-Logo-text"><{$xoops_slogan}></div>
+                    </div>			
+                </div>	
+				<!-- Ende Header -->
+                <!-- Navigation -->
+				<div class="row">
+                <div class="art-nav">
+                	<div class="l"></div>
+                	<div class="r"></div>
+                           	<ul class="art-menu">
+                		<li>
+                			<a href="<{xoAppUrl /index.php}>" class="active"><span class="l"></span><span class="r"></span><span class="t">Startseite</span></a>
+                		</li>
+									 <!-- PrÃ¼fe ob nicht Eingeloggt -->
+						  <{if !$xoops_isuser}> <li>	<a href="<{xoAppUrl /user.php}>" target="_self" title="Login"><span class="l"></span><span class="r"></span><span class="t">Anmelden</span></a></li> <{/if}>
+                	
+						 <!-- PrÃ¼fe ob Eingeloggt -->
+					<{if $xoops_isuser}>
+                		<li>
+                			<a href="<{xoAppUrl /user.php}>" target="_self" title="Mein Konto"><span class="l"></span><span class="r"></span><span class="t">Hallo <{$xoops_uname}></span></a>
+                		 <ul>
+						  <!-- PrÃ¼fe ob Admin -->
+						<{if $xoops_isadmin}>		
+                <li><a href="<{xoAppUrl /admin.php}>" target="_self" title="Adminpanel">Adminpanel</a></li>
+      <{/if}>
+	  <!-- PrÃ¼fe ob Post vorhanden -->
+                <{xoInboxCount assign=pmcount}>
+                <li><a href="<{xoAppUrl /viewpmsg.php}>" target="_self" title="Postfach">Postfach: <{$pmcount}></a></li>
+				    <li><a href="<{xoAppUrl /user.php}>" target="_self" title="Profil bearbeiten">Profil bearbeiten</a></li>
+                <li><a href="<{xoAppUrl /notifications.php}>" target="_self" title="Benachrichtigungen">Benachrichtigungen</a></li>
+                                <li><a href="<{xoAppUrl /user.php op=logout}>" target="_self" title="Logout">Abmelden</a></li>  </ul></li>   <{/if}></ul>
+                </div></div>
+				<!-- Ende Navigation -->
+					<!-- Slide Panel -->
+				<div id="mypanel" class="ddpanel"> 
+<div id="mypanelcontent" class="ddpanelcontent">
+<{include file="$theme_name/loginpanel.html"}>
+</div>
+<div id="mypaneltab" class="ddpaneltab">
+<a href="#" ><span>Panel</span></a>
+</div>
+
+</div>
+	<!-- Ende Slide Panel -->
+                <div class="art-contentLayout">
+								<!-- Sidebar links  -->
+				  <{if $xoBlocks.canvas_left}>
+                    <div class="art-sidebar1">       
+                    <{foreach item=block from=$xoBlocks.canvas_left}>
+                    <{include file="$theme_name/theme_blockleft.html"}>
+                    <{/foreach}></div><{/if}>
+					<!-- Ende Sidebar links -->
+                                     <!-- Content -->
+	<div class="centercolumn <{if $columns_layout}><{$columns_layout}><{/if}>">
+       <!-- Center Top Blöcke -->
+    	<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+          <div class="centerblock-center <{if $columns_layout}><{$columns_layout}><{/if}>">
+              <{foreach item=block from=$xoBlocks.page_topcenter}>
+                  <{includeq file="$theme_name/theme_blockcenter_c.html"}>
+              <{/foreach}>
+          </div>
+          <div class="centerblock-left <{if $columns_layout}><{$block_layout}><{/if}>">
+              <{foreach item=block from=$xoBlocks.page_topleft}>
+                  <{includeq file="$theme_name/theme_blockcenter_l.html"}>
+              <{/foreach}>
+          </div>
+          <div class="centerblock-right <{if $columns_layout}><{$block_layout}><{/if}>">
+              <{foreach item=block from=$xoBlocks.page_topright}>
+                  <{include file="$theme_name/theme_blockcenter_r.html"}>
+              <{/foreach}>
+          </div>
+          <div class="clear"></div>
+        <{/if}>
+        <!-- Ende Center Top Blöcke -->
+        <{if $xoops_contents}>
+          <div class="page-content <{if $columns_layout}><{$columns_layout}><{/if}>">
+              <{$xoops_contents}>
+          </div>
+        <{/if}>
+        <!-- Center bottom Blöcke -->
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        <div class="centerblock-left <{if $columns_layout}><{$block_layout}><{/if}>">
+        	<{foreach item=block from=$xoBlocks.page_bottomleft}>
+				<{include file="$theme_name/theme_blockcenter_l.html"}>
+			<{/foreach}>
+        </div>
+    	<div class="centerblock-right <{if $columns_layout}><{$block_layout}><{/if}>">
+        	<{foreach item=block from=$xoBlocks.page_bottomright}>
+				<{include file="$theme_name/theme_blockcenter_r.html"}>
+			<{/foreach}>
+        </div>
+        <div class="clear"></div>
+		<div class="centerblock-center <{if $columns_layout}><{$columns_layout}><{/if}>">
+        	<{foreach item=block from=$xoBlocks.page_bottomcenter}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}>
+            <{/foreach}>
+        </div>
+        <{/if}>
+        <!-- Ende Center bottom Blöcke -->
+        </div>
+        <!-- Ende Content -->
+                   
+			
+	    <!-- Sidebar rechts -->
+		<{if $xoBlocks.canvas_right}>
+        <div class="art-sidebar2">
+    	<{foreach item=block from=$xoBlocks.canvas_right}>
+        <{include file="$theme_name/theme_blockright.html"}>
+        <{/foreach}></div><{/if}>
+		<!-- Ende Sidebar rechts -->
+               </div>
+                <div class="cleared"></div>
+				<div style="width:500px; margin: 0 auto; height: 70px;"><{$xoops_banner}></div>
+				<!-- Footer -->
+				<div class="row">
+				<div class="art-Footer">
+                <div class="art-Footer-inner">
+                <div class="art-Footer-text">
+            <p><{$xoops_footer}></p>
+            </div>
+            </div>
+                <div class="art-Footer-background"></div>
+            </div>
+			</div>
+			<!-- Ende Footer -->
+        	    <div class="cleared"></div>
+            </div>
+			</div>
+			</div>
+<div class="cleared"></div>
+		<!-- Copyright -->
+        <p class="art-page-footer">Free Template itt_blueworld by <a href="http://it-telemann.de">IT-Telemann</a>.</p>
+		<div style="display:none;"> <br/><a href="http://it-telemann.de">Xoops, ImpressCMS, xt:Commerce and Joomla Templates by IT-Telemann (Rene Telemann)</a></div>
+</body>
+</html>

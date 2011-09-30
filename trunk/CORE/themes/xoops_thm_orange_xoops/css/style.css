@@ -1,0 +1,227 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css - 12 01 2008 */
+
+/* IMPORTANT !!! :
+	propriety semantic order =
+	position box,
+	width,
+	heigth,
+	margin,
+	background-color,
+	background-image,
+	padding,
+	content (color, style font, ...),
+	border,
+	 ... */
+
+/* incorporation de feuilles de styles complémentaires */
+@import url(content.css);
+@import url(content-data.css);
+@import url(blocks.css);
+@import url(forms.css);
+
+/* reset des sélecteurs */
+* { margin: 0; padding: 0; border: 0;}
+
+
+
+/* beginning of the applicable styles */
+html, body {
+	margin:							0;
+	background-color: 			#000;
+padding:							0;
+	color:							#fff;
+	font-family:					"Lucida Grande", Verdana, sans-serif;
+	font-size:						10pt;
+}
+body.site_closed form {	padding: 1em 35%;}
+
+/* ======= Body box ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+	margin:							0;
+	background-color: 		#ffdeab;
+	color:							#000;
+}
+body.theme-dialog #xo-canvas {
+	margin:							0 6px;
+}
+/*================= Content zone ===================*/
+#xo-canvas-content {
+background-color: 		#fff;
+	padding: 0 40px 20px 40px;
+	color:							#000;
+}
+#xo-page {
+	background-color:				#fff;
+	color:							#000;
+	width:							100%; /* add by kris */
+}
+#xo-content {
+	clear:							both;
+	margin:							0;
+	background-color:				#fff;
+	padding:							.5em;
+	color:							#333;
+}
+
+/* =========== Slide ============*/
+#bottom-slide {
+	background-color: 		#ffdeab;
+	background-image: 			url(../img/xo-canvas-content-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+	display: block;
+	clear: both;
+	float: left;
+}
+.arrow-slide {
+background-color: #fff;
+font-size: .9em; 
+color: #333;
+padding-top: 2px;
+}
+a#v_slideout img , a#v_slidein img  {
+width: 16px;
+height: 16px;
+background-color: inherit;
+}
+/* ========== End Slide ======== */
+#xo-uptop {
+	margin: 							0;
+	background-color: 			transparent;
+	padding-top: 					5px;
+	color: 							inherit;
+	font-size: 						.9em;
+	text-align:						right;
+}
+#xo-uptop a {
+	background-color: 			inherit;
+	color: 							#46574d;
+}
+#xo-uptop a:hover {
+background-color: 				inherit;
+color: 								#647b6d;
+}
+#xo-logger-output { font-size:	.8em;}
+/* ============== header ================= */
+#xo-header {
+	height:							166px;
+	z-index:							10;
+	background-color: 			transparent;
+	background-image: 			url(../img/xo-banner-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+}
+#xo-top {
+height: 81px;
+	background-color: 			transparent;
+	background-image: 			url(../img/top-header-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+	color: 							#fff;
+}
+/* ---------- Banner ---------- */
+#xo-banner-ad {
+background-color: transparent;
+position: relative;
+top: 10px;
+right: 10px;
+float: right;
+display: inline;
+  }
+/*---------------------- site title in the header ----------------------------*/
+#xo-site-title {
+	background-color: 			transparent;
+	font-family:	 				Arial, sans-serif;
+	font-weight:					700;
+	font-size: 28px;
+	position: 						absolute;
+	left: 90px;
+	top: 15px;
+}
+a#xo-site-title  {color: #000;}
+a:hover#xo-site-title  {color: #fff;}
+/*----------------------- slogan in the header ------------------------*/
+#xo-site-slogan {
+	position: 						absolute;
+	top: 								45px;
+	padding-left: 					90px;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+}
+/*------------------------ Logo in the header ----------------------------*/
+#xo-main-logo {
+	position: 						absolute;
+	top: 								10px;
+	background: 					inherit;
+	padding-left: 					10px;
+	color:							#fff;
+	display: block;
+	}
+
+/*=============== Style for the Footer  ====================*/
+#xo-footer {
+width: 100%;
+text-align: center;
+	height: 							85px;
+	background-color: 			#000;
+	background-image: 			url(../img/xo-footer-backg.jpg);
+	background-repeat: 			repeat-x;
+	background-position: 		left top;
+  margin:							0;
+	color:							#fff;
+	font-size:						.8em;
+}
+#xo-footer td {padding: 30px 10px 0 10px;}
+#xo-footer td.micro-bt {width: 35%;}
+#xo-footer .micro-bt img {margin-left: 10px;}
+#xo-footer td.xoops_footer-infos {width: 30%; text-align: center;}
+#xo-footer td.rss-designer {}
+#xo-footer .rss-designer img {margin-left: 10px;}
+#xo-footer a {background-color: inherit; color: #ffcf83;}
+#xo-footer a:hover {background-color: inherit; color:	#ffdf83;}
+body.theme-dialog #xo-footer {}
+
+/*========== Main menu block =============*/
+#mainmenu ul li a {
+	background-color: 		inherit;
+	line-height: 					1.4em;
+	list-style: 					square inside;
+	font-weight: 700;
+}
+#mainmenu ul li a:hover {
+	text-decoration:				none !important;
+}
+
+#mainmenu .mainmenu-sub a {
+	margin-left: 					20px;
+	background-color: 		inherit;
+	line-height: 					1.3em;
+	list-style: 					none;
+	font-size: .9em;
+	font-weight: normal;
+}
+/*============ Usermenu block ============*/
+#usermenu a {
+	display: 						block;
+	background-color: 			inherit;
+	padding: 						2px;
+	font-size: 						0.8em;
+	font-weight: 					normal;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	background-color: 			inherit;
+	padding-left: 					1em;
+	font-style: 					italic;
+	text-decoration:				none !important;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: 			#ff9c00 !important;
+	color: 							#fff;
+}

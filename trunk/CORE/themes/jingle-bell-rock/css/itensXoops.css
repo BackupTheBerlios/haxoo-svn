@@ -1,0 +1,59 @@
+/* Theme Factory v-0.1 Alpha
+Author				:					Angelo Rocha
+Site URL			:					www.angelorocha.com.br
+Contact				:					contato@angelorocha.com.br
+Theme				:					Jingle Bell Rock
+*/
+
+#mainmenu a{background:url(../images/arrow-a.png) no-repeat left; padding-left:18px; display:block; margin-bottom:5px;}
+#mainmenu a:hover{background:url(../images/arrow.gif) no-repeat left; color:#096;}
+#mainmenu a.menuSub{font-size:10px; background:none; margin-left:15px;}
+#mainmenu a:hover.menuSub{color:#F00; background:url(../images/arrow-sub.png) left no-repeat;}
+
+#usermenu a{background:url(../images/arrow-a.png) no-repeat left; padding-left:18px; display:block; margin-bottom:5px;}
+#usermenu a:hover{background:url(../images/arrow.gif) no-repeat left; color:#096;}
+
+.even{border-bottom:1px solid #CCC; background:#EBEBEB; color:#434343;}
+.odd{background:#F1F1F1;color:#434343; border-bottom:1px solid #CCC;}
+.head{background:#999;}
+
+.item{margin-bottom:25px;}
+.itemHead{background:#440000; color:#FFF; padding-left:5px;}
+.itemHead a{color:#FFF;}
+.itemTitle{color:#FFF;}
+.itemText:first-letter{font-size:1.2em; font-weight:bold; color:#440000;}
+.itemFoot{background:#440000; color:#FFF;}
+.itemFoot a{color:#FFF;}
+.itemPoster{font-weight:bold; text-decoration:underline}
+.itemPostDate{font-weight:bold; text-decoration:underline}
+.itemStats{font-weight:bold; font-style:italic; font-size:11px; color:#F00;}
+.itemInfo{background:#CCC;}
+.itemText{color:#333;}
+.itemBody{padding:5px;}
+
+#xo-redirect{background:#FFF; width:600px; margin-top:10%; margin-left:auto; margin-right:auto; padding:10px; font-size:1.2em;}
+#div.errorMsg{background:#FFF; width:600px; margin-top:10%; margin-left:auto; margin-right:auto; padding:10px; font-size:1.2em;}
+#div.confirmMsg{background:#FFF; width:600px; margin-top:10%; margin-left:auto; margin-right:auto; padding:10px; font-size:1.2em;}
+#div.resultMsg{background:#FFF; width:600px; margin-top:10%; margin-left:auto; margin-right:auto; padding:10px; font-size:1.2em;}
+
+.comTitle{background:#999; color:#333;}
+.outer{background:#999;}
+.comTitle a{color:#440000;}
+.comText{padding:3px;}
+.comUserName{background:#999; color:#440000; text-align:center;}
+.comUserName a{color:#440000;}
+.comUserStat{border:1px solid #333; padding:5px; background: #EBEBEB;}
+.comUserRankText{font-size:1.5em; text-align:center; font-weight:bold; border:1px solid #333;}
+.comUserImg{width:180px;}
+.extra{color:#096; font-weight:bold;}
+.extra a{color:#09C;}
+.foot{background:#333; color:#FFF}
+.foot a{color:#FFF;}
+
+div.xoopsCode{background:#FFF; width:600px; margin:0 auto; padding:5px;}
+div.xoopsQuote{background:#FFF; width:600px; margin:0 auto; padding:5px; font-style:italic; font-weight:bold; border:1px #CCC solid;}
+
+#closed{width:400px; background:url(../modules/system/site_close.png) left bottom no-repeat #FFF; margin-left:auto; margin-right:auto; margin-top:10%;}
+#closed .msg{color:#F00; font-size:1.5em; font-weight:bold; text-align:center; margin-bottom:10px;}
+#closed .form{text-align:right; height:200px}
+.footer-close{text-align:center; margin:0 auto; background:#FFF; width:400px; font-weight:bold;}

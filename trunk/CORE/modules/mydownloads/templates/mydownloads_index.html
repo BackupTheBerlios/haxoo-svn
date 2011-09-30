@@ -1,0 +1,48 @@
+<div id="mydl-wrapper">
+<h1><{$xoops_modulename}></h1>
+<{if count($categories) == 0}>
+<div id="mydl-nav" style="border-width: 0;">
+<{else}>
+<div id="mydl-nav">
+<{/if}>
+<{$smarty.const._MD_NEWARRIVAL}> | 
+<a href="<{$xoops_url}>/modules/mydownloads/filelist.php" target="_top"><{$smarty.const._MD_FILELIST}></a>
+<{if $xoops_isuser}> | 
+<a href="<{$xoops_url}>/modules/mydownloads/submit.php" target="_top"><{$smarty.const._MD_SUBMITCATHEAD}></a>
+<{/if}>
+</div>
+<{if count($categories) gt 0}>
+<div id="mydl-cat-list">
+<ul>
+<{foreach item=category from=$categories}>
+<{if $category.totaldownloads != 0}>
+<li>
+<div class="mydl-cat-main">
+<a href="<{$xoops_url}>/modules/mydownloads/viewcat.php?cid=<{$category.id}>">
+<{$category.title}>
+<span> (<{$category.totaldownloads}>)</span>
+</a>
+</div>
+<{if $category.subcategories != ""}>
+<div class="mydl-cat-sub">
+<{$category.subcategories}>
+</div>
+<{/if}>
+</li>
+<{/if}>
+<{/foreach}>
+</ul>
+</div>
+<{/if}>
+<{if $file != ""}>
+<div id="mydl-con">
+<h2><{$lang_latestlistings}></h2>
+<dl id="mydl-con-list">
+<{section name=i loop=$file}>
+<{include file="db:mydownloads_download.html" down=$file[i]}>
+<{/section}>
+</dl>
+</div>
+<{/if}>
+<{include file="db:system_notification_select.html"}>
+</div>

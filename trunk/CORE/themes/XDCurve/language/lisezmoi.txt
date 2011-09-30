@@ -1,0 +1,15 @@
+/**
+ * @translation     XOOPS France Team
+ * @specification   _LANGCODE: fr
+ * @specification   _CHARSET: UTF-8
+ *
+ * @version         $Id: lisezmoi.txt 1183 2010-06-19 23:03:49Z kris_fr $
+**/
+
+Information pour la localisation
+
+Structure du dossier :
+themes/themefolder/french:
+    main.php - define de langue
+    style.css - feuille de style spécifique à la langue
+    script.js - fichier javascript spécifique à la langue

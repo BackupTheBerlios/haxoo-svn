@@ -1,0 +1,296 @@
+/* --------- Hypertext links --------- */
+a {  
+  background-color : transparent;
+  color : #0599E3;
+  text-decoration : none;
+}
+a:hover {color : #333;}
+
+/* --------- Titles --------- */
+h1 {
+  font-size : 1.4em;
+  font-weight : bold;
+}
+h2 {font-size : 1.2em;}
+h3 {
+  padding-bottom : 3px;
+  font-size : 1em;  
+}
+h4 {font-size : 1em;}
+h5 {font-size : .9em;}
+h6 {font-size : .8em;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+img.border {
+  padding : 2px;
+  border : 1px solid #eee;
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul {
+  margin : 2px;
+  padding : 2px;
+  list-style : decimal inside;
+  text-align : left;
+}
+#xo-canvas-content li {
+  margin-left : 2px;
+  background-color : inherit;
+  color : #333;
+  line-height : 1.4em;
+  list-style :	disc inside;
+}
+
+hr {display : none;}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0; 
+}
+
+th {
+  background : #D6D6D6;
+  padding : 5px;
+  color : #666;
+  vertical-align : middle;
+  font-weight : normal;
+}
+.outer {}
+.head {
+  background : #E4E4E4;
+  padding : 8px;
+  color : #666;
+  font-weight : bold;
+}
+.odd, tr.odd td {
+  background: #EBEBEB;
+  padding : 5px;
+  border: 1px solid #E4E4E4;
+}
+
+.even, tr.even td {
+	background: #F4F4F4;
+  padding : 5px;
+  border: 1px solid #E4E4E4 ;
+}
+
+.foot {
+  background-color : #E8E8E8;
+  padding : 5px;
+  font-weight : bold;
+}
+
+#xo-canvas-rightcolumn th {
+  background : transparent;
+  padding : 5px;
+  color : #fff;
+  vertical-align : middle;
+  font-weight : normal;
+  border: 1px solid  #E4E4E4;
+}
+
+#xo-canvas-rightcolumn .odd, tr.odd td {
+  background-color: transparent;
+  padding : 5px;
+  border: 1px solid #E4E4E4;
+}
+
+#xo-canvas-rightcolumn .even, tr.even td {
+  background-color: transparent;
+  padding : 5px;
+   border: 1px solid #E4E4E4;
+}
+
+#xo-canvas-rightcolumn .foot {
+  background-color : transparent ;
+  padding : 5px;
+  font-weight : bold;
+  border: 1px solid #E4E4E4;
+}
+
+/*left col*/
+#xo-canvas-leftcolumn th {
+  background : transparent;
+  padding : 5px;
+  color : #fff;
+  vertical-align : middle;
+  font-weight : normal;
+  border: 1px solid  #E4E4E4;
+}
+
+#xo-canvas-lefttcolumn .odd, tr.odd td {
+  background: transparent;
+  padding : 5px;
+  border: 1px solid #E4E4E4;
+}
+
+#xo-canvas-leftcolumn .even, tr.even td {
+  background: transparent;
+  padding : 5px;
+  border: 1px solid #E4E4E4;
+}
+
+#xo-canvas-leftcolumn .foot {
+  background-color : transparent ;
+  padding : 5px;
+  font-weight : bold;
+  border: 1px solid #E4E4E4;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #FFCCCC;
+  padding : 10px;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.confirmMsg {
+  background-color : #DDFFDF;
+  padding : 10px;
+  color : #136C99;  
+  text-align : center;
+  font-weight : bold; 
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;   
+}
+.resultMsg {
+  background-color : #c1c1c1;
+  padding : 10px;
+  color : #333;
+  text-align : center;
+  font-weight : bold;
+  border-top : 1px solid #ccc;
+  border-left : 1px solid #ccc;  
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;  
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  max-height : 200px;
+  margin : 6px;
+  background-color : #fafafa;
+  padding : 6px; 
+  overflow : auto;
+  color : #666;
+  font-family : "Lucida Console", "courier new", monospace;
+  font-size : .9em; 
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #d79b02; 
+}
+.xoopsQuote {
+  margin : 6px;
+  background: #fafafa url("../img/quote.gif") no-repeat 5px 10px;  
+  padding : 6px 6px 6px 40px;  
+  font-style : italic;
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #d79b02; 
+}
+
+/* --------- Articles --------- */
+.item {margin-bottom : 10px; padding:3px; border: 1px solid #E4E4E4}
+.itemHead {
+  background : url("../icons/page.gif") no-repeat left;
+  padding : 3px 3px 3px 22px;  
+  color : #dfa102;
+  font-size : 1.1em;
+}
+.itemInfo { 
+  padding : 3px 3px 6px 3px;
+  text-align : right;
+  font-size : .95em;
+   border-top: 1px dashed #E4E4E4;
+}
+.itemTitle a {
+  background-color : transparent;
+  color : #0599E3;
+  font-size : 1em;
+  font-weight : bold;
+}
+.itemTitle a:hover {color : #454545;}
+.itemPoster {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 3px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  padding : 0 5px 0 5px;
+  line-height : 1.5em;
+}
+.itemFoot {  
+  background : url("../img/bghead.gif") repeat;
+  padding : 4px;
+  text-align : left;
+  border-top: 1px dashed #E4E4E4;
+}
+.itemAdminLink {font-size : .9em;}
+.itemPermaLink {font-size : .9em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px; 
+  background-color : #fff;
+  padding : 2px;  
+  color : #555;
+  font-size : .8em;
+  font-weight : bold;
+  border : 1px solid #ccc;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #555;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .85em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .8em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}

@@ -1,0 +1,221 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css - 12 01 2008 */
+
+/* IMPORTANT !!! :
+	propriety semantic order =
+	position box,
+	width,
+	heigth,
+	margin,
+	background-color,
+	background-image,
+	padding,
+	content (color, style font, ...),
+	border,
+	 ... */
+
+/* incorporation de feuilles de styles complmentaires */
+@import url(content.css);
+@import url(content-data.css);
+@import url(blocks.css);
+@import url(forms.css);
+
+/* reset des slecteurs */
+* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal;}
+
+
+
+/* beginning of the applicable styles */
+html, body {
+	margin:							0;
+	background: 			    #000;
+	padding:						0;
+	color:							#fff;
+	font-family:					"Lucida Grande", Verdana, sans-serif;
+	font-size:						10pt;
+}
+body.site_closed form {	padding: 1em 35%;}
+
+/* ======= Body box ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+	margin:							0;
+	background-color: 			    #fff;
+	color:							#333;
+}
+body.theme-dialog #xo-canvas {
+	margin:							0;
+}
+/*================= Content zone ===================*/
+#xo-canvas-content {
+	background:  #3b3b3b;
+	padding:						0px;
+	color:							#666;
+}
+#xo-page {
+	color:						#666;
+	border: 					1px;
+}
+#xo-canvas-rightcolumn {padding: .5em; }
+#xo-canvas-leftcolumn {padding: .5em;}
+#xo-content {
+	clear:							both;
+	margin:							0;
+	padding:							.5em;
+	color:							#f7f6f5;
+}
+#xo-uptop {
+	margin: 							0;
+	background-color: 			transparent;
+	padding-top: 					5px;
+	color: 							inherit;
+	font-size: 						.9em;
+	text-align:						right;
+}
+#xo-uptop a {
+	background-color: 			inherit;
+	color: 							#FBD61A;
+}
+#xo-uptop a:hover {
+   background-color: 				inherit;
+color: 								#01bdbc;
+}
+#xo-logger-output { font-size:	.8em;}
+/* ============== header ================= */
+#xo-top{height:299px; position:relative; margin:0 auto; padding:0px; background-image:url(../img/header_slice.gif); background-repeat:repeat-x; background-position:top;}
+#header{width:755px; height:299px; position:relative; margin:0 auto; padding:0px 9px 0px 14px;}
+#header img{height:86px; width:450px; position:absolute; top:0; left:161px; padding:0px;}
+#header ul{list-style-type:none; width:94px; height:145px; padding:23px 29px 20px 40px; position:absolute; top:103px; left:0px; background:url(../img/ul.gif) 0 0 no-repeat;}
+#header ul li{background:url(../img/bullet1.gif) 0 7px no-repeat #ccc; border-bottom:#929292 dotted 1px; font:12px/24px Verdana, Helvetica, sans-serif; font-weight:bold; color: #000; padding-left:10px;}
+#header ul li.contact{border:none;}
+#header ul li a{font-family:Verdana, Helvetica, sans-serif; font-size:12px; font-weight:bold; text-decoration:none; background:#ccc; color:#212121;}
+#header ul li a:hover{background:#ccc; color:#B53332; text-decoration:none;}
+#header h1{padding:137px 0px 0px 33px; background:url(../img/banner.jpg) 0 0 no-repeat #fff; width:547px; height:51px; font-family:Verdana, Helvetica, sans-serif; font-size:13px; font-weight:bold; color: #3B3B3B; position:absolute; top:103px; left:175px;}
+/*---------------------- site title in the header ----------------------------*/
+#xo-site-title {
+	position: 						relative;
+	top: 								10px;
+	background-color: 			transparent;
+	padding: 						10px 0 0 20px;
+	font-family:	 				"Lucida Grande","Trebuchet MS", Verdana, sans-serif;
+	font-size:						2.2em;
+	font-weight:					bold;
+}
+a#xo-site-title {
+	background-color: 			inherit;
+	color:							#01bdbc;
+}
+a:hover#xo-site-title {
+	background-color: 			inherit;
+	color: 							#fff;
+}
+#xo-site-title.commercial {
+	margin: 							0 20px;
+	padding: 						10px 0 0 0;
+ }
+ #xo-site-title.commercial a:hover {
+	background-color: 			inherit;
+	color:							#01bdbc;
+}
+/*----------------------- slogan in the header ------------------------*/
+#xo-site-slogan {
+	position: 						relative;
+	top: 								10px;
+	padding-left: 					70px;
+	font-style: 					italic;
+}
+#xo-site-slogan.commercial {}
+/*------------------------ Logo in the header ----------------------------*/
+#xo-main-logo {
+	position: 						relative;
+	top: 								15px;
+	background: 					inherit;
+	padding-left: 					10px;
+	color:							#666;
+	}
+#xo-main-logo.commercial {}
+/*-------- style forms in the header-----------*/
+#xo-banner form {
+	display:							inline;
+	margin:							0;
+}
+#xo-banner input {
+	width:							8em;
+	margin:							0 0 0 2px;
+	background-color:				#E2E2E2;
+	color:							#333;
+}
+/*=============== Style for the Footer  ====================*/
+#footermainPan{list-style-type:none; height:144px; background:url(../img/footerbg.gif) 0 0 repeat-x #3B3B3B; position:relative; margin:0 auto;  color:#fff; font:13px/22px "Trebuchet MS",Arial, Helvetica, sans-serif; clear:both; padding:30px 0 0;}
+#footerPan{width:878px; position:relative; margin:0 auto;}
+#footerlogoPan{display:block; width:215px; height:40px; position:absolute; top:0px; left:456px;}
+#footerPan ul{list-style-type:none; width:446px; position:absolute; top:0px; left:0px;}
+#footerPan li{list-style-type:none; float:left; }
+#footerPan ul li a{padding:0 10px 0; color:#fff; background: url(../img/footermenubg.gif) 0 0 repeat-x #3B3B3B; text-decoration:none;}
+#footerPan ul li a:hover{text-decoration:underline;}
+#footerPan ul.templateworld{width:250px; background:#3B3B3B; color:#fff; display:block; position:absolute; top:100px; left:10px;}
+#footerPan ul.templateworld li a{background:#3B3B3B; display:block; color:#fff; text-decoration:none;}
+#footerPan ul.templateworld li a:hover{text-decoration:underline;}
+#footerPan p.copyright{width:500px; background: url(../img/copyrightbg.gif) 0 0 repeat-x #3B3B3B; color:#fff; position:absolute; top:43px; left:1px;}
+#footerPanhtml{width:70px; height:24px; display:block; position:absolute; top:69px; left:5px;}
+#footerPanhtml a{width:65px; height:24px; display:block; background:url(../img/html-normal.gif) 0 0 no-repeat #3B3B3B; color:#fff; font-size:13px; line-height:23px; font-weight:bold; text-decoration:none;text-transform:uppercase; padding:0 0 0 5px;}
+#footerPanhtml a:hover{background:url(../img/html-hover.gif) 0 0 no-repeat #3B3B3B; color:#fff;}
+#footerPancss{width:58px; height:24px; display:block; position:absolute; top:70px; left:80px;}
+#footerPancss a{width:49px; height:24px; display:block; background:url(../img/css-normal.gif) 0 0 no-repeat #3B3B3C; color:#3B3B3B; font-size:13px; line-height:24px; font-weight:bold; text-decoration:none; text-transform:uppercase; padding:0 0 0 10px;}
+#footerPancss a:hover{background:url(../img/css-hover.gif) 0 0 no-repeat #3B3B3B; color:#3B3B3C; text-decoration:none;}
+/*========== Main menu block =============*/
+#mainmenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px;
+	font-weight: 					500;
+	border-bottom: 1px solid #666;
+}
+#mainmenu a:hover {
+    background-color:				#333 !important;
+	text-decoration:				none !important;
+	border-bottom: 1px solid #f7f7f7;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px; }
+#mainmenu a.menuSub {
+	background-color:				inherit;
+	padding-left: 					20px;
+	color:							#bfb88f;
+	font-size:						.8em;
+	font-style: 					italic;
+}
+#mainmenu a.menuSub:hover {
+	background-color: 			inherit;
+	color:							#f7f7f7;
+}
+
+/*============ Usermenu block ============*/
+#usermenu a {
+	display: 						block;
+	background-color: 			inherit;
+	padding: 						2px;
+	color:							#FBD61A;
+	font-size: 						0.8em;
+	font-weight: 					normal;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	background-color: 			inherit;
+	padding-left: 					1em;
+	color:							#666;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	border-left:					1px solid #666;
+	border-bottom:					1px solid #666;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: 			#333;
+	color: 							#ccc;
+}
+
+/*=========== for old templates system ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}

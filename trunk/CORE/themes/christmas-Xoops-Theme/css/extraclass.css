@@ -1,0 +1,54 @@
+/* ---------  Show class --------- */
+.clear {
+  clear : both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear : right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+.left {text-align : left;}
+.right {text-align : right;}
+.center {text-align : center;}
+.justify {text-align : justify; }
+.middle {vertical-align : middle;}
+.top {vertical-align :	top;}
+.bottom {vertical-align : bottom;}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size : 1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}

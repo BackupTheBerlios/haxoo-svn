@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html files -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+  <meta name="keywords" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="bleekk.com" />
+	
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+	
+	<{$xoops_module_header}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+  <noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+
+<div id="header">
+	<div id="logo">
+    	<a href="<{xoAppUrl}>"><img src="<{xoImgUrl img/logo.jpg}>" title="<{$xoops_pagetitle}>" /></a>
+    </div>
+    <div id="language">
+    Sprache w&auml;hlen: 
+    <a href="#"><img src="<{xoImgUrl img/de.gif}>" title="Deutsch" /></a>
+    <a href="#"><img src="<{xoImgUrl img/es.gif}>" title="Spanisch" /></a>
+    <a href="#"><img src="<{xoImgUrl img/ba.gif}>" title="Bosnisch" /></a>
+    </div>
+    <div id="header-menu">
+    	<ul>
+        	<li><a href="#">Mein Account</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Garantie</a></li>
+            <li><a href="#">R&uuml;cknahmebedingungen</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Navigation Menu -->
+<div id="top-menu">
+    <div id="suche">
+			<form method="get" action="<{xoAppUrl search.php}>">
+				<div id="search-field">
+                <input type="text" value="" maxlength="30" id="keywords" class="input-field" name="keywords"/>
+                <button value="draft" name="commit" type="submit"></button>
+                <div style="clear:both"></div>
+                </div>
+			</form>
+	</div>
+    <div id="menu">
+      <ul>
+          <li><a href="<{xoAppUrl}>">Home</a></li>
+          <li><a href="<{xoAppUrl}>">Angebote</a></li>
+          <li><a href="<{xoAppUrl}>">Neue Produkte</a></li>
+          <li><a href="<{xoAppUrl}>">Alle Produkte</a></li>
+          <li><a href="<{xoAppUrl}>">Kaufberatung</a></li>
+          <li><a href="<{xoAppUrl}>">Vergleich</a></li>
+      </ul>
+	</div>
+</div>
+
+<div id="xo-canvas">  
+  <!-- End header -->
+  <table id="xo-canvas-content" cellspacing="0">
+	
+    	<tr>
+        	<td>
+            <table>
+            	 <{if $xoops_showrblock}>
+                <tr>
+                	<td colspan="2" id="slogan-header">
+                    
+                    </td>
+                </tr>
+                <{/if}>
+                <tr>
+                	<!-- Start left blocks loop -->
+		  <{if $xoops_showlblock}>
+					<td id="xo-canvas-leftcolumn">
+					<{foreach item=block from=$xoBlocks.canvas_left}>
+					<{includeq file="$theme_name/theme_blockleft.html"}>
+					<{/foreach}>         
+					 </td>
+		 <{/if}>
+		<!-- End left blocks loop -->
+                    <td id="xo-page">
+		<!-- Start center top blocks loop -->
+		<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+		<table  id="xo-topblocks" cellspacing="0">
+			<tr>
+					<td id="xo-topcenterblocks" colspan="2">
+					<{foreach item=block from=$xoBlocks.page_topcenter}>
+					<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+			<tr>
+					<td id="xo-topleftblocks">
+					<{foreach item=block from=$xoBlocks.page_topleft}>
+					<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+					<{/foreach}>
+					</td>
+					
+					<td id="xo-toprightblocks">
+					<{foreach item=block from=$xoBlocks.page_topright}>
+					<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+		</table>
+		<{/if}>
+		<!-- End center top blocks loop -->
+		
+		<!-- Start content module page -->
+        <div id="xo-content"><{$xoops_contents}></div>
+		<!-- End content module -->
+	
+	    <!-- Start center bottom blocks loop -->
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+		<table id="xo-bottomblocks" cellspacing="0">
+		<{if $xoBlocks.page_bottomcenter}>
+		<tr>
+				<td id="xo-bottomcenterblocks" colspan="2">
+				<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}><{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+				<td id="xo-bottomleftblocks">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+				<{include file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+				</td>
+				
+				<td id="xo-bottomrightblocks">
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+				<{include file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		</table>
+		<{/if}>
+		<!-- End center bottom blocks loop -->
+      </td>
+                </tr>
+            </table>
+            </td>
+            
+        <{if $xoops_showrblock}>
+		<td id="xo-canvas-rightcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_right}>
+          <{includeq file="$theme_name/theme_blockright.html"}>
+        <{/foreach}>
+		</td>
+		<{/if}>
+        </tr>
+           
+    
+  </table>
+  <!-- Start footer -->
+<div id="footer">
+	<p>Designed by <a href="http://www.bleekk.com" target="_blank">bleekk.com</a> | <{$xoops_footer}></p>
+</div>
+  <!-- end Footer -->
+</div>
+
+</body>
+</html>

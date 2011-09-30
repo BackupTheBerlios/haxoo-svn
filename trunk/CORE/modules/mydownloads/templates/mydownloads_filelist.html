@@ -1,0 +1,91 @@
+<div id="mydl-container">
+	<div id="mydl-header">
+		<div id="header-title">
+			<h1><a href="<{$xoops_url}>/modules/mydownloads/" target="_top"><{$mod_name}></a></h1>
+		</div>
+		<div id="header-menu">
+			<ul>
+			<{foreach item=sub_menu from=$sub_menu}>
+				<li>
+					<a href="<{$sub_menu.url}>"><{$sub_menu.name}></a>
+					&nbsp;
+				</li>
+			<{/foreach}>
+			</ul>
+		</div>
+	</div>
+	<div id="mydl-contents">
+		<{if $deleteok}>
+			<form action="filelist.php" method="POST">
+				<img src="./images/delete.gif" />
+				<{$deleteok}>
+				<input type="hidden" name="lid" value="<{$lid}>" />
+				<input type="hidden" name="filename" value="<{$filename}>" />
+				<input type="hidden" name="command" value="deleteok" />
+				<input type="hidden" name="sortname" value="<{$sortname}>" />
+				<input type="hidden" name="sortorder" value="<{$sortorder}>" />
+				<input type="submit" name="submit" value="<{$smarty.const._MD_DELETE}>" />
+			</form>
+		<{/if}>
+		<table class="table-datatable">
+			<thead>
+				<tr>
+					<th>
+						<a href="<{$smarty.server.PHP_SELF}>?sortname=name&sortorder=<{$altsortorder}>">
+							<{$smarty.const._MD_FILENAME}>
+						</a>
+					</th>
+					<th>
+						<a href="<{$smarty.server.PHP_SELF}>?sortname=size&sortorder=<{$altsortorder}>">
+							<{$smarty.const._MD_SIZE}>
+						</a>
+					</th>
+					<th>
+						<a href="<{$smarty.server.PHP_SELF}>?sortname=type&sortorder=<{$altsortorder}>">
+							<{$smarty.const._MD_TYPE}>
+						</a>
+					</th>
+					<th>
+						<a href="<{$smarty.server.PHP_SELF}>?sortname=date&sortorder=<{$altsortorder}>">
+							<{$smarty.const._MD_DATE}>
+						</a>
+					</th>
+					<th>
+						<{$smarty.const._MD_CTRL}>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<{foreach item=i from=$flist}>
+					<tr class="<{cycle values='odd,even'}>">
+						<td>
+							<a href="visit.php?filename=<{$i.name}>"><{$i.name}></a>
+						</td>
+						<td align="right">
+							<{$i.size|number_format}>
+						</td>
+						<td>
+							<{$i.type}>
+						</td>
+						<td>
+							<{$i.date}>
+						</td>
+						<td>
+							<{if $isadmin || $i.delok}>
+								<a href="filelist.php?lid=<{$i.lid}>&filename=<{$i.name}>&command=delete&sortname=<{$sortname}>&sortorder=<{$sortorder}>">
+								<img src="./images/delete.gif" />
+								</a>
+							<{/if}>
+							<{if $i.singlefile}>
+								<a href="<{$i.singlefile}>"><img src="./images/stats.gif" /></a>
+							<{/if}>
+						</td>
+					</tr>
+				<{/foreach}>
+			</tbody>
+		</table>
+	    <{$page_nav}>
+	</div>
+</div>
+
+

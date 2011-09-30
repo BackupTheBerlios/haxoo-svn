@@ -1,0 +1,58 @@
+<div id="xo-userbar">
+  <{if !$xoops_isuser}>
+    <!-- Menu in anonymous mode-->
+    <form method="post" action="<{xoAppUrl /user.php op=login}>">
+      <p>
+        <!-- Pseudo -->
+        Username: <br  /><input class="uname" name="uname" type="text" title="Pseudo" size="17" /><br  /><br />
+        <!-- Password -->
+        Password: <br /><input class="password" name="pass" type="password" title="Password" size="17" /><br  />
+        <!-- Submit button -->
+        <input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />		
+		    <{if $lang_siteclosemsg}>
+		    <input type="hidden" name="xoops_login" value="1" />
+		    <{/if}>
+        <button type="submit" style="background:transparent; border:none; padding-top:2px; padding-left:23px;"><img src="<{xoImgUrl icons/user/login.png}>" alt="Login" /></button>
+      </p>  
+    </form>    
+    <!-- Register link -->
+	<div style="padding-left:24px; padding-top:10px;">
+    <p class="register">
+      <a href="<{xoAppUrl register.php}>">Register now !</a><br  />
+	  <a href="<{xoAppUrl user.php#lost}>">Lost Password</a>
+    </p>
+	</div>
+    <{else}>
+    
+		<!-- Menu in recorded mode -->
+		<div class="usermenu">
+		  <p class="welcome">
+        Welcome <a class="uname" href="<{xoAppUrl /user.php}>" title="View Account"><{$xoops_uname}></a>
+      </p><br />	
+      <!-- For my message box  -->
+		  <{xoInboxCount assign=pmcount}>
+		  <a href="<{xoAppUrl viewpmsg.php}>">
+	  	<{if $pmcount}>
+		  	<!-- If I have messages -->
+		  	<img src="<{xoImgUrl icons/user/inbox-full.png}>" alt="unread message(s)"/>
+		  <{else}>
+			  <!-- If I do not have a message -->
+			  <img src="<{xoImgUrl icons/user/inbox.png}>" alt="Inbox"/>
+		  <{/if}>
+		  </a> 
+		  <!-- End my message box-->
+			
+		  <a href="<{xoAppUrl /notifications.php}>" title="Notifications"><img src="<{xoImgUrl icons/user/note_view.png}>" alt="View Notifications"/></a> 
+		  <a href="<{xoAppUrl /user.php}>" title="View Account"><img src="<{xoImgUrl icons/user/profile.png}>" alt="View Account"/></a> 
+		  <a href="<{xoAppUrl /search.php}>" title="Search"><img src="<{xoImgUrl icons/user/find.png}>" alt="Search" /></a>
+
+		  <!-- Additional link if I have rights of administration of module -->
+		  <{if $xoops_isadmin}>
+			  <a href="<{xoAppUrl /admin.php}>" title="Administration"><img src="<{xoImgUrl icons/user/configuration.png}>" alt="Administration" /></a> 
+		  <{/if}>
+		  <!-- End additional link-->
+
+		  <a href="<{xoAppUrl /user.php op=logout}>" title="Logout" ><img src="<{xoImgUrl icons/user/exit.png}>" alt="Logout"/></a>    
+    </div>
+  <{/if}>
+</div>

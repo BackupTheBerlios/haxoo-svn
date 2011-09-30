@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc><{$smarty.const.XOOPS_URL}>/</loc>
+<{if $sitemap.xmlhomelastmod}><lastmod><{$sitemap.xmlhomelastmod}></lastmod><{/if}>
+<{if $sitemap.xmlhomecf}><changefreq><{$sitemap.xmlhomecf}></changefreq><{/if}>
+<{if $sitemap.xmlhomepriority}><priority><{$sitemap.xmlhomepriority}></priority><{/if}>
+</url>
+
+<{foreach name=i item=module from=$sitemap.modules}>
+
+  <{if $module.name}>
+    <url>
+      <loc><{$smarty.const.XOOPS_URL}>/modules/<{$module.directory}>/</loc>
+      <{if $module.lastmod}><lastmod><{$module.lastmod}></lastmod><{/if}>
+      <{if $module.changefreq}><changefreq><{$module.changefreq}></changefreq><{/if}>
+      <{if $module.priority}><priority><{$module.priority}></priority><{/if}>
+    </url>
+
+    <{foreach item=parent from=$module.parent}>
+      <url>
+        <loc><{$smarty.const.XOOPS_URL}>/modules/<{$module.directory}>/<{$parent.url}></loc>
+        <{if $parent.lastmod}><lastmod><{$parent.lastmod}></lastmod><{/if}>
+        <{if $parent.changefreq}><changefreq><{$parent.changefreq}></changefreq><{/if}>
+        <{if $parent.priority}><priority><{$parent.priority}></priority><{/if}>
+      </url>
+      
+      <{if $show_subcategoris}>
+      <{foreach item=child from=$parent.child}>
+        <url>
+          <loc><{$smarty.const.XOOPS_URL}>/modules/<{$module.directory}>/<{$child.url}></loc>
+          <{if $child.lastmod}><lastmod><{$child.lastmod}></lastmod><{/if}>
+          <{if $child.changefreq}><changefreq><{$child.changefreq}></changefreq><{/if}>
+          <{if $child.priority}><priority><{$child.priority}></priority><{/if}>
+        </url>
+      <{/foreach}>
+      <{/if}>
+
+    <{/foreach}>
+    <{foreach item=sublink from=$module.sublinks}>
+      <url>
+        <loc><{$sublink.url}></loc>
+        <{if $sublink.lastmod}><lastmod><{$sublink.lastmod}></lastmod><{/if}>
+        <{if $sublink.changefreq}><changefreq><{$sublink.changefreq}></changefreq><{/if}>
+        <{if $sublink.priority}><priority><{$sublink.priority}></priority><{/if}>
+      </url>
+    <{/foreach}>
+  <{/if}>
+
+<{/foreach}>
+
+</urlset>

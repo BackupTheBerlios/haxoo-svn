@@ -1,0 +1,35 @@
+<div id="xo-userbar">
+    <{if !$xoops_isuser}>
+	<p>Login Panel</p>
+        <form method="post" action="<{xoAppUrl /user.php op=login}>">
+            <{$smarty.const._LOGIN}>&nbsp;
+            <input name="uname" type="text" />&nbsp;&nbsp;<input name="pass" type="password"/>
+            <input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+
+            <{if $lang_siteclosemsg}>
+                <input type="hidden" name="xoops_login" value="1" />
+            <{/if}>
+            <button type="submit"><img src="<{xoImgUrl /icons/users/home.png}>" title="Login" alt="<{$smarty.const._LOGIN}>" /></button>
+        </form>
+        <{if !$lang_siteclosemsg}>
+            &nbsp;oder&nbsp;<a href="<{xoAppUrl /register.php}>" class="register" title="Registrieren"><{$smarty.const._REGISTER}></a>
+        <{/if}>
+    <{else}>
+	<p>User Panel</p>
+        <{xoInboxCount assign=pmcount}>
+        <a href="<{xoAppUrl viewpmsg.php}>" title="Postfach">
+        <{if $pmcount}>
+            <img src="<{xoImgUrl /icons/users/inbox-full.png}>" alt="<{$pmcount}> <{$smarty.const._THEME_INBOX_NOTREAD}>"/>
+        <{else}>
+            <img src="<{xoImgUrl icons/users/inbox.png}>" alt="<{$smarty.const._THEME_INBOX}>"/>
+        <{/if}>
+        </a>
+        <a href="<{xoAppUrl /notifications.php}>" title="Benachrichtigungen"><img src="<{xoImgUrl icons/users/note_view.png}>" alt="<{$smarty.const._THEME_NOTIFICATIONS}>"/></a>
+        <a href="<{xoAppUrl /user.php}>" title="Mein Profil"><img src="<{xoImgUrl icons/users/profile.png}>" alt="<{$smarty.const._THEME_PROFILE}>"/></a>
+
+        <{if $xoops_isadmin}>
+            <a href="<{xoAppUrl /admin.php}>" title="Adminpanel"><img src="<{xoImgUrl icons/users/configuration.png}>" alt="<{$smarty.const._THEME_ADMINISTRATION}>" /></a>
+        <{/if}>
+        <a href="<{xoAppUrl /user.php op=logout}>" title="Logout" ><img src="<{xoImgUrl icons/users/exit.png}>" alt="<{$smarty.const._THEME_LOGOUT}>"/></a>
+    <{/if}>
+</div>

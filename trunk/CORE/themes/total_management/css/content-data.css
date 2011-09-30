@@ -1,0 +1,367 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : content-data.css - 12 01 2008 */
+
+
+/*============== Style for userbar.html =================*/
+#xo-userbar {
+	display:							block;
+	float: 							right;
+	background-color: 			inherit;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color:							#666;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	background-color:				transparent;
+	background-image: 			none;
+	padding:							0;
+	border:							none;
+	color: 							inherit;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar img {
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar input {
+	width: 							80px;
+	color:							#333;
+}
+#xo-userbar input:hover {
+	background-color: 			#DBDCDC;
+	color:							#333;
+}
+#xo-userbar a {
+	background-color: 			inherit;
+	color: 							#FBD61A;
+	text-decoration:				none;
+}
+#xo-userbar a:hover {
+	background-color: 			inherit;
+	color: 							#01bdbc;
+}
+a#xo-uname {
+	background-color:				inherit;
+	color: 							#ff0000;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+/*========== Style for searchbar.html ==============*/
+#xo-searchbar {
+	display:							block;
+	float: 							left;
+	margin-top: 					5px;
+	margin-left : 					1em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	color:							#333;
+}
+#xo-searchbar input[type=text]:hover {
+	background-color:				#E2E2E2;
+	color:							#333;
+}
+/*=============  Style for language.html ============= */
+#xo-language {
+	display: 						block;
+	float:							left;
+	margin-top :					5px;
+	background-color: 			inherit;
+	padding-left: 					1em;
+	color:							#666;
+}
+#xo-language img{
+	width: 							22px;
+	height: 							22px;
+}
+/*============= Style for accessibilitybar.html ================*/
+#xo-accessibilitybar {
+	display:							block;
+	float: 							right;
+	padding-top: 					2px;
+	padding-right:					1em;
+}
+#xo-accessibilitybar a {
+	text-decoration: 				none;
+	border: 							none;
+}
+#xo-accessibilitybar img {
+	width: 							22px;
+	height: 							22px;
+}
+
+/*============== Styles for userbar_siteclosed.html =================*/
+#xo-userbar_siteclosed {
+	display:							block;
+	float: 							right;
+	background-color: 			inherit;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color:							#666;
+}
+#xo-userbar_siteclosed form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar_siteclosed button {
+	margin: 							0 -3px;
+	background-color:				transparent;
+	background-image: 			none;
+	color: 							inherit;
+	padding:							0;
+	border:							none;
+}
+#xo-userbar_siteclosed button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar_siteclosed button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar_siteclosed input {
+	width: 							80px;
+	color:							#333;
+}
+#xo-userbar_siteclosed input:hover {
+	background-color: 			#DBDCDC;
+	color:							#333;
+}
+/*============= Style for globalnav.html ================*/
+#xo-globalnav {
+	min-height:						30px;
+	margin:							0px;
+	background-color:				#424242;
+	padding :						2px 0;
+	color:							#393939;
+	font-size:						1.1em;
+	font-weight: 					bold;
+	text-align: 					center;
+}
+* html #xo-globalnav { height: 30px; }
+
+#xo-globalnav .x2-label {
+	display:							none;
+}
+#xo-globalnav ul {
+	padding:							3px;
+	list-style-type:				none;
+}
+#xo-globalnav li {
+	display:							inline;
+	margin:							0;
+	padding-left:					.5em;
+	padding-right:					.5em;
+	font-size: 						.9em;
+}
+#xo-globalnav a {
+	background-color:				inherit;
+	color:							#f0f0f0;
+	font-weight: 					bold;
+	text-decoration:				none;
+}
+#xo-globalnav a:hover {
+	background-color:				inherit;
+	color:							#01bdbc;
+	text-decoration:				none;
+}
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	background-color: 			inherit;
+	padding: 						0 0 15px 10px;
+	color : 							#666;
+	font-size:						.8em;
+}
+/*============== Styles for system_siteclosed.html =================*/
+#xo-siteclose {
+	width:							400px;
+	margin:							100px auto;
+	background-color:				#e2e2e2;
+	padding:							30px;
+	color:							#000;
+	font-size: 						1.2em;
+	font-weight: 					bold;
+	text-align: 					center;
+	border:							1px solid #666;
+}
+/*============== Styles for system_redirect.html =================*/
+#xo-redirect {
+	width:							780px;
+	margin:							50px auto;
+	padding:							1em;
+	font-weight:					bold;
+	text-align:						center;
+}
+#xo-redirect .notreload {
+	height:							28px;
+	background-color:				inherit;
+	padding-top:					2px;
+	color:							#fff;
+}
+#xo-redirect .notreload a {
+	background-color: 			inherit;
+	color:							#ff0000;
+	font-weight:					bold;
+	text-decoration: 				none;
+}
+#xo-redirect .message {
+	min-height:						60px;
+	background-color: 			#f3f3f3;
+	padding:							1em;
+	color:							#333;
+	font-size:						1.2em;
+	text-align:						center;
+	border:		 					solid 1px #666;
+}
+#xo-redirect .message img{	padding:	1em;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*======== others float class ======== */
+.floatleft {
+	float: 							left;
+	margin-top: 					1em;
+	margin-right : 				1em;
+	padding-left: 					4px;
+	border: 							0;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	padding: 						2px;
+	border: 							0;
+}
+/*========  others alignment class ======== */
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align:			justify; }
+.middle { vertical-align: 		middle;}
+.top { vertical-align: 			top;}
+.bottom { vertical-align: 		bottom;}
+/*========  others width class ======== */
+.width100 { width: 				100%; }
+.width95 {width:					95%}
+.width75 { width: 				75%; }
+.width50 { width: 				50%; }
+.width33 { width: 				33%; }
+.width25 { width: 				25%; }
+.width20 { width: 				20%; }
+
+/* ========= others font class ========== */
+.small {	font-size: .92em;}
+.normal { font-size: 1em;}
+.big { font-size: 1.17em;}
+.maxi { font-size: 1.5em;}
+
+.bold { font-weight: bold;}
+.italic {font-style: italic;}
+/*========  others display class ======== */
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/* ======== others hypertext links ================ */
+a.printable, a.pdf, a.friend {
+	width:							22px;
+	height:							22px;
+	background-repeat:			no-repeat;
+	background-position:			left top;
+	text-indent:					-1000em;
+}
+a.printable	{	background-image: url(../icons/action/printable.png); }
+a.pdf	{	background-image: url(../icons/action/pdf.png); }
+a.friend	{	background-image: url(../icons/action/friend.png); }
+
+/*======== body for tinyeditor/inbetwen module ======== */
+body.mceContentBody {
+	background-color: 			#fff;
+	background-image: 			none;
+	color: 							#333;
+}
+/* ======== for accessibility ================ */
+/*a[hreflang]:after {
+	content: "\0000a0[alt+" attr(hreflang) "]";
+}
+a[accesskey]:after {
+	content: "\0000a0[alt+" attr(accesskey) "]";
+}*/
+
+/* -- signature in CBB/NewBB -- */
+.signature {
+	font-style: italic;
+	font-size: .9em;
+}
+
+/* ============ Style for notification form ============ */
+span.notification_title {
+	font-size:.9em;
+	font-weight:bold;
+}
+
+
+/*----BODY BOTTOM PANEL----*/
+#bodyBottomPan{width:690px; background:url(../img/body_shadow.gif) 0 0 no-repeat; position:relative; margin:0 auto; padding:54px 0 0 88px; clear:both;}
+/*----Info Panel----*/
+#infoPan{width:187px; height:192px; background:url(../img/infopanelbg.jpg) 0 100% no-repeat #3B3B3B; float:left; margin:0 28px 0 0; color:#524201; font:13px/17px Verdana, Arial, Helvetica, sans-serif;}
+#infoPan h2{width:163px; height:40px; background:url(../img/infopaneltop.jpg) 0 0 no-repeat #3B3B3B; color:#fff; font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; padding:30px 0 0 24px;}
+#infoPan p{padding:10px 0 0 24px; line-height:17px;}
+#infoPan p.view{width:66px; height:18px; padding:10px 0 0 24px;}
+#infoPan p.view a{width:66px; height:18px; display:block; background:url(../img/infoview-normal.gif) 0 0 no-repeat #F0C40E; color:#fff; font:12px/18px Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; text-decoration:none;}
+#infoPan p.view a:hover{background:url(../img/infoview-hover.gif) 0 0 no-repeat #F0C40E; color:#fff; text-decoration:none;}
+/*----/Info Panel----*/
+
+/*----Services Panel----*/
+#servicesPan{width:187px; height:192px; background:url(../img/servicespanelbg.jpg) 0 100% no-repeat #3B3B3B; color:#212121; float:left; margin:0 28px 0 0; font:13px/17px Verdana, Arial, Helvetica, sans-serif;}
+#servicesPan h2{width:163px; height:40px; background:url(../img/servicespaneltop.jpg) 0 0 no-repeat #3B3B3B; color:#fff; font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; padding:30px 0 0 24px;}
+#servicesPan p{padding:10px 0 0 24px; line-height:17px;}
+#servicesPan p.view{width:66px; height:18px; padding:10px 0 0 24px;}
+#servicesPan p.view a{width:66px; height:18px; display:block; background:url(../img/servicesview-normal.gif) 0 0 no-repeat #B8B8B8; color:#fff; font:12px/18px Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; text-decoration:none;}
+#servicesPan p.view a:hover{background:url(../img/servicesview-hover.gif) 0 0 no-repeat #B8B8B8; color:#fff; text-decoration:none;}
+/*----/Services Panel----*/
+
+/*----Schedule Panel----*/
+#schedulePan{width:187px; height:192px; background:url(../img/schedulepanelbg.jpg) 0 100% no-repeat #3B3B3B; color:#fff; float:left; margin:0 28px 0 0; font:13px/17px Verdana, Arial, Helvetica, sans-serif;}
+#schedulePan h2{width:163px; height:40px; background:url(../img/schedulepaneltop.jpg) 0 0 no-repeat #3B3B3B; color:#fff; font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; padding:30px 0 0 24px;}
+#schedulePan p{padding:10px 0 0 24px; line-height:17px;}
+#schedulePan p.view{width:66px; height:18px; padding:10px 0 0 24px;}
+#schedulePan p.view a{width:66px; height:18px; display:block; background:url(../img/scheduleview-normal.gif) 0 0 no-repeat #E45D5D; color:#fff; font:12px/18px Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; text-decoration:none;}
+#schedulePan p.view a:hover{background:url(../img/scheduleview-hover.gif) 0 0 no-repeat #E45D5D; color:#fff; text-decoration:none;}
+/*----/Schedule Panel----*/
+
+/*----BOTOM PANEL----*/
+#bottomPan{height:282px; background:url(../img/bottombg.gif) 0 0 repeat-x; position:relative; margin:0 auto; padding:65px 0 0; clear:both;}
+
+#bottomMainPan{width:778px; position:relative; margin:0 auto; padding:50px 0 0;}
+#bottomBorderPan{width:778px; float:left; background:url(../img/bottomborder-bg1.gif) 0 0 repeat-y;}
+#bottomBorderPan h2{width:210px; height:40px; position:absolute; top:28px; left:0px; display:block; background:#ccc; color:#0C0C0C; font:24px/40px Georgia, "Times New Roman", Times, serif;}
+#bottomBorderPan h3{width:210px; height:40px; position:absolute; top:28px; left:259px; display:block; background:#ccc; color:#0C0C0C; font:24px/40px Georgia, "Times New Roman", Times, serif;}
+#bottomBorderPan h4{width:210px; height:40px; position:absolute; top:28px; left:517px; display:block; background:#ccc; color:#0C0C0C; font:24px/40px Georgia, "Times New Roman", Times, serif;}
+
+#bottomBorderPan ul{list-style-type:none; float:left; width:248px; padding:25px 0 0;}
+#bottomBorderPan ul li{list-style-type:none; width:225px; height:22px; margin:0 10px 0 0;}
+#bottomBorderPan ul li a{list-style-type:none; width:200px; height:22px; display:block; background:url(../img/arrow-normal.gif) 0 8px no-repeat #ccc; color:#3D3C2C; font:14px/22px Arial, Helvetica, sans-serif; text-decoration:none; padding:0 0 0 16px;}
+#bottomBorderPan ul li a:hover{list-style-type:none; background:url(../img/arrow-hover.gif) 0 8px no-repeat #BDBDBD; color:#3D3C2C; text-decoration:none;}
+/*----/BOTOM PANEL----*/

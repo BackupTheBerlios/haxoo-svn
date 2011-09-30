@@ -1,0 +1,184 @@
+
+#mydl-sidepanel{ float: left; width: 23%; }
+#mydl-sidepanel .mydl-panel-inner{  }
+#mydl-mainpanel{ float: right; width: 75%; }
+#mydl-mainpanel .mydl-panel-inner{ border-left: 1px solid #ccc; padding-left: 20px; }
+
+#mydl-wrapper{
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.1ex;
+	color: #333;
+}
+#mydl-wrapper h1{
+	font-size: 200%;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+#mydl-wrapper h1 a{
+	text-decoration: none;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#mydl-nav{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 90%;
+	text-align: right;
+}
+#mydl-path{
+	float: left;
+	text-align: left;
+}
+#mydl-cat-list ul{
+	margin: 0;
+	padding: 10px 0;
+}
+#mydl-cat-list ul li{
+	float: left;
+	width: 47%;
+	margin: 0 2% 2% 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #333;
+	color: #fff;
+	font-size: 90%;
+}
+.mydl-cat-sub{
+	border-top: 1px solid #666;
+	padding: 5px 10px 10px;
+}
+.mydl-cat-main a,
+.mydl-cat-sub a{
+	color: #fff;
+	text-decoration: none;
+}
+.mydl-cat-main a{
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.mydl-cat-main a:hover{
+	padding: 10px;
+	background-color: #666;
+}
+.mydl-cat-sub a:hover{
+	border-bottom: 1px solid #666;
+	padding-bottom: 3px;
+}
+.mydl-cat-main a span{
+	font-weight: normal;
+}
+#mydl-con{
+	clear: left;
+	margin-top: 10px;
+	border-top: 1px solid #ccc;
+}
+#mydl-sortbttn{
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #dcdcdc;
+	font-size: 80%;
+}
+#mydl-sortbttn span{
+	font-weight: bold;
+}
+#mydl-sortbttn ul,
+#mydl-sortbttn li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#mydl-sortbttn li{
+	list-style-type: none;
+	padding-left: 10px;
+}
+#mydl-sortbttn a{
+	margin: 0 5px;
+}
+#mydl-con h2{
+	padding: 20px 0 20px;
+	font-size: 120%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#mydl-con-list{
+	margin: 0;
+	padding: 0;
+}
+#mydl-con-list dt,
+#mydl-con-list dd{
+	margin: 0;
+}
+#mydl-con-list dt{
+	margin: -1px 0 0;
+	padding: 10px 10px 10px 40px;
+	border: 1px solid #ccc;
+	border-width: 1px 1px 0;
+	background: #fff url(images/file_icon.png) no-repeat 10px 10px;
+	zoom: 1; /* for IE Bug */
+}
+#mydl-con-list dd{
+	margin-bottom: 10px;
+	padding: 0 10px 10px 40px;
+	border: 1px solid #ccc;
+	border-width: 0 1px 1px;
+}
+#mydl-con-list dt a{
+	border-bottom: 1px dashed #ccc;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #333;
+}
+#mydl-con-list dt a img{ border-width: 0; }
+#mydl-con-list dd a img{
+	float: right;
+	border-width: 0;
+	margin: 0 0 10px 10px;
+}
+.mydl-list-desc{
+	padding: 0 0 10px;
+	font-size: 90%;
+}
+.mydl-list-info{
+	clear: right;
+	padding: 5px;
+	background-color: #dcdcdc;
+}
+.mydl-list-info ul,
+.mydl-list-info ul li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.mydl-list-info ul li{
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: 1px solid #333;
+	font-size: 80%;
+}
+.mydl-list-info .mydl-list-info-1st{
+	border-width: 0;
+}
+.mydl-table{
+	width: 100%;
+	margin: 10px 0 0;
+	padding: 0;
+}
+.mydl-table,
+.mydl-table th,
+.mydl-table td{
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+.mydl-table th,
+.mydl-table td{
+	padding: 3px;
+}
+.mydl-table th a{
+	text-decoration: none;
+	border-bottom: 1px dashed #ccc;
+	color: #333;
+}
+.mydl-tcell-num{ text-align: right; }

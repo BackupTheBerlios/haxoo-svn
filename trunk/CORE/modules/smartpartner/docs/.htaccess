@@ -1,0 +1,12 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^associates/(.*?)/comment_(.*?) modules/smartpartner/comment_$3 [L,NC,QSA]
+RewriteRule ^associates/(.*?)/([0-9]+) modules/smartpartner/partner.php?title=$1&id=$2  [L,NC,QSA]
+RewriteRule ^associates/(.*?)/vpartner.php?id=([0-9]+) modules/smartpartner/vpartner.php?id=$2  [L,NC,QSA]
+RewriteRule ^associates/(.*?)/vpartner.php(.*?)$ modules/smartpartner/vpartner.php?$2  [L,NC,QSA]
+RewriteRule ^associates/(.*?)/ modules/smartpartner/partner.php?title=$1  [L,NC,QSA]
+RewriteRule ^associates/([0-9]+) modules/smartpartner/index.php?start=$1 [L,NC,QSA]
+RewriteRule ^associates/ modules/smartpartner/index.php [L,NC,QSA]

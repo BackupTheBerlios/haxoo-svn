@@ -1,0 +1,22 @@
+/* Theme Factory v-0.1 Alpha
+Author				:					Angelo Rocha
+Site URL			:					www.angelorocha.com.br
+Contact				:					contato@angelorocha.com.br
+Theme				:					Jingle Bell Rock
+*/
+
+*{margin:0; padding:0;}
+
+img{border:0;}
+
+body{background:#2F0000 url(../images/back.jpg) no-repeat center top; font-size:12px; font-family:Arial;}
+
+a{color:#660000; text-decoration:none; font-weight:bold;}
+
+a:hover{color:#F00;}
+
+ul{text-align:left; font-weight:bold;}
+
+li{list-style:outside circle; margin-left:10px;}
+
+h1{font-size:1.6em;} h2{font-size:1.5em;} h3{font-size:1.4em;} h4{font-size:1.3em;} h5{font-size:1.2em;} h6{font-size:1.1em;}

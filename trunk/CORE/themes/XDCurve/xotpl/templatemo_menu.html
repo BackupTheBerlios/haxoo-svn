@@ -1,0 +1,16 @@
+<div id="templatemo_menu">
+    
+          <ul>
+					<{php}>
+					    include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php';
+					    $modules = b_system_main_show();
+					    $this->assign('defModules', $modules);
+					<{/php}>
+					
+					<li><a href="<{$xoops_url}>" <{if $xoops_dirname == "system"}> class="current"<{/if}>><span>Accueil</span></a></li>
+					<{foreach item=module from=$defModules.modules}>
+					<li><a href="<{$xoops_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname== $module.directory}> class="current"<{/if}> title="<{$module.name}>"><span><{$module.name}></span></a>
+					<{/foreach}>
+				</ul>  
+    
+    </div>

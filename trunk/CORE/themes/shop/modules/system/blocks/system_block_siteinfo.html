@@ -1,0 +1,23 @@
+
+  <{if $block.showgroups == true}>
+    <table cellspacing="0">
+  <!-- start group loop -->
+  <{foreach item=group from=$block.groups}>
+  <tr>
+    <td colspan="2"><h4><{$group.name}></h4></td>
+  </tr>
+
+  <!-- start group member loop -->
+  <{foreach item=user from=$group.users}>
+  <tr>
+    <td valign="middle" align="center"><img src="<{$user.avatar}>" alt="<{$user.name}>'s avatar" width="32px" /><a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a></td><td width="20%" align="right" valign="middle">       
+	<br /><{$user.msglink}></td>
+  </tr>
+  <{/foreach}>
+  <!-- end group member loop -->
+
+  <{/foreach}>
+  <!-- end group loop -->
+</table>
+<{/if}>
+

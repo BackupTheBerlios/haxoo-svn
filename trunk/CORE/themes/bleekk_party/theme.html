@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html files -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+  <meta name="keywords" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="" />
+	
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- Sheet Css -->
+
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+	
+	
+	
+	<{$xoops_module_header}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+  <noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+
+<div id="header-top">
+<div class="usermenu">
+<{if $xoops_isuser}>
+	<{if $xoops_isadmin}><a href="<{$xoops_url}>/admin.php"><font color="#FF0000">ADMIN</font></a><{/if}>
+<a href="<{xoAppUrl user.php}>">Konto</a><a href="<{$xoops_url}>/viewpmsg.php">Posteingang</a><a href="<{xoAppUrl user.php?op=logout}>">Ausloggen</a>
+<{else}>
+<a href="<{xoAppUrl user.php}>">Einloggen</a>  <a href="<{xoAppUrl register.php}>">Noch nicht registriert?</a>
+<{/if}> 
+</div>
+</div>
+
+<div id="header">
+<div id="headerbanner"><{$xoops_banner}></div>
+</div>
+
+<div id="menutop">
+	<!-- Navigation Menu -->
+	<ul>
+			<li><a href="<{xoAppUrl }>">Home</a></li>
+			<li><a href="<{xoAppUrl }>">News</a></li>
+            <li><a href="<{xoAppUrl }>">Eventfotos</a></li>
+            <li><a href="<{xoAppUrl }>">Eventkalender</a></li>
+			<li><a href="<{xoAppUrl }>">Forum</a></li>			
+			<li><a href="<{xoAppUrl }>">Gewinnspiele</a></li>
+            <li><a href="<{xoAppUrl }>">Kontakt</a></li>
+	</ul>
+</div>
+
+<div id="xo-canvas">
+	
+	<!-- Navigation Menu -->
+  	<!--<div id="menu">
+		<ul>
+			<li><a href="<{xoAppUrl }>">Home</a></li>
+			<li><a href="<{xoAppUrl modules/news/}>">Blog</a></li>
+			<li><a href="<{xoAppUrl modules/extgallery}>">Photos</a></li>
+			<li><a href="<{xoAppUrl modules/newbb/}>">Forum</a></li>
+			<li><a href="<{xoAppUrl modules/mylinks/}>">Links</a></li>
+			<li><a href="<{xoAppUrl modules/liaise/}>">Contact</a></li>
+		</ul>
+	</div> -->
+	
+	
+  
+  
+  <table id="xo-canvas-content" cellspacing="0">
+    <tr > 
+		<!-- Start left blocks loop -->
+		  <{if $xoops_showlblock}>
+					<td id="xo-canvas-leftcolumn">
+					<{foreach item=block from=$xoBlocks.canvas_left}>
+					<{includeq file="$theme_name/theme_blockleft.html"}>
+					<{/foreach}>         
+					 </td>
+		 <{/if}>
+		<!-- End left blocks loop -->
+
+    <td id="xo-page">
+		<!-- Start center top blocks loop -->
+		<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+		<table  id="xo-topblocks" cellspacing="0">
+			<tr>
+					<td id="xo-topcenterblocks" colspan="2">
+					<{foreach item=block from=$xoBlocks.page_topcenter}>
+					<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+			<tr>
+					<td id="xo-topleftblocks">
+					<{foreach item=block from=$xoBlocks.page_topleft}>
+					<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+					<{/foreach}>
+					</td>
+					
+					<td id="xo-toprightblocks">
+					<{foreach item=block from=$xoBlocks.page_topright}>
+					<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+		</table>
+		<{/if}>
+		<!-- End center top blocks loop -->
+		
+		<!-- Start content module page -->
+        <div id="xo-content"><{$xoops_contents}></div>
+		<!-- End content module -->
+	
+	    <!-- Start center bottom blocks loop -->
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+		<table id="xo-bottomblocks" cellspacing="0">
+		<{if $xoBlocks.page_bottomcenter}>
+		<tr>
+				<td id="xo-bottomcenterblocks" colspan="2">
+				<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}><{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+				<td id="xo-bottomleftblocks">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+				<{include file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+				</td>
+				
+				<td id="xo-bottomrightblocks">
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+				<{include file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		</table>
+		<{/if}>
+		<!-- End center bottom blocks loop -->
+      </td>
+
+        <!-- Start right blocks loop -->
+		<{if $xoops_showrblock}>
+		<td id="xo-canvas-rightcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_right}>
+          <{includeq file="$theme_name/theme_blockright.html"}>
+        <{/foreach}>
+		</td>
+		<{/if}>
+        <!-- End right blocks loop -->	
+    </tr>
+  </table>
+</div>
+  <!-- Start footer -->
+<div id="footer">
+	<p>Design by <a href="http://www.xoops-theme.com" target="_blank">Xoops-Theme.com</a>.<{$xoops_footer}></p>
+</div>
+  <!-- end Footer -->
+</body>
+</html>

@@ -1,0 +1,945 @@
+
+robot-id: AdsBot-Google
+robot-name: AdsBot-Google
+robot-cover-url: http://www.google.com/
+robot-details-url: http://www.google.com/adsbot.html
+robot-owner-name: Google Inc.
+robot-owner-url: http://www.google.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: Crawler
+robot-platform: 
+robot-availability: Now
+robot-exclusion: 
+robot-exclusion-useragent: AdsBot-Google (+http://www.google.com/adsbot.html)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: AdsBot-Google (+http://www.google.com/adsbot.html)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: AdsBot-Google (+http://www.google.com/adsbot.html)
+robot-handlesession: Yes
+
+robot-id: Baiduspider
+robot-name: Baiduspider
+robot-cover-url: http://www.baidu.com/
+robot-details-url: http://www.baidu.com/
+robot-owner-name: Baidu.com
+robot-owner-url: http://www.baidu.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Baiduspider subscriber
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Baiduspider
+robot-exclusion-useragent: Baiduspider+(+http://www.baidu.com/search/spider.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Baiduspider+(+http://www.baidu.com/search/spider.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Baiduspider+(+http://www.baidu.com/search/spider.htm)
+robot-handlesession: Yes
+
+robot-id: Bloglines
+robot-name: Bloglines
+robot-cover-url: http://www.bloglines.com/
+robot-details-url: http://www.bloglines.com/
+robot-owner-name: IAC Search & Media
+robot-owner-url: http://www.bloglines.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Bloglines Images
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Bloglines-Images
+robot-exclusion-useragent: Bloglines-Images/0.1 (http://www.bloglines.com)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Bloglines-Images/0.1 (http://www.bloglines.com)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Bloglines-Images/0.1 (http://www.bloglines.com)
+robot-handlesession: Yes
+
+robot-id: Bloglines 0
+robot-name: Bloglines 0
+robot-cover-url: http://www.bloglines.com/
+robot-details-url: http://www.bloglines.com/
+robot-owner-name: IAC Search & Media
+robot-owner-url: http://www.bloglines.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Bloglines
+robot-exclusion-useragent: Bloglines/3.1 (http://www.bloglines.com)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Bloglines/3.1 (http://www.bloglines.com)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Bloglines/3.1 (http://www.bloglines.com)
+robot-handlesession: Yes
+
+robot-id: Bloglines 1
+robot-name: Bloglines 1
+robot-cover-url: http://www.bloglines.com/
+robot-details-url: http://www.bloglines.com/
+robot-owner-name: IAC Search & Media
+robot-owner-url: http://www.bloglines.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Bloglines 1 Subscriber
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Bloglines
+robot-exclusion-useragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-handlesession: Yes
+
+robot-id: Bloglines 3
+robot-name: Bloglines 3
+robot-cover-url: http://www.bloglines.com/
+robot-details-url: http://www.bloglines.com/
+robot-owner-name: IAC Search & Media
+robot-owner-url: http://www.bloglines.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 3 subscribers
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Bloglines
+robot-exclusion-useragent: Bloglines/3.1 (http://www.bloglines.com; 3 subscribers)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Bloglines/3.1 (http://www.bloglines.com; 3 subscribers)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Bloglines/3.1 (http://www.bloglines.com; 3 subscribers)
+robot-handlesession: Yes
+
+robot-id: Charlotte 0.9
+robot-name: Charlotte 0.9
+robot-cover-url: http://www.searchme.com/
+robot-details-url: http://www.searchme.com/
+robot-owner-name: Searchme
+robot-owner-url: http://www.searchme.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Charlotte/0.9t
+robot-exclusion-useragent: Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)
+robot-handlesession: Yes
+
+robot-id: Charlotte 1.1
+robot-name: Charlotte 1.1
+robot-cover-url: http://www.searchme.com/
+robot-details-url: http://www.searchme.com/
+robot-owner-name: Searchme
+robot-owner-url: http://www.searchme.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Charlotte/1.1
+robot-exclusion-useragent: Mozilla/5.0 (compatible; Charlotte/1.1; http://www.searchme.com/support/)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; Charlotte/1.1; http://www.searchme.com/support/)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; Charlotte/1.1; http://www.searchme.com/support/)
+robot-handlesession: Yes
+
+robot-id: DotBot
+robot-name: DotBot
+robot-cover-url: http://www.dotnetdotcom.org/
+robot-details-url: http://www.dotnetdotcom.org/
+robot-owner-name: dotnetdotcom.org
+robot-owner-url: http://www.dotnetdotcom.org/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: DotBot/1.1
+robot-exclusion-useragent: Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)
+robot-handlesession: Yes
+
+robot-id: FeedFetcher-Google
+robot-name: FeedFetcher-Google
+robot-cover-url: http://www.google.com/
+robot-details-url: http://www.google.com/
+robot-owner-name: Google Inc.
+robot-owner-url: http://www.google.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Feedfetcher-Google
+robot-exclusion-useragent: Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)
+robot-handlesession: Yes
+
+robot-id: Googlebot
+robot-name: Googlebot
+robot-cover-url: http://www.google.com/
+robot-details-url: http://www.google.com/
+robot-owner-name: Google Inc.
+robot-owner-url: http://www.google.com/
+robot-owner-email: robot@xortify.com
+robot-status: 
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Googlebot/2.1
+robot-exclusion-useragent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+robot-handlesession: Yes
+
+robot-id: Java VM 1.4
+robot-name: Java VM 1.4
+robot-cover-url: http://java.sun.com/
+robot-details-url: http://java.sun.com/
+robot-owner-name: Sun Microsystems, Inc.
+robot-owner-url: http://java.sun.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Java/1.4.2
+robot-exclusion-useragent: Java/1.4.2
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Java/1.4.2
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Java/1.4.2
+robot-handlesession: Yes
+
+robot-id: Java VM 1.5
+robot-name: Java VM 1.5
+robot-cover-url: http://java.sun.com/
+robot-details-url: http://java.sun.com/
+robot-owner-name: Sun Microsystems, Inc.
+robot-owner-url: http://java.sun.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Java/1.4.1
+robot-exclusion-useragent: Java/1.4.1
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Java/1.4.1
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Java/1.4.1
+robot-handlesession: Yes
+
+robot-id: Java VM 1.6
+robot-name: Java VM 1.6
+robot-cover-url: http://java.sun.com/
+robot-details-url: http://java.sun.com/
+robot-owner-name: Sun Microsystems, Inc.
+robot-owner-url: http://java.sun.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Java VM 1.6
+robot-exclusion-useragent: Java VM 1.6
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Java VM 1.6
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Java VM 1.6
+robot-handlesession: Yes
+
+robot-id: LinkWalker 1
+robot-name: LinkWalker 1
+robot-cover-url: http://www.seventwentyfour.com/
+robot-details-url: http://www.seventwentyfour.com/
+robot-owner-name: SEVENtwentyfour Inc.
+robot-owner-url: http://www.seventwentyfour.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: LinkWalker/2.0
+robot-exclusion-useragent: LinkWalker/2.0
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: LinkWalker/2.0
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: LinkWalker/2.0
+robot-handlesession: Yes
+
+robot-id: LiteFinder 1
+robot-name: LiteFinder 1
+robot-cover-url: http://www.litefinder.net/
+robot-details-url: http://www.litefinder.net/
+robot-owner-name: LiteFinder.net
+robot-owner-url: http://www.litefinder.net/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: LiteFinder/1.0
+robot-exclusion-useragent: Mozilla/5.0 (compatible; LiteFinder/1.0; +http://www.litefinder.net/about.html)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; LiteFinder/1.0; +http://www.litefinder.net/about.html)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; LiteFinder/1.0; +http://www.litefinder.net/about.html)
+robot-handlesession: Yes
+
+robot-id: msnbot 1.1
+robot-name: msnbot 1.1
+robot-cover-url: http://www.microsoft.com/
+robot-details-url: http://www.microsoft.com/
+robot-owner-name: Microsoft 
+robot-owner-url: http://www.microsoft.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: msnbot/1.1
+robot-exclusion-useragent: msnbot/1.1 (+http://search.msn.com/msnbot.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: msnbot/1.1 (+http://search.msn.com/msnbot.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: msnbot/1.1 (+http://search.msn.com/msnbot.htm)
+robot-handlesession: Yes
+
+robot-id: msnbot-media 1.0
+robot-name: msnbot-media 1.0
+robot-cover-url: http://www.microsoft.com/
+robot-details-url: http://www.microsoft.com/
+robot-owner-name: Microsoft
+robot-owner-url: http://www.microsoft.com/
+robot-owner-email: robot@xortify.com
+robot-status: 
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: msnbot-media/1.0
+robot-exclusion-useragent: msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)
+robot-handlesession: Yes
+
+robot-id: msnbot-media 1.1
+robot-name: msnbot-media 1.1
+robot-cover-url: http://www.microsoft.com/
+robot-details-url: http://www.microsoft.com/
+robot-owner-name: Microsoft
+robot-owner-url: http://www.microsoft.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: msnbot-media/1.1
+robot-exclusion-useragent: msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)
+robot-handlesession: Yes
+
+robot-id: msnbot/2.0b 1
+robot-name: msnbot/2.0b 1
+robot-cover-url: http://www.microsoft.com/
+robot-details-url: http://www.microsoft.com/
+robot-owner-name: Microsoft 
+robot-owner-url: http://www.microsoft.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: msnbot/2.0b
+robot-exclusion-useragent: msnbot/2.0b (+http://search.msn.com/msnbot.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: msnbot/2.0b (+http://search.msn.com/msnbot.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: msnbot/2.0b (+http://search.msn.com/msnbot.htm)
+robot-handlesession: Yes
+
+robot-id: msnbot/2.0b 2
+robot-name: msnbot/2.0b 2
+robot-cover-url: http://www.microsoft.com/
+robot-details-url: http://www.microsoft.com/
+robot-owner-name: Microsoft
+robot-owner-url: http://www.microsoft.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: msnbot/2.0b
+robot-exclusion-useragent: msnbot/2.0b
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: msnbot/2.0b
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: msnbot/2.0b
+robot-handlesession: Yes
+
+robot-id: QihooBot
+robot-name: QihooBot
+robot-cover-url: http://www.qihoo.net/
+robot-details-url: http://www.qihoo.net/
+robot-owner-name: Qihoo 
+robot-owner-url: http://www.qihoo.net/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: CollapsarWEB qihoobot@qihoo.net
+robot-exclusion-useragent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)
+robot-handlesession: Yes
+
+robot-id: Sogou head 1.0
+robot-name: Sogou head 1.0
+robot-cover-url: http://www.sogou.com/
+robot-details-url: http://www.sogou.com/
+robot-owner-name: Sogou.com
+robot-owner-url: http://www.sogou.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Sogou head spider 1.0
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Sogou head spider/3.0
+robot-exclusion-useragent: Sogou head spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Sogou head spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Sogou head spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-handlesession: Yes
+
+robot-id: Sogou web 4.0
+robot-name: Sogou web 4.0
+robot-cover-url: http://www.sogou.com/
+robot-details-url: http://www.sogou.com/
+robot-owner-name: Sogou.com
+robot-owner-url: http://www.sogou.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Sogou web spider 4.0
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Sogou web spider/4.0
+robot-exclusion-useragent: Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+robot-handlesession: Yes
+
+robot-id: Sosoimagespider
+robot-name: Sosoimagespider
+robot-cover-url: http://www.tencent.com/
+robot-details-url: http://www.tencent.com/
+robot-owner-name: Tencent
+robot-owner-url: http://www.tencent.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Sosoimagespider
+robot-exclusion-useragent: Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)
+robot-handlesession: Yes
+
+robot-id: Sosospider
+robot-name: Sosospider
+robot-cover-url: http://www.tencent.com/
+robot-details-url: http://www.tencent.com/
+robot-owner-name: Tencent
+robot-owner-url: http://www.tencent.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Sosospider
+robot-exclusion-useragent: Sosospider+(+http://help.soso.com/webspider.htm)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Sosospider+(+http://help.soso.com/webspider.htm)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Sosospider+(+http://help.soso.com/webspider.htm)
+robot-handlesession: Yes
+
+robot-id: Superdownloads
+robot-name: Superdownloads
+robot-cover-url: http://superdownloads.uol.com.br/
+robot-details-url: http://superdownloads.uol.com.br/
+robot-owner-name: Superdownloads 
+robot-owner-url: http://superdownloads.uol.com.br/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: Superdownloads Spiderman
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Superdownloads Spiderman/2.00
+robot-exclusion-useragent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Coldfusion/7.00 Superdownloads Spiderman/2.00
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Coldfusion/7.00 Superdownloads Spiderman/2.00
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (Windows; U; Windows NT 5.1; rv:1.7.3) Coldfusion/7.00 Superdownloads Spiderman/2.00
+robot-handlesession: Yes
+
+robot-id: WebAlta 2.0
+robot-name: WebAlta 2.0
+robot-cover-url: http://www.webalta.ru/
+robot-details-url: http://www.webalta.ru/
+robot-owner-name: Webalta
+robot-owner-url: http://www.webalta.ru/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: WebAlta Crawler 2.0
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: WebAlta Crawler/2.0
+robot-exclusion-useragent: WebAlta Crawler/2.0 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: WebAlta Crawler/2.0 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: WebAlta Crawler/2.0 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)
+robot-handlesession: Yes
+
+robot-id: Yahoo! Slurp
+robot-name: Yahoo! Slurp
+robot-cover-url: http://www.yahoo.com/
+robot-details-url: http://www.yahoo.com/
+robot-owner-name: Yahoo! Inc.
+robot-owner-url: http://www.yahoo.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Yahoo! Slurp
+robot-exclusion-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-handlesession: Yes
+
+robot-id: Yahoo! Slurp 3.0
+robot-name: Yahoo! Slurp 3.0
+robot-cover-url: http://www.yahoo.com/
+robot-details-url: http://www.yahoo.com/
+robot-owner-name: Yahoo! Inc.
+robot-owner-url: http://www.yahoo.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Yahoo! Slurp/3.0
+robot-exclusion-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+robot-handlesession: Yes
+
+robot-id: Yahoo! Slurp China
+robot-name: Yahoo! Slurp China
+robot-cover-url: http://www.yahoo.com/
+robot-details-url: http://www.yahoo.com/
+robot-owner-name: Yahoo! Inc.
+robot-owner-url: http://www.yahoo.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Yahoo! Slurp China
+robot-exclusion-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp China; http://misc.yahoo.com.cn/help.html)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; Yahoo! Slurp China; http://misc.yahoo.com.cn/help.html)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; Yahoo! Slurp China; http://misc.yahoo.com.cn/help.html)
+robot-handlesession: Yes
+
+robot-id: Yeti 1.0
+robot-name: Yeti 1.0
+robot-cover-url: http://www.nhncorp.com/
+robot-details-url: http://www.nhncorp.com/
+robot-owner-name: NHN Corporation
+robot-owner-url: http://www.nhncorp.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Yeti/1.0
+robot-exclusion-useragent: Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)
+robot-handlesession: Yes
+
+robot-id: YodaoBot 1.0
+robot-name: YodaoBot 1.0
+robot-cover-url: http://corp.163.com/
+robot-details-url: http://corp.163.com/
+robot-owner-name: NetEase Inc
+robot-owner-url: http://corp.163.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: YodaoBot/1.0
+robot-exclusion-useragent: Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+robot-handlesession: Yes
+
+robot-id: YoudaoBot 1.0
+robot-name: YoudaoBot 1.0
+robot-cover-url: http://corp.163.com/
+robot-details-url: http://corp.163.com/
+robot-owner-name: NetEase Inc
+robot-owner-url: http://corp.163.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: YoudaoBot/1.0
+robot-exclusion-useragent: Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent:  (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )
+robot-handlesession: Yes
+
+robot-id: Bloglines 2
+robot-name: Bloglines 2
+robot-cover-url: http://www.bloglines.com/
+robot-details-url: http://www.bloglines.com/
+robot-owner-name: IAC Search & Media
+robot-owner-url: http://www.bloglines.com/
+robot-owner-email: robot@xortify.com
+robot-status: Active
+robot-purpose: 
+robot-type: 
+robot-platform: 
+robot-availability: 
+robot-exclusion: Bloglines/3.1
+robot-exclusion-useragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-noindex: 
+robot-host: 40
+robot-from: 
+robot-useragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-language: 
+robot-description: 40
+robot-history: 
+robot-environment: 
+modified-date: 
+modified-by: 
+robot-safeuseragent: Bloglines/3.1 (http://www.bloglines.com; 2 subscribers)
+robot-handlesession: Yes

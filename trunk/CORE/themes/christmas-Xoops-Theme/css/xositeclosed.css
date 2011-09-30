@@ -1,0 +1,42 @@
+/* --------- system_siteclosed.html --------- */
+body {
+  background-color : #000;     
+  font-family : Arial, sans-serif;
+  font-size : .9em;       
+}
+#xo-siteclosed {
+  margin : 85px 200px 10px 200px;
+  background : #fff url("../img/bgcontent.png") repeat-x top;
+  padding : 8px;
+  line-height : 1.6em;
+  color : #333;
+  text-align: center;
+  border : 1px solid #ccc;
+}
+#xo-siteclosed a {
+  color : #fafafa;
+  text-decoration : none;
+}
+#xo-siteclosed a:hover {text-decoration : underline; }
+#xo-siteclosed strong {
+  display : block;
+  color : #cfa102;
+  text-transform : uppercase;
+  font-style : normal;
+}
+#xo-siteclosed label {
+  font-size : .9em;
+  font-weight : normal;
+}
+#xo-siteclosed input {
+  margin-right : 3px;
+	border : 1px solid #ccc;
+}
+#xo-siteclosed input.uname {
+  background : #fff url("../icons/users/pseudo.gif") no-repeat left;
+  padding-left : 18px;
+}
+#xo-siteclosed input.password {
+  background : #fff url("../icons/users/password.gif") no-repeat left;
+  padding-left : 18px;
+}

@@ -1,0 +1,53 @@
+/***************************************************************************
+                           mydl_fileup.zip  -  description
+                           ------------------------------
+    begin                : Mon Jul 05 2004
+    copyleft             : (C) 2004-2008 Bluemoon inc.
+    home page            : http://www.bluemooninc.biz/
+    auther               : Yoshi.Sakai
+    email                : webmaster@bluemooninc.biz
+***************************************************************************/
+
+/***************************************************************************
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ ***************************************************************************/
+
+Usage:
+
+Just overwrite to XOOPS 2 original mydownloads v1.10 module.
+
+You can upload automatically and it is not necessary to input into URL and 
+file size information any longer.
+
+v1.01 2005/04/11 - Supported multibyte strings in filename.
+v1.02 2005/07/17 - Accept anonymous upload with allow anonymous option by preference.
+v1.03 2005/10/22 - Comment out for URL check. Brush up for modify template,MIME.
+v1.04 2005/10/29 - Security update for image file upload vulnerability.
+v1.05 2007/02/24 - Add show the options (vote,comment and etc) at module preferense. Add style.css and those images.
+v1.06 2007/11/26 - Add redirect function to index.php. We can download as title name such like "http://XOOPS_URL/modules/mydownloads/?download_title".
+v1.07 2007/11/26 - Supported original style.css. It based for amnesty international japan.
+v1.08 2008/01/16 - Move fileup option to module preference from fileup.ini.php.
+v1.09 2008/01/17 - Supported multi language file name.
+v1.10 2008/01/18 - Add group permission for upload.
+v1.11 2008/01/19 - Add file list for all uploaded files.
+v1.12 2008/01/20 - Supported delete file at file list only admin.
+v1.13 2008/01/21 - Renew English and Japanese files.
+v1.14 2008/01/22 - Supported show single file from file list.
+v1.15 2008/01/28 - Redesign style.css for publication.
+v1.16 2008/02/04 - Added error message in fileup.class.php.
+v1.17 2008/02/09 - Supported XOOPS cube v2.1. Update template (Thx makinosuke.)
+v1.17a 2008/02/12 - Update template (Thx makinosuke.)
+v1.18 2008/05/17 - Supported force uploading for same URL by same submitter. Supported delete file by Submitter. Supported page controller on file list. 
+v1.19 2009/01/13 - MarkItUp jQuery plugin supported. Style design by Makinosuke.
+v1.19a 2009/01/14 - URL fix on template files. Add image "file_icon.png" designed by TYPEFACE.
+v1.20 2009/01/14 - Bugfixed: submit modify without uploading.
+v1.21 2009/01/16 - Security update for SQL injection at admin/index.php, include/function.php. It's same as patch-2008122001.zip on xoopscube.jp.
+v1.22 2009/01/20 - Bugfixed: Call to undefined function: is_admin_group() in function.php.
+v1.23 2009/01/21 - Bugfixed: Cannot redeclare is_admin_group() when it installed with news_embed any versions.
+v1.24 2009/06/16 - Added language default parameter. Fixed some warning parameters.
+v1.25 2009/06/18 - Added: Check existing record before insert for "mydownloads_text" table. Bugfixed: "delBrokenDownloads()","delCat()" functions had not a delete command for "mydownloads_text" table.

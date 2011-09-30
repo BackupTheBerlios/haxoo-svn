@@ -1,0 +1,100 @@
+/*============= Règles principale du squelette ============*/
+#xo-canvas-columns {
+    width:                  100%;
+    border-collapse:        collapse;
+}
+#xo-canvas-leftcolumn {
+    width:                  170px;
+    padding-top:                50px;
+
+}
+#xo-page {
+    min-height:             500px;
+	width:                  600px;
+    color:                  #000;
+    background-color:       transparent;
+}
+* html #xo-page {
+    height:                 500px;
+}
+#xo-canvas-rightcolumn {
+    width:                  170px;
+    color:                  #0000ff;
+    background-color:       #fff;
+}
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn {
+    vertical-align:         top;
+}
+/*========== Règles pour les configurations spécifiques des colonnes ===========*/
+#xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {}
+#xo-canvas.rightcolumn-layout #xo-page, #xo-canvas.threecolumns-layout #xo-page {
+    border-right-width:     0;
+}
+#xo-canvas-bottom, #xo-canvas-footer {}
+/*=========== Blocs centraux =============*/
+#xo-page-topblocks {
+    padding:                0 10px;
+}
+#xo-page-bottomblocks {
+    padding:                0 10px 10px;
+}
+#xo-page .xo-blockszone .xo-block {
+    margin-bottom:          10px;
+    border:                 0px solid #c6c1c1;
+}
+#xo-page-topleftblocks, #xo-page-bottomleftblocks {
+    float:                  left;
+    width:                  49.5%;
+}
+#xo-page-toprightblocks, #xo-page-bottomrightblocks {
+    float:                  right;
+    width:                  49.5%;
+}
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks {
+    clear:                  both;
+}
+#xo-page .xo-lcrpageblocks .xo-blockszone, #xo-page .xo-lcrpageblocks .xo-blockszone {
+    float:                  left;
+    clear:                  none;
+    width:                  33%;
+}
+.xo-lcrpageblocks #xo-page-topleftblocks,
+.xo-lcrpageblocks #xo-page-topcenterblocks,
+.xo-lcrpageblocks #xo-page-bottomleftblocks,
+.xo-lcrpageblocks #xo-page-bottomcenterblocks {
+    margin-right:           .5%;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+    min-height:             50px;
+}
+* html #xo-page .xo-blockszone .xo-blockcontent {
+    height:                 50px;
+}
+#xo-page-topblocks .xo-block,
+#xo-page-bottomblocks .xo-block {
+    padding-top:            2px;
+}
+#xo-page-topblocks *>.xo-block,
+#xo-page-bottomblocks *>.xo-block {
+    padding-top:            0;
+}
+#xo-page .xo-blockszone > .xo-block {
+    border-style:           none solid none none;
+    padding-left:           4px !important;
+}
+#xo-page .xo-blockszone .xo-block:before {
+    background:             url(../img/centerblock-tr.png) no-repeat right top;
+    display:                block;
+    content:                url(../img/centerblock-tl.png);
+    height:                 7px;
+    margin-left:            -4px !important;
+    margin-right:           -1px !important;
+}
+#xo-page .xo-blockszone .xo-block:after {
+    display:                block;
+    content:                url(../img/centerblock-bl.png);
+    background:             url(../img/centerblock-br.png) no-repeat right top;
+    height:                 7px;
+    margin-left:            -4px !important;
+    margin-right:           -1px !important;
+}

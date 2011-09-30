@@ -1,0 +1,33 @@
+/* --------- Forms --------- */
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #dfa102;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+label {font-weight : bold;}
+input {
+  margin-right : 3px;
+	font-size : 1em;
+	border : 1px solid #ccc;
+}
+select {
+  background-color :	#f6f6f6;
+	color : #000;
+	border : 1px solid #ccc;
+	font-size : .9em;
+}
+textarea {
+	width :  85%;
+	height : 110px;
+	margin : 0.5em 0.5em 0.5em 0;	
+	padding : 5px;
+	color : #000;
+	border : 1px solid #ccc;
+	overflow : auto;
+}

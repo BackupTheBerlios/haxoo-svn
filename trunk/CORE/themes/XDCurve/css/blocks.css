@@ -1,0 +1,143 @@
+/* ===== columns list ===== */
+.xo-canvas-column ul {
+    margin:                 0;
+    padding:                .5em;
+    list-style-type:        none;
+}
+
+.xo-canvas-column ul ul {
+    padding-top:            0;
+    padding-bottom:         0;
+    padding-left:           1em;
+}
+
+/* ===== table cells in columns ===== */
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+    background-color:       transparent;
+    color:                  inherit;
+    border:                 0 none transparent !important;
+}
+
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+    margin:                 0;
+    padding:                0;
+    border:                 0 !important;
+}
+
+/* ===== left columns ===== */
+#xo-canvas-leftcolumn .xo-block {
+    margin-right:           11px;
+    margin-bottom:          10px;
+    background:transparent;
+    padding-top:            4px;
+    width:                  240px; /* add by kris */
+}
+
+#xo-canvas-leftcolumn .xo-blocktitle {
+    color: #FFFFFF;
+    font-size: 21px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    min-height:             110px;
+    background-color:       transparent;
+    background:             url(../img/bg-left_blockcontent.gif) no-repeat left top;
+    padding:                2px 8px 0;
+    color:                  #ccc;
+}
+
+* html #xo-canvas-leftcolumn .xo-blockcontent {
+    height:                 110px;
+
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a {
+    background-color:       inherit;
+    color:                  #fff;
+    text-decoration:         none;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+    background-color:       inherit;
+    color:                  #000;
+    text-decoration:        none;
+}
+
+#xo-canvas-leftcolumn img {
+    margin:                 3px 3px 0 7px;
+    padding:                3px;
+    border:                 1px solid #999;
+}
+
+#xo-canvas-leftcolumn img:hover {
+    border:                 0;
+}
+
+/* ===== right column ===== */
+#xo-canvas-rightcolumn .xo-block { width: 240px; } /* add by kris */
+#xo-canvas-rightcolumn a {
+    background-color:       inherit;
+    color:                  #59709C;
+    text-decoration:        none;
+}
+
+#xo-canvas-rightcolumn a:hover {
+    background-color:       inherit;
+    color:                  #555;
+    text-decoration:        underline;
+}
+
+#xo-canvas-rightcolumn .xo-blocktitle {
+    color: #FFFFFF;
+    font-size: 21px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#xo-canvas-rightcolumn .xo-blockcontent {
+    padding:                .5em;
+}
+
+
+/* ======= center column ===========*/
+.xo-block ul {
+    margin:                 0;
+    padding:                0;
+    list-style-type:        none;
+}
+
+#xo-page .xo-blockszone .xo-blocktitle {
+    color: #FFFFFF;
+    font-size: 21px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent {
+    background-color:       inherit;
+    padding:                .5em;
+    color:                  #ccc;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img {
+    margin:                 3px 3px 0 7px;
+    padding:                3px;
+    border:                 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+    border:                 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent a {
+    background-color:       inherit;
+    color:                  #1251c6;
+    text-decoration:        none;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+    background-color:       inherit;
+    color:                  #000;
+}

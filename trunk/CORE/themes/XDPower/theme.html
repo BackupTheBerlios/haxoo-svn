@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+    <!-- Assign Theme name -->
+    <{assign var=theme_name value=$xoTheme->folderName}>
+
+    <!-- Title and meta -->
+    <meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+    <meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+    <title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <meta name="author" content="<{$xoops_meta_author}>" />
+    <meta name="copyright" content="<{$xoops_meta_copyright}>" />
+    <meta name="generator" content="XOOPS" />
+
+    <!-- Rss -->
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+    <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+    <!-- Sheet Css -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style.css}>" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="<{xoImgUrl styleIE8.css}>" type="text/css" />
+	<![endif]-->
+
+    <!-- customized header contents -->
+    <{$xoops_module_header}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+<div id="templatemo_wrapper">
+<!-- Start Header -->
+	<div id="templatemo_menu">
+        <ul>
+					<{php}>
+					    include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php';
+					    $modules = b_system_main_show();
+					    $this->assign('defModules', $modules);
+					<{/php}>
+					
+					<li><a href="<{$xoops_url}>" <{if $xoops_dirname == "system"}> class="current"<{/if}>><span>Accueil</span></a></li>
+					<{foreach item=module from=$defModules.modules}>
+					<li><a href="<{$xoops_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname== $module.directory}> class="current"<{/if}> title="<{$module.name}>"><span><{$module.name}></span></a>
+					<{/foreach}>
+				</ul>    	
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="tempaltemo_header">
+    	
+        <div id="site_title">
+            <a href="<{$xoops_url}>" target="_parent">XDPower</a>
+        </div> <!-- end of site_title -->
+        
+        <div id="header_right">
+        	<h1>Lorem ipsum dolor sit amet</h1>
+            <p>Etiam sit amet turpis. Duis nulla diam, posuere ac, varius id, ullamcorper sit amet, libero. Nam sodales, pede vel dapibus lobortis, ipsum diam molestie risus, a vulputate risus nisl pulvinar lacus.</p>
+            <div class="btn_more image_fr"><a href="blog_post.html">Read more</a></div>
+        </div>
+        
+    	<div class="cleaner"></div>
+    </div> <!-- end of tempaltemo header -->
+    
+    <div id="templatemo_content_wrapper_top"></div>
+<!-- End header -->
+<div id="templatemo_content_wrapper">
+<table cellspacing="0">
+    <tr>
+        <!-- Start left blocks loop -->
+        <{if $xoops_showlblock}>
+            <td id="leftcolumn">
+            <{foreach item=block from=$xoBlocks.canvas_left}>
+                <{includeq file="$theme_name/theme_blockleft.html"}>
+            <{/foreach}>
+            </td>
+        <{/if}>
+        <!-- End left blocks loop -->
+
+        <td id="centercolumn">
+            <!-- Display center blocks if any -->
+            <{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+                <table cellspacing="0">
+                    <tr>
+                        <td id="centerCcolumn" colspan="2">
+                        <!-- Start center-center blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topcenter}>
+                            <{includeq file="$theme_name/theme_blockcenter_c.html"}>
+                        <{/foreach}>
+                        <!-- End center-center blocks loop -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="centerLcolumn">
+                        <!-- Start center-left blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topleft}>
+                            <{includeq file="$theme_name/theme_blockcenter_l.html"}>
+                        <{/foreach}>
+                        <!-- End center-left blocks loop -->
+                        </td>
+                        <td id="centerRcolumn">
+                        <!-- Start center-right blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topright}>
+                            <{includeq file="$theme_name/theme_blockcenter_r.html"}>
+                        <{/foreach}>
+                        <!-- End center-right blocks loop -->
+                        </td>
+                    </tr>
+                </table>
+            <{/if}>
+            <!-- End center top blocks loop -->
+
+            <!-- Start content module page -->
+            <{if $xoops_contents && ($xoops_contents != ' ') }><div id="content"><{$xoops_contents}></div><{/if}>
+            <!-- End content module -->
+
+            <!-- Start center bottom blocks loop -->
+            <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+                <table cellspacing="0">
+                    <{if $xoBlocks.page_bottomcenter}>
+                        <tr>
+                            <td id="bottomCcolumn" colspan="2">
+                            <{foreach from=$xoBlocks.page_bottomcenter item=block}>
+                                <{include file="$theme_name/theme_blockcenter_c.html"}>
+                            <{/foreach}>
+                            </td>
+                        </tr>
+                    <{/if}>
+
+                    <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+                        <tr>
+                            <td id="bottomLcolumn">
+                            <{foreach from=$xoBlocks.page_bottomleft item=block}>
+                                <{include file="$theme_name/theme_blockcenter_l.html"}>
+                            <{/foreach}>
+                            </td>
+
+                            <td id="bottomRcolumn">
+                            <{foreach from=$xoBlocks.page_bottomright item=block}>
+                                <{include file="$theme_name/theme_blockcenter_r.html"}>
+                            <{/foreach}>
+                            </td>
+                        </tr>
+                    <{/if}>
+                </table>
+            <{/if}>
+            <!-- End center bottom blocks loop -->
+        </td>
+
+
+    </tr>
+    
+</table>
+</div>
+<div id="templatemo_content_wrapper_bottom"></div>
+
+</div>
+<div id="templatemo_footer">
+    
+        <div class="col_w300">
+            <h4>Our Pages</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="last">Contact</a></li>
+            </ul>  
+ 
+        </div>
+        
+        <div class="col_w300">
+            <h4>Partners</h4>
+            <ul>
+                <li><a href="http://www.flashmo.com">Flash Templates</a></li>
+                <li><a href="http://www.templatemo.com">CSS Templates</a></li>
+                <li><a href="http://www.koflash.com">Flash Websites Gallery</a></li>
+                <li><a href="http://www.flashmo.com/store">Premium Templates</a></li>
+            </ul>    
+ 
+        </div>
+        
+        <div class="col_w300">
+            <h4>About this blog</h4>
+            <p>Aenean scelerisque tellus vitae tortor placerat egestas. Integer consectetur enim eget diam tincidunt vehicula. Ut volutpat erat nec mauris vestibulum sit amet pharetra.</p>
+            <div class="btn_more"><a href="about.html">Read more <span>&raquo;</span></a></div>
+ 
+        </div>
+        
+        
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+</div>
+
+<div id="templatemo_copyright_wrapper">
+    <div id="templatemo_copyright">
+    
+        Copyright © 2011 <a href="#">Your Company Name</a> - 
+        <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> 
+        by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a> | <{$xoops_footer}>
+        
+    </div>
+</div>
+</body>
+</html>

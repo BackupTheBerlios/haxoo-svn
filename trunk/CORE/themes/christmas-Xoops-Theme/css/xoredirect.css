@@ -1,0 +1,18 @@
+/* --------- system_redirect.html --------- */
+body {
+  background-color : #000;
+  color : #dfa102; 
+  font-family : Arial, sans-serif;
+  font-size : 1.2em;       
+}
+#xo-redirect {
+  margin : 110px 200px 10px 200px;
+  padding : 6px;
+  line-height : 1.3em;    
+  text-align: center;
+}
+#xo-redirect a {
+  color : #fafafa;
+  text-decoration : none;
+}
+#xo-redirect a:hover {text-decoration : underline; }

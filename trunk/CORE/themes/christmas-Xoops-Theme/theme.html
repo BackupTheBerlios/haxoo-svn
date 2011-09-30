@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+  <{assign var=theme_name value=$xoTheme->folderName}>	
+  <{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+  <{include_php file="file:$xoops_rootpath/themes/$xoops_theme/xoscripts/breadcrumb.php"}>  
+  <!-- Title, metas, style sheet ... -->	
+  <{includeq file="$theme_name/xohead.html"}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+<noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+
+
+  <!-- Start header -->
+  <{includeq file="$theme_name/xoheader.html"}>  
+  <!-- End header --> 
+  
+  <!-- Start Topnavigation -->
+   <{includeq file="$theme_name/xoglobalnav.html"}>
+  <!-- End Topnavigation -->
+  
+  <div id="xo-canvas" class="<{$xoops_dirname}>">
+  
+  <div id="xo-canvas-content" class="<{$xoops_dirname}>">
+  <table cellspacing="0">
+    <tr>    
+		  <!-- Start left blocks loop -->
+		  <{if $xoops_showlblock}>
+			  <td id="xo-canvas-leftcolumn">
+				  <{foreach item=block from=$xoBlocks.canvas_left}>
+					<{includeq file="$theme_name/theme_blockleft.html"}>
+					<{/foreach}>         
+				</td>
+		  <{/if}>
+		 <!-- End left blocks loop -->
+
+    <td id="xo-page">      
+		  <!-- Start center top blocks loop -->
+		  <{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+		  <table id="xo-topblocks" cellspacing="0">
+		    <!-- Top center blocks -->
+			  <tr>
+				  <td id="xo-topcenterblocks" colspan="2">
+					  <{foreach item=block from=$xoBlocks.page_topcenter}>
+					  <{includeq file="$theme_name/theme_blockcenter_c.html"}>
+					  <{/foreach}>
+					</td>
+			  </tr>
+			  <!-- Top left blocks -->
+		  	<tr>
+					<td id="xo-topleftblocks">
+					  <{foreach item=block from=$xoBlocks.page_topleft}>
+					  <{includeq file="$theme_name/theme_blockcenter_l.html"}>
+					  <{/foreach}>
+					</td>
+				<!-- Top right blocks -->	
+				  <td id="xo-toprightblocks">
+					  <{foreach item=block from=$xoBlocks.page_topright}>
+					  <{includeq file="$theme_name/theme_blockcenter_r.html"}>
+					  <{/foreach}>
+			   </td>
+			 </tr>
+		 </table>
+		 <{/if}>
+		 <!-- End center top blocks loop -->
+		
+		 <!-- Start content module page -->
+     <div id="xo-content"><{$xoops_contents}></div>
+		 <!-- End content module -->
+	
+	   <!-- Start center bottom blocks loop -->
+     <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+		 <table id="xo-bottomblocks" cellspacing="0">
+		  <!-- Bottom center blocks -->	
+		  <{if $xoBlocks.page_bottomcenter}>
+		  <tr>
+			  <td id="xo-bottomcenterblocks" colspan="2">
+				<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}><{/foreach}>
+				</td>
+		  </tr>
+		  <{/if}>
+		  <!-- Bottom left blocks -->	
+		  <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		  <tr>
+			  <td id="xo-bottomleftblocks">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+				<{include file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+				</td>
+				<!-- Bottom right blocks -->	
+				<td id="xo-bottomrightblocks">
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+				<{include file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+				</td>
+		  </tr>
+		  <{/if}>
+		 </table>
+		 <{/if}>
+		 <!-- End center bottom blocks loop -->
+    </td>
+
+      <!-- Start right blocks loop -->
+		  <{if $xoops_showrblock}>
+		  <td id="xo-canvas-rightcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_right}>
+        <{includeq file="$theme_name/theme_blockright.html"}>
+        <{/foreach}>
+		  </td>
+		  <{/if}>
+    <!-- End right blocks loop -->
+    
+    </tr>
+  </table>
+  </div>
+
+ 
+  
+</div>
+ <!-- Start footer -->
+  <{includeq file="$theme_name/xofooter.html"}>
+  <!-- end Footer -->
+</body>
+</html>

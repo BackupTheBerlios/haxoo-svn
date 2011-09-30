@@ -1,0 +1,58 @@
+<div id="mydl-container">
+	<div id="mydl-header">
+		<div id="header-title">
+			<h1><a href="<{$xoops_url}>/modules/mydownloads/" target="_top"><{$mod_name}></a></h1>
+		</div>
+		<div id="header-menu">
+			<ul>
+			<{foreach item=sub_menu from=$sub_menu}>
+				<li>
+					<a href="<{$sub_menu.url}>"><{$sub_menu.name}></a>
+					&nbsp;
+				</li>
+			<{/foreach}>
+			</ul>
+		</div>
+	</div>
+	<div id="mydl-contents">
+		<{if $deleteok}>
+			<form action="filelist.php" method="POST">
+				<img src="./images/delete.gif" />
+				<{$deleteok}>
+				<input type="hidden" name="filename" value="<{$filename}>" />
+				<input type="hidden" name="command" value="deleteok" />
+				<input type="hidden" name="sortname" value="<{$sortname}>" />
+				<input type="hidden" name="sortorder" value="<{$sortorder}>" />
+				<input type="submit" name="submit" value="<{$smarty.const._MD_DELETE}>" />
+			</form>
+		<{/if}>
+		<{foreach item=ranking from=$rankings}>
+		<h2 class="table-datatable-caption"><{$ranking.title}>&nbsp;(<{$lang_sortby}>)</h2>
+		<table class="table-datatable">
+			<thead>
+				<tr>
+					<th><{$lang_rank}></th>
+					<th><{$lang_title}></th>
+					<th><{$lang_category}></th>
+					<th><{$lang_hits}></th>
+					<th><{$lang_rating}></th>
+					<th><{$lang_vote}></th>
+				</tr>
+			</thead>
+			<{foreach item=file from=$ranking.file}>
+				<tbody>
+					<tr>
+						<td><{$file.rank}></td>
+						<td><a href='singlefile.php?cid=<{$file.cid}>&amp;lid=<{$file.id}>'><{$file.title}></a></td>
+						<td><{$file.category}></td>
+						<td><{$file.hits}></td>
+						<td><{$file.rating}></td>
+						<td><{$file.votes}></td>
+					</tr>
+				</tbody>
+			<{/foreach}>
+		</table>
+		<{/foreach}>
+	</div>
+</div>
+

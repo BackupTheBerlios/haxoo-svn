@@ -1,0 +1,182 @@
+/* --------- Stylesheets incorporation --------- */
+@import url("content.css");
+/*@import url("extraclass.css");
+@import url("forms.css");*/
+@import url("blocks.css");
+
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+  	margin : 0;
+	background : #0099CC;
+	padding : 0;
+	color : #333;	
+	font-family : Arial, sans-serif;
+	font-size : .9em;
+}
+#xo-canvas {
+  width : 1000px;
+  margin : 0 auto;
+  background: #F3F1F1 url(../img/content-top.gif) no-repeat top left;
+}
+#xo-canvas-content {
+  padding-top : 5px;
+  
+}
+#xo-page {
+padding-top : 5px;
+}
+
+/* --------- Header --------- */
+#xo-header {
+  height : 170px;
+  width: 1001px;
+  margin: 0 auto;
+  background : #000 url("../img/header2.gif") no-repeat;  
+}
+
+
+/* --- Banner --- */
+#xo-header .banner {
+  position : relative;
+  float : right;
+  top : 50px;
+  right : 20px;  
+}
+
+* html #xo-header .banner { /*IE6 fix*/
+ position: absolute;
+  float : right;
+  top : 50px;
+  margin-right : 125px;  
+}
+
+/* --------- Navigation menu --------- */
+#nav-top{
+width: 1001px;
+height: 41px;
+background: url(../img/menu-top.gif) no-repeat left;
+line-height: 41px;
+margin-left: auto;
+margin-right:auto;
+margin-bottom: 15px;
+}
+
+ul#xo-globalnav {
+  height : 41px; 
+  width: 100%;
+  float: left;
+  margin-left: 20px;
+  line-height: 41px;
+  background : transparent;  
+  text-align : center;
+}
+
+* html ul#xo-globalnav{
+margin-left: 10px;
+}
+
+ul#xo-globalnav li {
+ display : inline;
+  list-style : none;
+  margin-left: 25px;
+}
+
+ul#xo-globalnav a {
+  float:left;
+  margin-left: 3px;
+  padding : 0 0 0 20px;
+  display: block;
+  color : #fff;
+  font-size : 1.4em;
+  font-weight: normal;
+  background: none;
+}
+
+ul#xo-globalnav .navigation {
+  position : relative;
+  top : 5px;
+  color : #888;
+  font-size : 1.1em;
+}
+ul#xo-globalnav a:hover, ul#xo-globalnav a:active,
+ul#xo-globalnav a:focus, ul#xo-globalnav a.xo-current {
+  background : none;
+  color : #70AA0F;
+  cursor: pointer;
+}
+
+ul#xo-globalnav a:hover span, ul#xo-globalnav a:active span,
+ul#xo-globalnav a:focus span, ul#xo-globalnav a.xo-current span {
+  background : none;
+  color : #000;
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+  height : 80px;
+  line-height: 70px;
+  width: 1001px;
+  background: url(../img/footer.gif) no-repeat left;
+  margin: 0 auto; 
+  text-align : center;
+  font-size : .85em;
+  border: none;
+  color: #fff;
+}
+
+#xo-footer a{
+color: #fff;
+}
+
+#xo-footer a:hover{
+color: #fff;
+}
+
+#xo-footer cite {font-style : normal;}
+#xo-footer p.copyright {text-align : center;}   
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin : 0;
+  padding : 3px;
+  color : #333;
+  border-bottom: 1px dashed #D7D7D7;
+}
+#mainmenu a:hover {color : #fff;}
+#mainmenu a.menuTop {padding-left : 16px;}
+#mainmenu a.menuMain {padding-left : 16px;}
+#mainmenu a.menuSub {  
+  background : none;
+  padding-left : 18px;
+  color :#5D5D5D;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {color : #fff;}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .9em;}
+#usermenu a {
+  display : block;
+  margin : 0;
+  color: #333;  
+  padding : 3px;
+}
+#usermenu a:hover {color: #fff;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #fcc;}

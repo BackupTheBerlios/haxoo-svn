@@ -1,0 +1,107 @@
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 170px;
+  padding : 5px;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  height:  39px;
+  margin : 10px 0 0 0;
+  background : url("../img/left-top.png") no-repeat top;
+  line-height: 39px;
+  color : #fff;
+  font-weight : bold;
+  text-align:center; 
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+  margin-top: -3px;
+  padding : 5px 8px 3px 8px;
+  line-height : 1.2em;
+  background: url("../img/left-con.png") repeat-y top;
+}
+
+#xo-canvas-leftcolumn .xo-blockbottom {
+	height: 26px;
+  margin: 0px;
+  padding : 0px;
+  line-height : 1.2em;
+  background: url("../img/left-bot.png") no-repeat top;
+}
+
+#xo-canvas-leftcolumn a:hover{
+   color: #fff;
+}
+
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+   width : 170px;
+  padding : 5px;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  height:  39px;
+  margin : 10px 0 0 0;
+  background : url("../img/right-top.png") no-repeat top;
+  line-height: 39px;
+  color : #fff;
+  font-weight : bold;
+  text-align:center; 
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  margin-top: -3px;
+  padding : 5px 8px 3px 8px;
+  line-height : 1.2em;
+  background: url("../img/right-con.png") repeat-y top;
+}
+
+#xo-canvas-rightcolumn .xo-blockbottom {
+	height: 26px;
+  margin: 0px;
+  padding : 0px;
+  line-height : 1.2em;
+  background: url("../img/right-bot.png") no-repeat top;
+}
+
+#xo-canvas-rightcolumn a{
+   color: #fff;
+}
+
+#xo-canvas-rightcolumn a:hover{
+   color: #A8C732;
+}
+
+
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin : 10px 5px 5px 5px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin : 5px 5px 0 5px;
+  background : url("../icons/page.gif") no-repeat left;
+  padding : 3px 3px 3px 22px;  
+  color : #0599E3;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.5em;
+  text-align : justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle {
+  margin : 5px 5px 0 5px;
+  background : url("../icons/page.gif") no-repeat left;
+  padding : 3px 3px 3px 22px;  
+  color : #0599E3;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.5em;
+  text-align : justify;  
+}

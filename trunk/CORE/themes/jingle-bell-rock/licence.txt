@@ -1,0 +1,32 @@
+﻿Tema: Jingle Bell Rock
+Autor: Angelo Rocha
+Site: www.angelorocha.com.br
+Contato: contato@angelorocha.com.br
+
+#######################Atenção#########################
+#######################Atenção#########################
+#######################Atenção#########################
+Uma pequena colaboração para a comunidade XOOPS, você
+pode alterar o tema desde que não remova os créditos do
+desenvolvedor. É permitido a redistribuição do tema, não é 
+permitido a comercialização.
+
+Suporte XOOPS no Brasil:
+www.guxbrasil.org
+www.xoopsfire.com
+
+
+A little help for the XOOPS community, you
+can change the theme since it does not remove the credits
+developer. To allow the redistribution of the topic, it is not
+allowed to trade.
+
+XOOPS Support in Brazil:
+www.guxbrasil.org
+www.xoopsfire.com
+#######################################################
+#######################################################
+
+Use Software Livre
+
+♥ Xoops - Powered By You!

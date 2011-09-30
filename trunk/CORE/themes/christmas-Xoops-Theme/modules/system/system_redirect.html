@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+  <!-- Theme name -->
+  <{assign var=theme_name value=$xoTheme->folderName}>
+	
+  <!-- Directory html files -->
+  <{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+  
+  <!-- Title and metas -->	
+  <title><{$xoops_sitename}></title>
+  <meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+  <link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+
+  <!-- Sheet Css -->
+  <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/xoredirect.css}>" />
+  
+</head>
+<body>
+  
+  <!-- Star Redirect Message -->
+  <div id="xo-redirect">
+    <!-- Message text -->
+    <h4><{$message}></h4>
+    <!-- Load text -->
+    <p><{$lang_ifnotreload}></p>
+    <{if $xoops_logdump != ''}><div><{$xoops_logdump}></div><{/if}>
+  </div>
+  <!-- End Redirect Message -->
+
+</body>
+</html>

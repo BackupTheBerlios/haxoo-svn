@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+	
+	<{$xoops_module_header}>
+</head>
+
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+  <noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+
+<div id="header">
+	<div id="logo">
+    	<a href="<{xoAppUrl}>"><img src="<{xoImgUrl img/logo.jpg}>" title="<{$xoops_pagetitle}>" /></a>
+    </div>
+    <div id="language">
+    Sprache w&auml;hlen: 
+    <a href="#"><img src="<{xoImgUrl img/de.gif}>" title="Deutsch" /></a>
+    <a href="#"><img src="<{xoImgUrl img/es.gif}>" title="Spanisch" /></a>
+    <a href="#"><img src="<{xoImgUrl img/ba.gif}>" title="Bosnisch" /></a>
+    </div>
+    <div id="header-menu">
+    	<ul>
+        	<li><a href="#">Mein Account</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Garantie</a></li>
+            <li><a href="#">R&uuml;cknahmebedingungen</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Navigation Menu -->
+<div id="top-menu">
+    <div id="suche">
+			<form method="get" action="<{xoAppUrl search.php}>">
+				<div id="search-field">
+                <input type="text" value="" maxlength="30" id="keywords" class="input-field" name="keywords"/>
+                <button value="draft" name="commit" type="submit"></button>
+                <div style="clear:both"></div>
+                </div>
+			</form>
+	</div>
+    <div id="menu">
+      <ul>
+          <li><a href="<{xoAppUrl}>">Home</a></li>
+          <li><a href="<{xoAppUrl}>">Angebote</a></li>
+          <li><a href="<{xoAppUrl}>">Neue Produkte</a></li>
+          <li><a href="<{xoAppUrl}>">Alle Produkte</a></li>
+          <li><a href="<{xoAppUrl}>">Kaufberatung</a></li>
+          <li><a href="<{xoAppUrl}>">Vergleich</a></li>
+      </ul>
+	</div>
+</div>
+
+<div id="xo-canvas">  
+ <div style="width: 500px; margin: 20px auto 0 auto; padding: 5px; border: 1px solid #CCC; text-align: center; font-size: 14px;">
+ <h4><{$message}></h4>
+  <p><{$lang_ifnotreload}></p>
+</div>
+<{if $xoops_logdump != ''}><div><{$xoops_logdump}></div><{/if}>
+</div>
+</div>
+
+ 
+</body>
+</html>

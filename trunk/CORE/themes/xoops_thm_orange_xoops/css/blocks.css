@@ -1,0 +1,219 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : blocks.css - 12 01 2008 */
+
+/* ========== Blocks Quick links ============ */
+.blocks-quicklink {
+border: 1px solid #ff9c00;
+background-color: #ffdeab;
+padding: 4px;
+margin-top: 1em;
+}
+
+/*========== list in columns ==========*/
+.xo-canvas-column ul {
+	margin:							0;
+	padding:							.5em;
+	list-style-type:				none;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+}
+
+/* ====== cells table in column ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	background-color:				#fff;
+	color: 							#000;
+	border:							0 none;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	margin:							0;
+	padding:							0;
+	border: 							0 !important;
+}
+
+/*===== left column =======*/
+#xo-canvas-leftcolumn .xo-block {
+	margin-right:					11px;
+	margin-bottom:					10px;
+	background-color: 			#fff;
+	padding-top:					4px;
+	color:							#000;
+	width:							190px; /* add by kris */
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	background-color: 			inherit;
+	padding-left:					6px;
+	padding-bottom:				5px;
+	color:							#ff9c00;
+	font-family:					Arial, sans-serif;
+	font-size:						1.6em;
+	font-weight:					700;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+	/*min-height:						60px;*/
+	background-color: 			inherit;
+	padding:							0 5px 10px 5px;
+	color:							#000;
+	border-bottom: 1px dashed #ff9c00;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {}
+#xo-canvas-leftcolumn img {
+	margin: 							0;
+	padding: 						3px;
+}
+#xo-canvas-leftcolumn img:hover {}
+
+/*======== right column ========*/
+#xo-canvas-rightcolumn {
+}
+#xo-canvas-rightcolumn .xo-block {
+	margin-left:					11px;
+	margin-bottom:					10px;
+	background-color: 			#fff;
+	padding-top:					4px;
+	color:							#000;
+}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	background-color: 			inherit;
+	padding-left:					6px;
+	padding-bottom:				5px;
+	color:							#ff9c00;
+	font-family:					Arial, sans-serif;
+	font-size:						1.6em;
+	font-weight:					700;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {
+	background-color: 			inherit;
+	padding:							0 5px 10px 5px;
+	color:							#000;
+	border-bottom: 1px dashed #ff9c00;
+}
+#xo-canvas-rightcolumn img {
+	margin: 							0;
+	padding: 						3px;
+}
+#xo-canvas-rightcolumn img:hover {}
+
+/* ======= Content center ===========*/
+#xo-page .xo-blockszone > .xo-block {
+	display: block;
+	clear: both;
+}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	background-color: 			inherit;
+	padding-left:					6px;
+	padding-bottom:				5px;
+	color:							#ff9c00;
+	font-family:					Arial, sans-serif;
+	font-size:						1.6em;
+	font-weight:					700;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	background-color: 			inherit;
+	padding:							0 5px 10px 5px;
+	color:							#000;
+	border-bottom: 1px dashed #ff9c00;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 							0;
+	padding: 						3px;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {}
+#xo-page .xo-blockszone .xo-blockcontent a {}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {}
+
+/* ======= Center blocks ===========*/
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block {}
+#xo-page-topcenterblocks .xo-block {}
+/* exemple :
+#xo-page-topleftblocks .xo-block .xo-blocktitle {
+	color: #ff00ff;
+	background-color: transparent;
+} 
+#xo-page-topleftblocks .xo-block .xo-blockcontent {
+	color: #ff0000;
+	background-color: #000;
+} 
+etc ...*/
+
+/* ===== Bottom slide area ========== */
+#bottom-slide #xo-page .xo-blockszone > .xo-block {
+	
+}
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks {
+	clear:						both;
+}
+#bottom-slide #xo-page-bottomleftblocks {
+float: left;
+	width:						49%;
+	display: block;
+}
+#bottom-slide #xo-page-bottomrightblocks {
+float: right;
+	width:						49%;
+	display: block;
+}
+
+#bottom-slide #xo-page-bottomleftblocks .xo-block, #bottom-slide #xo-page-bottomrightblocks .xo-block {
+padding: 20px;
+}
+#bottom-slide #xo-page-bottomcenterblocks .xo-block {
+padding:  20px;
+}
+
+#bottom-slide #xo-page-bottomleftblocks .xo-block .xo-blocktitle, #bottom-slide #xo-page-bottomrightblocks .xo-block .xo-blocktitle {
+	background-color: 			inherit;
+padding: 0 0 5px 0;
+	color:							#ff9c00;
+	font-family:					Arial, sans-serif;
+	font-size:						1.6em;
+	font-weight:					700;
+}
+#bottom-slide #xo-page-bottomcenterblocks .xo-block .xo-blocktitle {
+	background-color: 			inherit;
+padding: 0 0 5px 0;
+	color:							#ff9c00;
+	font-family:					Arial, sans-serif;
+	font-size:						1.6em;
+	font-weight:					700;
+}
+
+#bottom-slide #xo-page-bottomleftblocks .xo-block .xo-blockcontent, #bottom-slide #xo-page-bottomrightblocks .xo-block .xo-blockcontent {
+padding:  10px;
+color: #666;
+	padding:							0 5px 10px 5px;
+	color:							#000;
+	border-bottom: 1px dashed #647b6d;
+}
+#bottom-slide #xo-page-bottomcenterblocks .xo-block .xo-blockcontent {
+padding:  10px;
+color: #666;
+	padding:							0 5px 10px 5px;
+	color:							#000;
+	border-bottom: 1px dashed #647b6d;
+}
+#bottom-slide #xo-page-bottomleftblocks .xo-block .xo-blockcontent a, #bottom-slide #xo-page-bottomrightblocks .xo-block .xo-blockcontent a {
+color: #fe7200;
+}
+#bottom-slide #xo-page-bottomcenterblocks .xo-block .xo-blockcontent a {
+color: #fe7200;
+}
+#bottom-slide #xo-page-bottomleftblocks .xo-block .xo-blockcontent a:hover, #bottom-slide #xo-page-bottomrightblocks .xo-block .xo-blockcontent a:hover {
+color: #ff9c00;
+}
+#bottom-slide #xo-page-bottomcenterblocks .xo-block .xo-blockcontent a:hover {
+color: #ff9c00;
+}

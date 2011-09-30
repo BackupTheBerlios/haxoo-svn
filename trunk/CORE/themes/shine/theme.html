@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="<{$xoops_sitename}>" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{$xoops_module_header}>
+</head>
+<body>
+<div style="display: none;">This Theme was Designed by Mr. Theme (http://www.mrtheme.com) </div>
+<table align="center" cellpadding="0" cellspacing="0" class="nav_table">
+  	<tr> 
+		<td>
+			<div id="navs">
+			<ul id="navrow">
+				<li><a href="<{$xoops_url}>">HOME</a></li>
+				<li><a href="<{$xoops_url}>">LINK 1</a></li>
+				<li><a href="<{$xoops_url}>">LINK 2</a></li>
+				<li><a href="<{$xoops_url}>">LINK 3</a></li>
+				<li><a href="<{$xoops_url}>">LINK 4</a></li>
+				<li><a href="<{$xoops_url}>">LINK 5</a></li>
+				<li><a href="<{$xoops_url}>">LINK 6</a></li>
+				<li><a href="<{$xoops_url}>">LINK 7</a></li>
+				<li><a href="<{$xoops_url}>">LINK 8</a></li>
+				<li><a href="<{$xoops_url}>">LINK 9</a></li>
+				<li><a href="<{$xoops_url}>">LINK 10</a></li>
+				<li><a href="<{$xoops_url}>">LINK 11</a></li>
+				<li><a href="<{$xoops_url}>">LINK 12</a></li>
+				<li><a href="<{$xoops_url}>">LINK 13</a></li>
+			</ul>
+			</div>
+		</td>
+	</tr>
+</table>
+<table align="center" cellpadding="0" cellspacing="0" class="head_table">
+  	<tr> 
+		<td><a href="<{$xoops_url}>"><{$xoops_sitename}> - <{$xoops_slogan}></a></td>
+	</tr>
+</table>
+
+<table align="center" class="body_table">
+	<tr>
+		<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="main_table">
+	<tr> 
+	<{if $xoops_lblocks}>
+		<td rowspan="2" valign="top" id="leftcolumn"> 
+			<{foreach item=block from=$xoops_lblocks}>
+			<{include file="$xoops_theme/block.html"}> 
+			<{/foreach}> 
+		</td>
+	<{/if}>
+        	<td valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  				<tr>
+    					<td width="1%" align="left"><img src="<{$xoops_imageurl}>images/cc_tl.jpg" width="12" alt="" border="" /></td>
+    					<td width="98%" style="background-image: url(<{$xoops_imageurl}>images/cc_tc.jpg);"></td>
+    					<td width="1%" align="right"><img src="<{$xoops_imageurl}>images/cc_tr.jpg" width="12" alt="" border="" /></td>
+  				</tr>		
+			</table>  
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  				<tr>
+          				<td width="1%" style="background-image: url(<{$xoops_imageurl}>images/cc_l.jpg);"><div align="left"><img src="<{$xoops_imageurl}>images/cc_l.jpg" width="12" height="1" alt="" /></div></td>
+					<td id="centercolumn">
+			<{if $xoops_showcblock == 1}>
+        			<table cellspacing="0">
+					<tr valign="top">
+						<td id="centerCcolumn" colspan="2">
+							<{foreach item=block from=$xoops_ccblocks}>
+							<{include file="$xoops_theme/cblock.html"}>
+							<{/foreach}>
+						</td>
+					</tr>
+					<tr>
+						<td id="centerLcolumn">		
+							<{foreach item=block from=$xoops_clblocks}>
+							<{include file="$xoops_theme/cblock.html"}>
+							<{/foreach}>
+						</td>
+						<td id="centerRcolumn">		
+							<{foreach item=block from=$xoops_crblocks}>
+							<{include file="$xoops_theme/cblock.html"}>
+							<{/foreach}>
+						</td>
+					</tr>
+        			</table>
+        		<{/if}>
+			<{if $xoops_contents}>
+			        <div id="content">
+          				<{$xoops_contents}>
+        			</div>
+			<{/if}>
+        		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        			<table cellspacing="0">
+        				<{if $xoBlocks.page_bottomcenter}>
+						<tr>
+							<td id="bottomCcolumn" colspan="2">
+								<{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/cblock.html"}><{/foreach}>
+							</td>
+						</tr>
+					<{/if}>
+					<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+						<tr>
+							<td id="bottomLcolumn">
+								<{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/cblock.html"}><{/foreach}>
+							</td>
+							<td id="bottomRcolumn">
+								<{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/cblock.html"}><{/foreach}>
+							</td>
+						</tr>
+        				<{/if}>
+        			</table>
+        		<{/if}>
+
+					</td>
+          				<td width="1%" style="background-image: url(<{$xoops_imageurl}>images/cc_r.jpg);"><div align="right"><img src="<{$xoops_imageurl}>images/cc_r.jpg" width="12" height="1" alt="" /></div></td>
+  				</tr>		
+			</table> 
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  				<tr>
+    					<td width="1%" align="left"><img src="<{$xoops_imageurl}>images/cc_bl.jpg" width="12" alt="" border="" /></td>
+    					<td width="98%" style="background-image: url(<{$xoops_imageurl}>images/cc_bc.jpg);"></td>
+    					<td width="1%" align="right"><img src="<{$xoops_imageurl}>images/cc_br.jpg" width="12" alt="" border="" /></td>
+  				</tr>		
+			</table> 
+
+      		</td>
+
+ 		<{if $xoops_showrblock == 1}>
+	        <td id="rightcolumn">
+<!-- Start right blocks loop -->
+        	<{foreach item=block from=$xoops_rblocks}>
+          		<{include file="$xoops_theme/block.html"}>
+        	<{/foreach}>
+<!-- End right blocks loop -->
+	        </td>
+      		<{/if}>
+    	</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<dt class="mydl-list-itemh">
+<a href='visit.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>'><{$down.title}></a>
+</dt>
+<dd class="mydl-list-itemc">
+<div class="mydl-list-desc">
+<{if $down.logourl != ""}>
+<a href="<{$xoops_url}>/modules/mydownloads/visit.php?cid=<{$down.cid}>&amp;lid=<{$down.id}>">
+<img src="<{$xoops_url}>/modules/mydownloads/images/shots/<{$down.logourl}>" alt="Document's screenshot image" />
+</a>
+    <{/if}>
+<{$down.description}>
+</div>
+<div class="mydl-list-info">
+<ul>
+<li class="mydl-list-info-1st"><span><{$lang_category}>:</span> <{$down.category}></li>
+<li><span><{$lang_subdate}>:</span> <{$down.updated}></li>
+<li><span><{$lang_size}>:<span> <{$down.size}></li>
+<{if $xoops_isuser==true}>
+<li><span><{$smarty.const._MD_COUNT}></span> <{$down.hits}></li>
+<li>
+<a href="modfile.php?lid=<{$down.id}>"><{$smarty.const._MD_EDIT}></a>
+</li>
+<{/if}>
+</ul>
+</div>
+</dd>

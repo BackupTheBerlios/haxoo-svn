@@ -1,0 +1,75 @@
+<div id="mydl-wrapper">
+	<h1><a href="index.php" target="_top"><{$xoops_modulename}></a> - <{$category_path|replace:":":""|replace:"<a":"&gt; <a"|regex_replace:"/.*&gt; /":""}></h1>
+	<{if count($subcategories) == 0}>
+		<div id="mydl-nav" style="border-width: 0;">
+	<{else}>
+		<div id="mydl-nav">
+	<{/if}>
+		<div id="mydl-path">
+			<{$category_path|replace:":":""|replace:"<a":"&gt; <a"|regex_replace:"/^&gt; /":""}>
+		</div>
+		<{$smarty.const._MD_NEWARRIVAL}> | <a href="filelist.php" target="_top"><{$smarty.const._MD_FILELIST}></a>
+	</div>
+	<{if count($subcategories) gt 0}>
+	<div id="mydl-cat-list">
+		<ul>
+		<{foreach item=subcat from=$subcategories}>
+			<li>
+				<div class="mydl-cat-main">
+					<a href="viewcat.php?cid=<{$subcat.id}>">
+						<{$subcat.title}><span> (<{$subcat.totallinks}>)</span>
+					</a>
+				</div>
+				<{if $subcat.infercategories != ""}>
+				<div class="mydl-cat-sub">
+					<{$subcat.infercategories}>
+				</div>
+				<{/if}>
+			</li>
+		<{/foreach}>
+		</ul>
+	</div>
+	<{/if}>
+	<{if $file != ""}>
+	<div id="mydl-con">
+		<{if $show_nav == true}>
+		<div id="mydl-sortbttn">
+			<div>
+				<span><{$lang_sortby}></span>
+				&nbsp;
+				<ul>
+					<li>
+						<{$lang_title}>
+						(<a href="viewcat.php?cid=<{$category_id}>&amp;orderby=titleA">
+							<{$smarty.const._MD_TITLEATOZ}>
+						</a>
+						|
+						<a href="viewcat.php?cid=<{$category_id}>&amp;orderby=titleD">
+							<{$smarty.const._MD_TITLEZTOA}>
+						</a>)
+					</li>
+					<li>
+						<{$lang_date}>
+						(<a href="viewcat.php?cid=<{$category_id}>&amp;orderby=dateA">
+							<{$smarty.const._MD_DATEOLD}>
+						</a>
+						|
+						<a href="viewcat.php?cid=<{$category_id}>&amp;orderby=dateD">
+							<{$smarty.const._MD_DATENEW}>
+						</a>)
+					</li>
+				</ul>
+			</div>
+			<div><span><{$lang_cursortedby|replace:" : ":"</span> : "}></div>
+		</div>
+		<{/if}>
+		<dl id="mydl-con-list">
+			<{section name=i loop=$file}>
+				<{include file="db:mydownloads_download.html" down=$file[i]}>
+			<{/section}>
+		</dl>
+	</div>
+	<{/if}>
+	<{include file="db:system_notification_select.html"}>
+</div>
+
