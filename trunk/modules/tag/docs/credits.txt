@@ -1,7 +1,0 @@
-This Module has been developed by Taiwen Jiang (phppp)
-
-Updates have been done by:
-
-Trabis
-Voltan
-Mamba

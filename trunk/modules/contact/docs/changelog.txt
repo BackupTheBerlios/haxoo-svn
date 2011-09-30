@@ -1,8 +1,0 @@
-Version 1.71 RC from 2011-04-17 (Mamba)
-- converted to XOOPS Standard Module GUI
-- included ModuleAdmin class from Mage
-
-Version 1.70 from 11-08-2010 (Trabis)
-- added 2.4.x compatibilty
-- added php5.3 compatibilty
-- added error checking while sending emails
